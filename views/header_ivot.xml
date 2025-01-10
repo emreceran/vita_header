@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <template id="custom_theme_header" inherit_id="website.layout"
+            name="Custom Theme Header">
+    <xpath expr="//header" position="replace">
+
+      <header style="z-index: 9999">
+        <nav class="navbar navbar-expand-lg navbar-light py-3"
+             style="background-color: #2a2d34;">
+          <div class="container ps-2 pe-2">
+            <a class="navbar-brand" href="#">
+              <img src="/web/static/img/logo.png"
+                   alt="Logo"
+                   style="height: 25px; max-height: 25px;"/>
+              <!--  Add your website name here instead of image if necessary  -->
+            </a>
+            <button class="navbar-toggler" type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+              <span class="fa fa-bars"/>
+              <span/>
+            </button>
+            <div class="collapse navbar-collapse"
+                 id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-white"
+                     href="#">
+                    Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white"
+                     href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white"
+                     href="#">Contact Us</a>
+                </li>
+              </ul>
+              <div class="nav navbar-nav ml-auto">
+                <!--  Sign In  -->
+                <t t-call="portal.placeholder_user_sign_in">
+                  <t t-set="_item_class"
+                     t-value="'nav-item ml-lg-3'"/>
+                  <t t-set="_link_class"
+                     t-value="'nav-link'"/>
+                </t>
+                <!--  User Dropdown  -->
+                <t t-call="portal.user_dropdown">
+                  <t t-set="_user_name" t-value="True"/>
+                  <t t-set="_item_class"
+                     t-value="'nav-item dropdown ml-lg-3'"/>
+                  <t t-set="_link_class"
+                     t-value="'nav-link font-weight-bold'"/>
+                </t>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </xpath>
+  </template>
+
+  <template id="homepage_inherit" inherit_id="website.homepage"
+            name="Custom home">
+    <xpath expr="//div[@id='wrap']" position="before">
+      <div class="s_quotes_carousel carousel o_cc o_cc2 s_carousel_default slide" data-bs-interval="10000" id="myCarousel1731157188704" style="background-image: none;">
+
+        <ol class="carousel-indicators o_we_no_overlay">
+          <li data-bs-slide-to="0" data-bs-target="#myCarousel1731157188704"/>
+          <li data-bs-slide-to="1" data-bs-target="#myCarousel1731157188704" class="active" aria-current="true"/>
+          <li data-bs-slide-to="2" data-bs-target="#myCarousel1731157188704"/>
+          <li data-bs-target="#myCarousel1731157188704" data-bs-slide-to="3"/> <li data-bs-target="#myCarousel1731157188704" data-bs-slide-to="4"/> </ol>
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item o_colored_level oe_img_bg o_bg_img_center pt256 pb256" style="background-image: url(&quot;/web/image/4059-d17e7cee/top-view-finances-elements-composition-with-empty-notepad.webp&quot;); background-position: 50% 50%;" data-name="Slide" data-mimetype="image/webp" data-original-id="4056" data-original-src="/web/image/4056-5d943aa1/top-view-finances-elements-composition-with-empty-notepad.jpg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1536">
+            <div class="container">
+              <blockquote class="s_blockquote blockquote w-50 me-auto s_blockquote_cover" data-name="Blockquote">
+                <i class="fa fa-1x fa-quote-left rounded float-start bg-o-color-2 s_blockquote_icon"/>
+                <div class="s_blockquote_content o_cc1 parallax shadow" style="background-image: none; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;" data-scroll-background-ratio="1.5"><span class="s_parallax_bg oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/website.s_blockquote_cover_default_image&quot;);"/><div class="o_we_bg_filter bg-white-50"/>
+                  <p class="o_default_snippet_text"><span style="font-size: 3.375rem;"><strong><span class="o_animated_text o_animate o_anim_fade_in o_animate_both_scroll" style="">Net Sonuçlar Çıkaran...</span></strong></span></p></div>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="carousel-item pb80 o_colored_level pt136 oe_img_bg o_bg_img_center active" style="background-image: url(&quot;/web/image/4058-f2169a42/drawn-arrow-bouncing-off-blocks.webp&quot;); background-position: 50% 100%;" data-name="Slide" data-mimetype="image/webp" data-original-id="4057" data-original-src="/web/image/4057-188bed52/drawn-arrow-bouncing-off-blocks.jpg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1920">
+            <div class="container">
+              <blockquote class="s_blockquote blockquote w-50 me-auto s_blockquote_cover" data-name="Blockquote">
+                <i class="fa fa-1x fa-quote-left rounded float-start bg-o-color-2 s_blockquote_icon"/>
+                <div class="s_blockquote_content o_cc1 shadow" style="box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important; background-image: none;">
+                  <p class="o_default_snippet_text"><span class="display-4-fs"><strong><span class="o_animated_text o_animate o_anim_fade_in o_animate_both_scroll" style="">Her Adımda Güven...</span></strong></span></p></div>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="carousel-item o_colored_level pb0 pt104 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4032-56faeb12/crop-architect-opening-blueprint.jpg&quot;); background-position: 50% 50%;" data-name="Slide">
+            <div class="container">
+              <blockquote class="s_blockquote blockquote w-50 s_blockquote_cover ms-auto" data-name="Blockquote">
+                <i class="fa fa-1x fa-quote-left rounded float-start bg-o-color-2 s_blockquote_icon"/>
+                <div class="s_blockquote_content o_cc1 shadow" style="background-image: none; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
+                  <p class="o_default_snippet_text"><span class="o_animated_text o_animate o_anim_fade_in o_animate_both_scroll" style=""><span class="display-4-fs"><strong>Etkili Denetimler...</strong></span><span class="h2-fs">​</span><br/></span></p>
+                </div>
+              </blockquote>
+            </div>
+          </div><div class="carousel-item o_colored_level pb0 pt96 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4061-779cb7e9/man-working-warehouse.webp&quot;); background-position: 50% 77.7624%;" data-name="Slide" data-mimetype="image/webp" data-original-id="4051" data-original-src="/web/image/4051-314a41cf/man-working-warehouse.jpg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1281">
+          <div class="container">
+            <blockquote class="s_blockquote blockquote w-50 s_blockquote_cover ms-auto" data-name="Blockquote">
+              <i class="fa fa-1x fa-quote-left rounded float-start bg-o-color-2 s_blockquote_icon"/>
+              <div class="s_blockquote_content o_cc1 shadow" style="background-image: none; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
+                <p class="o_default_snippet_text"><span class="o_animated_text o_animate o_animate_both_scroll o_anim_fade_in o_visible" style="--wanim-intensity: 32;"><strong><span class="h1-fs">Hızlı ve Kaliteli Çözümler...</span></strong><span class="display-4-fs"/><br/></span></p>
+              </div>
+            </blockquote>
+          </div>
+        </div><div class="carousel-item o_colored_level pb0 pt112 oe_img_bg o_bg_img_center" style="background-image: url(&quot;/web/image/4034-25277d03/handshake-business-men-concept.webp&quot;); background-position: 50% 77.7624%;" data-name="Slide" data-mimetype="image/webp" data-original-id="4033" data-original-src="/web/image/4033-7f78affa/handshake-business-men-concept.jpg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1920">
+          <div class="container">
+            <blockquote class="s_blockquote blockquote w-50 s_blockquote_cover ms-auto" data-name="Blockquote">
+              <i class="fa fa-1x fa-quote-left rounded float-start bg-o-color-2 s_blockquote_icon"/>
+              <div class="s_blockquote_content o_cc1 shadow" style="background-image: none; box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px !important;">
+                <p class="o_default_snippet_text"><span class="o_animated_text o_animate o_anim_fade_in o_animate_both_scroll" style=""><strong><span class="h1-fs">- VITA Mühendislik -</span></strong><br/></span></p>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        </div>
+
+        <div class="carousel-control-prev o_not_editable o_we_no_overlay" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous" data-bs-target="#myCarousel1731157188704">
+          <span class="carousel-control-prev-icon"/>
+          <span class="visually-hidden o_default_snippet_text">Previous</span>
+        </div>
+        <div class="carousel-control-next o_not_editable o_we_no_overlay" data-bs-slide="next" role="img" aria-label="Next" title="Next" data-bs-target="#myCarousel1731157188704">
+          <span class="carousel-control-next-icon"/>
+          <span class="visually-hidden o_default_snippet_text">Next</span>
+        </div>
+      </div>
+
+
+      <section class="s_embed_code o_colored_level pt0 pb0 text-center" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-tilt-feature=""><template class="s_embed_code_saved"><style>
+        .snippet-background1 {
+        background-color: #3a3a3a;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Sosyal medya ikonlarını sola, butonu sağa iter */
+        padding: 0; /* İkonları 1. kartın soluna, butonu 3. kartın sağına yaklaştırır */
+        }
+
+        .social_icons_rounded {
+        display: flex;
+        justify-content: flex-start; /* İkonları sola hizalar */
+        margin: 0;
+        }
+
+        .social_icons_rounded ul {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        margin-top: 14px;
+        }
+
+        .social_icons_rounded ul li {
+        margin-right: 15px;
+        }
+
+        .social_icons_rounded ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        line-height: 35px;
+        color: #e0e0e0;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        border: 1px solid #e0e0e0;
+        transition: background 0.3s, border 0.3s, color 0.3s;
+        }
+
+        .social_icons_rounded ul li a i {
+        font-size: 16px;
+        }
+
+        .f_facebook:hover {
+        color: #fff;
+        background: #2a66b3;
+        border: 1px solid #2a66b3;
+        }
+
+        .t_twitter:hover {
+        color: #fff;
+        background: #35bbec;
+        border: 1px solid #35bbec;
+        }
+
+        .pinterest:hover {
+        color: #fff;
+        background: #cb2027;
+        border: 1px solid #cb2027;
+        }
+
+        .linkedin:hover {
+        color: #fff;
+        background: #007bb5;
+        border: 1px solid #007bb5;
+        }
+
+        .g_google:hover {
+        color: #fff;
+        background: #e55644;
+        border: 1px solid #e55644;
+        }
+
+        .dribbble:hover {
+        color: #fff;
+        background: #ea4c89;
+        border: 1px solid #ea4c89;
+        }
+
+        .skype:hover {
+        color: #fff;
+        background: #01aaf8;
+        border: 1px solid #01aaf8;
+        }
+
+        .flickr:hover {
+        color: #fff;
+        background: #ff0084;
+        border: 1px solid #ff0084;
+        }
+
+        .instagram:hover {
+        color: #fff;
+        background: #e4405f;
+        border: 1px solid #e4405f;
+        }
+
+        .contact-button {
+        display: flex;
+        justify-content: flex-end; /* Butonu sağa hizalar */
+        }
+
+        .contact-button a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        line-height: 35px;
+        color: #e0e0e0;
+        height: 35px;
+        padding: 0 20px;
+        text-align: center;
+        border: 1px solid #e0e0e0;
+        background-color: transparent;
+        font-size: 16px;
+        transition: background 0.3s, border 0.3s, color 0.3s;
+        }
+
+        .contact-button a:hover {
+        color: #333333;
+        background-color: #949599;
+        border: 1px solid #949599;
+        }
+
+        body {
+        background-color: #E3F2FD;
+        }
+
+        html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        }
+
+        .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0;
+
+        }
+
+        .heading{
+        font-size:20px;
+        font-weight:600;
+        color:#3D5AFE;
+        }
+
+        .line1, .line2, .line3{
+        color: #000;
+        font-size: 12px;
+        }
+
+        .cards {
+        height: 150px;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        background: white;
+        margin: 0;
+        overflow: visible;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        padding-left: 0;
+        position: relative;
+        z-index: 1;
+        flex:1;
+
+        }
+
+
+        .card-image1 {
+        max-height: 50px; /* Yeni yüksekliği belirle */
+        width: 50px; /* Genişlik sabit olsun */
+        height: auto; /* Oran korunsun */
+        margin-left: 15px;
+        }
+
+
+        .cards-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-center;
+        align-items: center;
+        margin-left: 15px;
+        margin-top: 5px; /* Kartın üst kısmına yakınlaştırır */
+        margin-bottom: 0;
+        position: relative;
+        height: 100%;
+        }
+
+        .cards-content h5, .cards-content a {
+        text-align: center;
+        }
+        .cards h5 {
+        font-size: 18px; /* Başlık boyutunu küçülttük */
+        margin: 0;
+        position: relative;
+        top: 10px;
+        width: 100%;
+        font-weight: bold;
+        color: white;
+        }
+
+
+        .cards p {
+        max-width: 200px !important;
+        woed-wrap: break-word;
+        text-align: left;
+        font-size: 9px; /* Metin boyutunu küçülttük */
+        margin: 5px 0 0 0;
+        }
+
+        .carda {
+        max-width: 200px !important;
+        woed-wrap: break-word;
+        text-align: center;
+        font-size: 14px; /* Metin boyutunu küçülttük */
+        margin-top: 50px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        }
+
+
+        .cards:hover {
+        box-shadow: 0px 6px 6px 2px #3D3D3D;
+        transform: scale(1.1);
+        z-index: 10;
+        }
+
+
+        .col-md-4 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        }
+        .col-md-3 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        }
+
+
+        .card1 {
+        background: linear-gradient(to right,  #dbc000, #CAA135); /* Altın tonlarında soldan sağa */
+        }
+
+        .card2 {
+        background: linear-gradient(to right, #545454, #8b8b8f); /* Bordo tonlarında, 135 derece */
+        }
+
+        .card3 {
+        background: linear-gradient(to right, #640009, #c4000a); /* Lacivert tonlarında soldan sağa */
+        }
+        .snippet-background {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: linear-gradient(to right, #dbc000 30%, #b04656 35%, #949599 65%, #c4000a 70%);
+        transition: all 0.3s ease;
+        }
+
+        /* Kaydırma sonrası normal pozisyona dön */
+        .scroll-active {
+        position: relative !important;
+        bottom: auto;
+        }
+
+        .sentinel {
+        position: absolute;
+        top: 250px; /* Scroll yapılana kadar görünmez */
+        width: 100%;
+        height: 1px;
+        }
+
+        .logos {
+        display: flex;
+        justify-content: center; /* Logoları ortalar */
+        gap: 20px; /* Logolar arasındaki boşluğu artırır */
+        margin-top: 10px; /* Başlık ile logolar arasına boşluk ekler */
+        }
+
+        .logo-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px; /* Sabit genişlik */
+        height: 80px; /* Sabit yükseklik */
+        background-color: transparent; /* Arkaplan kaldırıldı */
+        transition: transform 0.3s ease;
+        }
+
+        .logo-link:hover {
+        transform: scale(1.1); /* Hover yapıldığında büyütme efekti */
+        }
+
+        .logo-icon {
+        width: 100%; /* Kapsayıcının tamamını doldur */
+        height: 100%; /* Kapsayıcının tamamını doldur */
+        object-fit: contain; /* Orijinal oranı koruyarak kapsayıcıya sığdır */
+        }
+
+
+
+      </style>
+
+        <div class="snippet-background" id="snippet1">
+          <div class="container-fluid d-flex justify-content-center">
+            <div class="row gx-0 gy-0">
+              <div class="col-md-4">
+                <div class="cards card1">
+                  <img src="https://odoo-184727-0.cloudclusters.net/web/image/4079" class="card-image1" loading="lazy"/>
+                  <div class="cards-content">
+                    <h5>A Tipi Muayene Kuruluşu</h5>
+                    <a href="https://asist.turkak.org.tr/tr/accreditation/accreditation-certificate/search/9709ab87-8f1f-4df5-40f5-08d957ee13bc" class="line1 carda">
+                      Akreditasyon Sertifikası Görüntüle
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="cards card2">
+                  <img src="https://odoo-184727-0.cloudclusters.net/web/image/4089" class="card-image1" loading="lazy" style=""/>
+                  <div class="cards-content">
+                    <h5>İş Hijyeni Ölçüm, Test ve Analiz Laboratuvarı</h5>
+                    <div class="logos">
+                      <a href="https://www.orneklink.com" class="logo-link">
+                        <img src="https://odoo-184727-0.cloudclusters.net/web/image/4117" title="TÜRKAK Belgesi Görüntüle" alt="Türkak Logo" class="logo-icon" loading="lazy"/>
+                      </a>
+                      <a href="https://www.orneklink.com" class="logo-link">
+                        <img src="https://www.csgb.gov.tr/media/79310/logo-arma-tr-kirmizi.png" title="İSGÜM Belgesi Görüntüle" alt="İsgüm Logo" class="logo-icon" loading="lazy"/>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="cards card3">
+                  <img src="https://odoo-184727-0.cloudclusters.net/web/image/4094" class="card-image1" loading="lazy" style=""/>
+                  <div class="cards-content">
+                    <h5>Mühendislik Hizmetleri </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="snippet-background1">
+            <div class="container">
+              <div class="row gx-0 gy-0 align-items-center">
+
+                <div class="col-md-4">
+                  <div class="social_icons_rounded">
+                    <ul>
+                      <li><a href="#" class="gap f_facebook"><i class="fa fa-facebook" aria-hidden="true" contenteditable="false">​</i></a></li>
+                      <li><a href="#" class="gap t_twitter"><i class="fa fa-twitter" aria-hidden="true" contenteditable="false">​</i></a></li>
+                      <li><a href="#" class="gap linkedin"><i class="fa fa-linkedin" aria-hidden="true" contenteditable="false">​</i></a></li>
+                      <li><a href="#" class="gap instagram"><i class="fa fa-instagram" aria-hidden="true" contenteditable="false">​</i></a></li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4"/>
+
+
+                <div class="col-md-4 text-end">
+                  <div class="contact-button">
+                    <a href="#" class="btn btn-primary">İletişim</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sentinel"/>
+
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+          const snippet = document.getElementById('snippet1');
+          const sentinel = document.querySelector('.sentinel');
+
+          // Gözlemci tanımlama
+          const observer = new IntersectionObserver((entries, observer) =&gt; {
+          entries.forEach(entry =&gt; {
+          if (entry.isIntersecting) {
+          snippet.classList.add('scroll-active'); // Scroll sonrası normal pozisyona geç
+          console.log("scroll-active sınıfı eklendi.");
+
+          // Gözlemciyi durdur, artık scroll-active sınıfı kaldırılmayacak
+          observer.disconnect();
+          }
+          });
+          }, { threshold: 0.1 });
+
+          // Gözlemciyi sentinel elemanına ata
+          observer.observe(sentinel);
+          });
+        </script></template>
+        <div class="s_embed_code_embedded o_not_editable container-fluid"><style>
+          .snippet-background1 {
+          background-color: #3a3a3a;
+          width: 100%;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between; /* Sosyal medya ikonlarını sola, butonu sağa iter */
+          padding: 0; /* İkonları 1. kartın soluna, butonu 3. kartın sağına yaklaştırır */
+          }
+
+          .social_icons_rounded {
+          display: flex;
+          justify-content: flex-start; /* İkonları sola hizalar */
+          margin: 0;
+          }
+
+          .social_icons_rounded ul {
+          display: flex;
+          padding: 0;
+          list-style: none;
+          margin-top: 14px;
+          }
+
+          .social_icons_rounded ul li {
+          margin-right: 15px;
+          }
+
+          .social_icons_rounded ul li a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          line-height: 35px;
+          color: #e0e0e0;
+          height: 35px;
+          width: 35px;
+          text-align: center;
+          border: 1px solid #e0e0e0;
+          transition: background 0.3s, border 0.3s, color 0.3s;
+          }
+
+          .social_icons_rounded ul li a i {
+          font-size: 16px;
+          }
+
+          .f_facebook:hover {
+          color: #fff;
+          background: #2a66b3;
+          border: 1px solid #2a66b3;
+          }
+
+          .t_twitter:hover {
+          color: #fff;
+          background: #35bbec;
+          border: 1px solid #35bbec;
+          }
+
+          .pinterest:hover {
+          color: #fff;
+          background: #cb2027;
+          border: 1px solid #cb2027;
+          }
+
+          .linkedin:hover {
+          color: #fff;
+          background: #007bb5;
+          border: 1px solid #007bb5;
+          }
+
+          .g_google:hover {
+          color: #fff;
+          background: #e55644;
+          border: 1px solid #e55644;
+          }
+
+          .dribbble:hover {
+          color: #fff;
+          background: #ea4c89;
+          border: 1px solid #ea4c89;
+          }
+
+          .skype:hover {
+          color: #fff;
+          background: #01aaf8;
+          border: 1px solid #01aaf8;
+          }
+
+          .flickr:hover {
+          color: #fff;
+          background: #ff0084;
+          border: 1px solid #ff0084;
+          }
+
+          .instagram:hover {
+          color: #fff;
+          background: #e4405f;
+          border: 1px solid #e4405f;
+          }
+
+          .contact-button {
+          display: flex;
+          justify-content: flex-end; /* Butonu sağa hizalar */
+          }
+
+          .contact-button a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          line-height: 35px;
+          color: #e0e0e0;
+          height: 35px;
+          padding: 0 20px;
+          text-align: center;
+          border: 1px solid #e0e0e0;
+          background-color: transparent;
+          font-size: 16px;
+          transition: background 0.3s, border 0.3s, color 0.3s;
+          }
+
+          .contact-button a:hover {
+          color: #333333;
+          background-color: #949599;
+          border: 1px solid #949599;
+          }
+
+          body {
+          background-color: #E3F2FD;
+          }
+
+          html, body {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          overflow-x: hidden;
+          }
+
+          .container-fluid {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin: 0;
+
+          }
+
+          .heading{
+          font-size:20px;
+          font-weight:600;
+          color:#3D5AFE;
+          }
+
+          .line1, .line2, .line3{
+          color: #000;
+          font-size: 12px;
+          }
+
+          .cards {
+          height: 150px;
+          transition: all 0.2s ease;
+          cursor: pointer;
+          background: white;
+          margin: 0;
+          overflow: visible;
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          padding-left: 0;
+          position: relative;
+          z-index: 1;
+          flex:1;
+
+          }
+
+
+          .card-image1 {
+          max-height: 50px; /* Yeni yüksekliği belirle */
+          width: 50px; /* Genişlik sabit olsun */
+          height: auto; /* Oran korunsun */
+          margin-left: 15px;
+          }
+
+
+          .cards-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-center;
+          align-items: center;
+          margin-left: 15px;
+          margin-top: 5px; /* Kartın üst kısmına yakınlaştırır */
+          margin-bottom: 0;
+          position: relative;
+          height: 100%;
+          }
+
+          .cards-content h5, .cards-content a {
+          text-align: center;
+          }
+          .cards h5 {
+          font-size: 18px; /* Başlık boyutunu küçülttük */
+          margin: 0;
+          position: relative;
+          top: 10px;
+          width: 100%;
+          font-weight: bold;
+          color: white;
+          }
+
+
+          .cards p {
+          max-width: 200px !important;
+          woed-wrap: break-word;
+          text-align: left;
+          font-size: 9px; /* Metin boyutunu küçülttük */
+          margin: 5px 0 0 0;
+          }
+
+          .carda {
+          max-width: 200px !important;
+          woed-wrap: break-word;
+          text-align: center;
+          font-size: 14px; /* Metin boyutunu küçülttük */
+          margin-top: 50px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          }
+
+
+          .cards:hover {
+          box-shadow: 0px 6px 6px 2px #3D3D3D;
+          transform: scale(1.1);
+          z-index: 10;
+          }
+
+
+          .col-md-4 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          }
+          .col-md-3 {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          }
+
+
+          .card1 {
+          background: linear-gradient(to right,  #dbc000, #CAA135); /* Altın tonlarında soldan sağa */
+          }
+
+          .card2 {
+          background: linear-gradient(to right, #545454, #8b8b8f); /* Bordo tonlarında, 135 derece */
+          }
+
+          .card3 {
+          background: linear-gradient(to right, #640009, #c4000a); /* Lacivert tonlarında soldan sağa */
+          }
+          .snippet-background {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1000;
+          background: linear-gradient(to right, #dbc000 30%, #b04656 35%, #949599 65%, #c4000a 70%);
+          transition: all 0.3s ease;
+          }
+
+          /* Kaydırma sonrası normal pozisyona dön */
+          .scroll-active {
+          position: relative !important;
+          bottom: auto;
+          }
+
+          .sentinel {
+          position: absolute;
+          top: 250px; /* Scroll yapılana kadar görünmez */
+          width: 100%;
+          height: 1px;
+          }
+
+          .logos {
+          display: flex;
+          justify-content: center; /* Logoları ortalar */
+          gap: 20px; /* Logolar arasındaki boşluğu artırır */
+          margin-top: 10px; /* Başlık ile logolar arasına boşluk ekler */
+          }
+
+          .logo-link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 80px; /* Sabit genişlik */
+          height: 80px; /* Sabit yükseklik */
+          background-color: transparent; /* Arkaplan kaldırıldı */
+          transition: transform 0.3s ease;
+          }
+
+          .logo-link:hover {
+          transform: scale(1.1); /* Hover yapıldığında büyütme efekti */
+          }
+
+          .logo-icon {
+          width: 100%; /* Kapsayıcının tamamını doldur */
+          height: 100%; /* Kapsayıcının tamamını doldur */
+          object-fit: contain; /* Orijinal oranı koruyarak kapsayıcıya sığdır */
+          }
+
+
+
+        </style><div class="snippet-background" id="snippet1">
+          <div class="container-fluid d-flex justify-content-center">
+            <div class="row gx-0 gy-0">
+              <div class="col-md-4">
+                <div class="cards card1">
+                  <img src="https://odoo-184727-0.cloudclusters.net/web/image/4079" class="card-image1" loading="lazy"/>
+                  <div class="cards-content">
+                    <h5>A Tipi Muayene Kuruluşu</h5>
+                    <a href="https://asist.turkak.org.tr/tr/accreditation/accreditation-certificate/search/9709ab87-8f1f-4df5-40f5-08d957ee13bc" class="line1 carda">
+                      Akreditasyon Sertifikası Görüntüle
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="cards card2">
+                  <img src="https://odoo-184727-0.cloudclusters.net/web/image/4089" class="card-image1" loading="lazy" style=""/>
+                  <div class="cards-content">
+                    <h5>İş Hijyeni Ölçüm, Test ve Analiz Laboratuvarı</h5>
+                    <div class="logos">
+                      <a href="https://www.orneklink.com" class="logo-link">
+                        <img src="https://odoo-184727-0.cloudclusters.net/web/image/4117" title="TÜRKAK Belgesi Görüntüle" alt="Türkak Logo" class="logo-icon" loading="lazy"/>
+                      </a>
+                      <a href="https://www.orneklink.com" class="logo-link">
+                        <img src="https://www.csgb.gov.tr/media/79310/logo-arma-tr-kirmizi.png" title="İSGÜM Belgesi Görüntüle" alt="İsgüm Logo" class="logo-icon" loading="lazy"/>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4">
+                <div class="cards card3">
+                  <img src="https://odoo-184727-0.cloudclusters.net/web/image/4094" class="card-image1" loading="lazy" style=""/>
+                  <div class="cards-content">
+                    <h5>Mühendislik Hizmetleri </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="snippet-background1">
+            <div class="container">
+              <div class="row gx-0 gy-0 align-items-center">
+
+                <div class="col-md-4">
+                  <div class="social_icons_rounded">
+                    <ul>
+                      <li><a href="#" class="gap f_facebook"><i class="fa fa-facebook" aria-hidden="true" contenteditable="false">​</i></a></li>
+                      <li><a href="#" class="gap t_twitter"><i class="fa fa-twitter" aria-hidden="true" contenteditable="false">​</i></a></li>
+                      <li><a href="#" class="gap linkedin"><i class="fa fa-linkedin" aria-hidden="true" contenteditable="false">​</i></a></li>
+                      <li><a href="#" class="gap instagram"><i class="fa fa-instagram" aria-hidden="true" contenteditable="false">​</i></a></li>
+                    </ul>
+                  </div>
+                </div>
+
+
+                <div class="col-md-4"/>
+
+
+                <div class="col-md-4 text-end">
+                  <div class="contact-button">
+                    <a href="#" class="btn btn-primary">İletişim</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><div class="sentinel"/><script>
+          document.addEventListener('DOMContentLoaded', function() {
+          const snippet = document.getElementById('snippet1');
+          const sentinel = document.querySelector('.sentinel');
+
+          // Gözlemci tanımlama
+          const observer = new IntersectionObserver((entries, observer) =&gt; {
+          entries.forEach(entry =&gt; {
+          if (entry.isIntersecting) {
+          snippet.classList.add('scroll-active'); // Scroll sonrası normal pozisyona geç
+          console.log("scroll-active sınıfı eklendi.");
+
+          // Gözlemciyi durdur, artık scroll-active sınıfı kaldırılmayacak
+          observer.disconnect();
+          }
+          });
+          }, { threshold: 0.1 });
+
+          // Gözlemciyi sentinel elemanına ata
+          observer.observe(sentinel);
+          });
+        </script></div>
+      </section>
+      <section id="sh_blog_snippet_8" class="js_cls_get_sh_blog_filter_s_post sh_onemate_snippet_31 o_colored_level pb24 aos-init s_parallax_no_overflow_hidden oe_img_bg o_bg_img_center aos-animate" data-column_class="col-lg-4 col-md-6 col-12 pr-0 pl-0" data-owl_item_mobile="1" data-owl_item_tablet="2" data-item_template="sh_blog_filter_snippet.sh_blog_filter_s_test_8_item" data-single_tab_item_template="sh_blog_filter_snippet.sh_blog_filter_s_test_8_item_single_tab" data-snippet="sh_blog_filter_s_test_8" data-name="Snippet 8" style="position: relative; background-image: url(&quot;/web/image/4130-b75aa98b/businesswoman-businessman-shaking-hands.webp&quot;);" data-filter-id="3" data-tilt-feature="" data-aos="" data-scroll-background-ratio="0" data-mimetype="image/webp" data-original-id="2496" data-original-src="/web/image/2496-f4fa449a/businesswoman-businessman-shaking-hands.jpg" data-mimetype-before-conversion="image/jpeg" data-resize-width="1920">
+        <div class="container">
+          <div class="heading text-center">
+            <div class="sh_sub_title o_default_snippet_text">Our Blog
+            </div>
+            <h2 class="text-center o_default_snippet_text" style="text-align: right;"><font class="text-o-color-1">Uzman Görüşleri​</font></h2></div>
+          <div class="js_cls_render_dynamic_post_area o_not_editable"/>
+        </div>
+      </section>
+
+    </xpath>
+  </template>
+</odoo>
