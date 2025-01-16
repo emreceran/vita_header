@@ -125,7 +125,8 @@
                     .gradient-box:hover {
                     transform: scale(1.1); /* Hover durumunda büyüme */
                     background: linear-gradient(to right, #630311, #f50528);
-                    <!--                    background: linear-gradient(to right, #001f3f, #0074d9);-->
+                     border-radius: 40px;
+<!--                    box-shadow: 1px 1px 5px lightblue;-->
                     }
 
                     .gradient-box p {
@@ -136,6 +137,13 @@
                     transform: scale(1.1); /* Hover durumunda büyüme */
                     <!--                    background: linear-gradient(to right, #630311, #f50528);-->
                     background: linear-gradient(to right, #057d23, #05e63d);
+                    }
+
+                    .box-1:hover {
+                    transform: scale(1.1); /* Hover durumunda büyüme */
+                    <!--                    background: linear-gradient(to right, #630311, #f50528);-->
+                    background: linear-gradient(to right, #e37609, #d98634);
+                    border-radius: 40px;
                     }
 
                     #wrapwrap {
@@ -157,13 +165,14 @@
                     .box-3 {
                     <!--                    background-color: #005fbf; /* Açık lacivert */-->
                     text-align: left; /* Sağ kutunun içeriği sola yaslandı */
-                    border-right: 5px solid black; /* Sol kenar */
+<!--                    border-right: 5px solid black; /* Sol kenar */-->
 
                     }
 
                     .box-4 {
                     <!--                    background-color: #005fbf; /* Açık lacivert */-->
                     text-align: left; /* Sağ kutunun içeriği sola yaslandı */
+
 
 
                     }
