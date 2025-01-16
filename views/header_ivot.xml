@@ -138,7 +138,8 @@
       </div>
 
 
-      <section class="s_embed_code o_colored_level pt0 pb0 text-center" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-tilt-feature=""><template class="s_embed_code_saved"><style>
+      <section class="s_embed_code o_colored_level pt0 pb0 text-center" data-snippet="s_embed_code" data-name="Embed Code" style="background-image: none;" data-tilt-feature=""><template class="s_embed_code_saved">
+        <style>
         .snippet-background1 {
         background-color: #3a3a3a;
         width: 100%;
