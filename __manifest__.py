@@ -29,7 +29,7 @@ Long description of module's purpose
     ],
 
     'assets': {
-        'web.assets_common': [
+        'web.assets_frontend': [
             'vita_header/static/src/css/header.css',
             'vita_header/static/src/js/header.js',
         ],
