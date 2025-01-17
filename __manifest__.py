@@ -33,7 +33,7 @@ Long description of module's purpose
             '/vita_header/static/src/css/header.css',
         ],
         'web.assets_backend': [
-            '/vita_header/static/src/css/header.js',
+            '/vita_header/static/src/js/header.js',
         ],
     },
     # only loaded in demonstration mode
