@@ -1,3 +1,4 @@
+/** @odoo-module **/
 document.addEventListener('DOMContentLoaded', function() {
     // Tüm `Mega Menu` öğelerini seç
     const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
