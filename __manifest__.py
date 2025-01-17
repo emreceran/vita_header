@@ -18,7 +18,7 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'website'],
+    'depends': ['base_setup', 'website', 'website_profile'],
 
     # always loaded
     'data': [
@@ -29,9 +29,9 @@ Long description of module's purpose
     ],
 
     'assets': {
-        'web.assets_frontend': [
-            '/vita_header/static/src/css/header.css',
-            '/vita_header/static/src/js/header.js',
+        'web.assets_common': [
+            'vita_header/static/src/css/header.css',
+            'vita_header/static/src/js/header.js',
         ],
 
     },

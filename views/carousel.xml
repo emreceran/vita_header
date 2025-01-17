@@ -121,12 +121,15 @@
                     font-weight: bold;
                     font-size: 1em;
                     padding: 2.5rem 0.5rem 2rem 1rem; /* Yazılara daha fazla boşluk */
+                    transition: transform 0.5s ease, background-color 0.5s ease; /* Animasyon için eklenen özellikler */
+
                     }
 
                     .gradient-box:hover {
                     transform: scale(1.1); /* Hover durumunda büyüme */
                     background: linear-gradient(to right, #630311, #f50528);
-<!--                    border-radius: 40px;-->
+                    border: none;
+                    <!--                    border-radius: 40px;-->
                     <!--                    box-shadow: 1px 1px 5px lightblue;-->
                     }
 
@@ -140,12 +143,12 @@
                     background: linear-gradient(to right, #057d23, #05e63d);
                     }
 
-<!--                    .box-1:hover {-->
-<!--                    transform: scale(1.1); /* Hover durumunda büyüme */-->
-<!--                    &lt;!&ndash;                    background: linear-gradient(to right, #630311, #f50528);&ndash;&gt;-->
-<!--                    background: linear-gradient(to right, #e37609, #d98634);-->
-<!--                    border-radius: 40px;-->
-<!--                    }-->
+                    <!--                    .box-1:hover {-->
+                    <!--                    transform: scale(1.1); /* Hover durumunda büyüme */-->
+                    <!--                    &lt;!&ndash;                    background: linear-gradient(to right, #630311, #f50528);&ndash;&gt;-->
+                    <!--                    background: linear-gradient(to right, #e37609, #d98634);-->
+                    <!--                    border-radius: 40px;-->
+                    <!--                    }-->
 
                     #wrapwrap {
                     overflow-x:hidden;

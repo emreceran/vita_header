@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+
+<!--  <template id="assets_frontend_inherit" inherit_id="web.assets_frontend" name="My Module Assets">-->
+<!--    <xpath expr="." position="inside">-->
+<!--        <script type="text/javascript" src="/vita_header/static/src/js/header.js" />-->
+<!--    </xpath>-->
+<!--</template>-->
+
   <template id="custom_theme_header" inherit_id="website.layout" name="Custom Theme Header">
     <xpath expr="//header" position="replace">
       <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Extra items button" class="   o_hoverable_dropdown o_header_disappears" style=" ">
