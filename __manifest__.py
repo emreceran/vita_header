@@ -31,10 +31,9 @@ Long description of module's purpose
     'assets': {
         'web.assets_frontend': [
             '/vita_header/static/src/css/header.css',
-        ],
-        'web.assets_backend': [
             '/vita_header/static/src/js/header.js',
         ],
+
     },
     # only loaded in demonstration mode
     'demo': [
