@@ -23,9 +23,16 @@ Long description of module's purpose
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
+        # 'views/views.xml',
         'views/carousel.xml',
+        'views/header_ivot.xml',
     ],
+
+    'assets': {
+        'web.assets_frontend': [
+            '/vita_header/static/src/css/header.css',
+        ],
+    },
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',

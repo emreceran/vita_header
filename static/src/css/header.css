@@ -1,0 +1,51 @@
+
+/* Başlangıç durumu */
+[data-name="Mega Menu"] {
+  transform-origin: top; /* Üstten başlayarak büyür */
+  transform: scaleY(0); /* Başlangıçta kapalı */
+  opacity: 0; /* Görünmez */
+  visibility: hidden; /* Görünmez */
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Animasyon */
+
+}
+
+/* Açıldığında görünür hale gelmesi */
+[data-name="Mega Menu"].active {
+  transform: scaleY(1); /* Tamamen açılır */
+  opacity: 1; /* Görünür */
+  visibility: visible; /* Görünür */
+  border-radius: 0 0 28px 28px;
+}
+
+[data-name="Mega Menu"] h4 div{
+  height: 5rem !important;
+}
+
+[data-name="Mega Menu"] h4 img{
+  width: 25%;
+
+}
+
+@media (max-width: 992px) {
+  #mega_nav{
+    border-radius: 1rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar .nav-link {
+    padding: 4px 0px !important;
+  }
+  .navbar .nav-item {
+    margin: 0px 0.5rem !important;
+  }
+}
+
+.navbar-brand {
+  margin-right: 10px; /* Logo ile menü öğeleri arasındaki boşluk */
+}
+
+.dropdown-submenu .dropdown-menu {
+  margin-left: 1rem; /* Alt menüleri biraz sağa kaydırır */
+  margin-top: -5px; /* Dikey hizalama düzeltmesi */
+}

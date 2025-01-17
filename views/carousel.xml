@@ -34,27 +34,28 @@
                     .slider-slogan {
                     position: absolute;
                     top: 50%;
-                    left: -100%; /* Soldan giriş için başlangıç konumu */
+                    left: 100%; /* Sağdan sola giriş için başlangıç konumu */
                     transform: translateY(-50%);
                     color: white;
                     font-size: 5rem; /* Yazı büyüklüğü */
                     font-weight: bold;
                     font-family: "Dancing Script", serif;
                     white-space: nowrap;
-                    animation: slideIn 1.5s ease-out forwards;
-
+                    animation: slideInRight 2s ease-out forwards;
                     }
 
-                    @keyframes slideIn {
+                    /* Sağdan sola kayan animasyon */
+                    @keyframes slideInRight {
                     from {
-                    left: -100%;
+                    left: 100%; /* Yazı ekran dışında sağda başlar */
                     }
                     to {
-                    left: 50%; /* Yazının ekrandaki konumu (resmin ortası) */
+                    left: 50%; /* Yazı ekranın ortasında durur */
                     transform: translateX(-50%) translateY(-50%);
                     }
                     }
                 </style>
+
 
                 <!-- Üst Div ve Carousel -->
                 <div class="carousel-container">
@@ -125,8 +126,8 @@
                     .gradient-box:hover {
                     transform: scale(1.1); /* Hover durumunda büyüme */
                     background: linear-gradient(to right, #630311, #f50528);
-                     border-radius: 40px;
-<!--                    box-shadow: 1px 1px 5px lightblue;-->
+<!--                    border-radius: 40px;-->
+                    <!--                    box-shadow: 1px 1px 5px lightblue;-->
                     }
 
                     .gradient-box p {
@@ -139,12 +140,12 @@
                     background: linear-gradient(to right, #057d23, #05e63d);
                     }
 
-                    .box-1:hover {
-                    transform: scale(1.1); /* Hover durumunda büyüme */
-                    <!--                    background: linear-gradient(to right, #630311, #f50528);-->
-                    background: linear-gradient(to right, #e37609, #d98634);
-                    border-radius: 40px;
-                    }
+<!--                    .box-1:hover {-->
+<!--                    transform: scale(1.1); /* Hover durumunda büyüme */-->
+<!--                    &lt;!&ndash;                    background: linear-gradient(to right, #630311, #f50528);&ndash;&gt;-->
+<!--                    background: linear-gradient(to right, #e37609, #d98634);-->
+<!--                    border-radius: 40px;-->
+<!--                    }-->
 
                     #wrapwrap {
                     overflow-x:hidden;
@@ -165,7 +166,7 @@
                     .box-3 {
                     <!--                    background-color: #005fbf; /* Açık lacivert */-->
                     text-align: left; /* Sağ kutunun içeriği sola yaslandı */
-<!--                    border-right: 5px solid black; /* Sol kenar */-->
+                    <!--                    border-right: 5px solid black; /* Sol kenar */-->
 
                     }
 
