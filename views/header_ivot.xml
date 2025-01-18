@@ -35,7 +35,7 @@
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Akreditasyon</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/hakkmzda" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Hakkımızda</font>
                               </a>
@@ -411,10 +411,10 @@
                             <div class="collapse" id="menu1-1" data-bs-parent="#accordionExample1">
                               <ol class="nav flex-column align-items-start ms-5">
                                 <li>
-                                  <a href="#" class="nav-link text-start">Akreditasyon</a>
+                                  <a href="/akreditasyon" class="nav-link text-start">Akreditasyon</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link text-start">Hakkımızda</a>
+                                  <a href="/hakkmzda" class="nav-link text-start">Hakkımızda</a>
                                 </li>
                                 <li>
                                   <a href="#" class="nav-link text-start">İlke ve Değerlerimiz</a>
