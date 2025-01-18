@@ -9,64 +9,7 @@
 
   <template id="custom_theme_header" inherit_id="website.layout" name="Custom Theme Header">
     <xpath expr="//header" position="replace">
-      <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
-            // Tüm Mega Menu öğelerini seç
-            const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
-            const topMenu = document.querySelector('#top_menuu');
 
-            // Her bir Mega Menu için olay dinleyicileri ekle
-            megaMenus.forEach((menu) =&gt; {
-                const dropdownToggle = menu.closest('.dropdown').querySelector('[data-bs-toggle="dropdown"]');
-
-                if (dropdownToggle) {
-                    // Menü açılma kontrol değişkeni
-                    let isMenuOpen = false;
-
-                    // Menü açıldığında
-                    topMenu.addEventListener('mouseenter', () =&gt; {
-                        if (!isMenuOpen) { // Eğer menü zaten açık değilse animasyonu uygula
-                            menu.classList.add('active'); // Açılma animasyonu
-                            isMenuOpen = true; // Menü açık olarak işaretle
-                        }
-                    });
-
-                    // Menü kapandığında
-                    topMenu.addEventListener('mouseleave', () =&gt; {
-                        menu.classList.remove('active'); // Kapanma animasyonu
-                        isMenuOpen = false; // Menü kapalı olarak işaretle
-                    });
-
-                    // Menü üzerinde gezinme
-                    menu.addEventListener('mouseenter', () =&gt; {
-                        isMenuOpen = true; // Menü üzerinde gezinirken açık kalsın
-                    });
-
-                    // Menüden çıkıldığında kapatma
-                    menu.addEventListener('mouseleave', () =&gt; {
-                        menu.classList.remove('active'); // Kapat
-                        isMenuOpen = false; // Menü kapalı olarak işaretle
-                    });
-                }
-            });
-
-            // #top_menu içindeki ilk 4 li elemanını seç
-            const firstFourItems = document.querySelectorAll('#top_menuu &gt; li:nth-child(-n+4)');
-            const megaNav = document.querySelector('#mega_nav');
-            megaNav.style.borderRadius = '50rem';
-
-            // İlk dört eleman üzerine geldiğinde işlem yap
-            firstFourItems.forEach((item) =&gt; {
-                item.addEventListener('mouseenter', () =&gt; {
-                    megaNav.style.borderRadius = '28px 28px 0 0';
-                });
-
-                item.addEventListener('mouseleave', () =&gt; {
-                    megaNav.style.borderRadius = '50rem';
-                });
-            });
-        });
-      </script>
       <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Extra items button" class="   o_hoverable_dropdown o_header_disappears" style=" ">
         <div class="container py-3 px-0">
           <nav id="mega_nav" data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc o_full_border d-none d-lg-block  py-2 px-3 shadow-sm ">
@@ -717,7 +660,65 @@
 
         </div>
       </header>
-      <script t-att-src="'/vita_header/static/src/js/header.js'"></script>
+      <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            // Tüm Mega Menu öğelerini seç
+            const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
+            const topMenu = document.querySelector('#top_menuu');
+
+            // Her bir Mega Menu için olay dinleyicileri ekle
+            megaMenus.forEach((menu) =&gt; {
+                const dropdownToggle = menu.closest('.dropdown').querySelector('[data-bs-toggle="dropdown"]');
+
+                if (dropdownToggle) {
+                    // Menü açılma kontrol değişkeni
+                    let isMenuOpen = false;
+
+                    // Menü açıldığında
+                    topMenu.addEventListener('mouseenter', () =&gt; {
+                        if (!isMenuOpen) { // Eğer menü zaten açık değilse animasyonu uygula
+                            menu.classList.add('active'); // Açılma animasyonu
+                            isMenuOpen = true; // Menü açık olarak işaretle
+                        }
+                    });
+
+                    // Menü kapandığında
+                    topMenu.addEventListener('mouseleave', () =&gt; {
+                        menu.classList.remove('active'); // Kapanma animasyonu
+                        isMenuOpen = false; // Menü kapalı olarak işaretle
+                    });
+
+                    // Menü üzerinde gezinme
+                    menu.addEventListener('mouseenter', () =&gt; {
+                        isMenuOpen = true; // Menü üzerinde gezinirken açık kalsın
+                    });
+
+                    // Menüden çıkıldığında kapatma
+                    menu.addEventListener('mouseleave', () =&gt; {
+                        menu.classList.remove('active'); // Kapat
+                        isMenuOpen = false; // Menü kapalı olarak işaretle
+                    });
+                }
+            });
+
+            // #top_menu içindeki ilk 4 li elemanını seç
+            const firstFourItems = document.querySelectorAll('#top_menuu &gt; li:nth-child(-n+4)');
+            const megaNav = document.querySelector('#mega_nav');
+            megaNav.style.setProperty('border-radius', '50rem', 'important');
+
+            // İlk dört eleman üzerine geldiğinde işlem yap
+            firstFourItems.forEach((item) =&gt; {
+                item.addEventListener('mouseenter', () =&gt; {
+                    megaNav.style.borderRadius = '28px 28px 0 0';
+                    megaNav.style.setProperty('border-radius', '28px 28px 0 0', 'important');
+                });
+
+                item.addEventListener('mouseleave', () =&gt; {
+                    megaNav.style.setProperty('border-radius', '50rem', 'important');
+                });
+            });
+        });
+      </script>
     </xpath>
   </template>
 
