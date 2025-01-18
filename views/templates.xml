@@ -6,23 +6,36 @@
 
 
             <div class="o_carousel_product_card m-3 card w-100" t-att-data-url="record.website_url"
-            style="border:2px solid #001f3f !important;">
+                 style="border:2px solid #001f3f !important;">
                 <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
                 <input type="hidden" name="product-id" t-att-data-product-id="record.id"/>
                 <div class="o_carousel_product_card_body card-body justify-content-between h-100 p-3">
                     <div class="row h-100">
                         <div class="col-8  d-flex flex-column">
-                            <div class="card_isim bg-white  h5" t-field="record.display_name"/>
-                            <div class="card-text mt-3 h6 text-muted" t-field="record.custom_description_html"/>
-<!--                            <div class="d-flex justify-content-between align-items-center flex-wrap w-100 mt-auto">-->
-<!--                                <div class="h5 text-primary mb-0 me-2">-->
-<!--                                    <t t-call="website_sale.price_dynamic_filter_template_product_product"/>-->
-<!--                                </div>-->
-<!--                                <t t-if="is_view_active('website_sale.product_comment')" t-call="portal_rating.rating_widget_stars_static">-->
-<!--                                    <t t-set="rating_avg" t-value="record.rating_avg"/>-->
-<!--                                    <t t-set="rating_count" t-value="record.rating_count"/>-->
-<!--                                </t>-->
-<!--                            </div>-->
+                            <div class="card_isim bg-white  h5" t-field="record.display_name"
+                                 style="
+                             font-size: 1.2rem;
+                    font-weight: bold; /* Kalın metin */
+                    color: #001f3f; /* Lacivert renk */
+
+                                    " />
+                            <div class="card-text mt-3 h6 text-muted" t-field="record.custom_description_html"
+                                 style="
+                             display: -webkit-box;
+                    -webkit-line-clamp: 6; /* 6 satır sınırı */
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis; /* Fazlalık için  ekler */
+                            "           />
+                            <!--                            <div class="d-flex justify-content-between align-items-center flex-wrap w-100 mt-auto">-->
+                            <!--                                <div class="h5 text-primary mb-0 me-2">-->
+                            <!--                                    <t t-call="website_sale.price_dynamic_filter_template_product_product"/>-->
+                            <!--                                </div>-->
+                            <!--                                <t t-if="is_view_active('website_sale.product_comment')" t-call="portal_rating.rating_widget_stars_static">-->
+                            <!--                                    <t t-set="rating_avg" t-value="record.rating_avg"/>-->
+                            <!--                                    <t t-set="rating_count" t-value="record.rating_count"/>-->
+                            <!--                                </t>-->
+                            <!--                            </div>-->
                         </div>
                         <div class="col-4 position-static">
                             <div class="overflow-hidden position-static">
