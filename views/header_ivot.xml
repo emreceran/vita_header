@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-
-<!--  <template id="assets_frontend_inherit" inherit_id="web.assets_frontend" name="My Module Assets">-->
-<!--    <xpath expr="." position="inside">-->
-<!--        <script type="text/javascript" src="/vita_header/static/src/js/header.js" />-->
-<!--    </xpath>-->
-<!--</template>-->
-
   <template id="custom_theme_header" inherit_id="website.layout" name="Custom Theme Header">
     <xpath expr="//header" position="replace">
-
       <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Extra items button" class="   o_hoverable_dropdown o_header_disappears" style=" ">
         <div class="container py-3 px-0">
           <nav id="mega_nav" data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc o_full_border d-none d-lg-block  py-2 px-3 shadow-sm ">
@@ -18,15 +10,15 @@
                 <span role="img" data-oe-xpath="/data/xpath/a/span[1]" aria-label="Logo of My Website" title="My Website" data-oe-model="website" data-oe-id="1" data-oe-field="logo" data-oe-type="image" data-oe-expression="website.logo"/>
                 <img src="/vita_header/static/src/img/Vita.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy"/>
               </a>
-              <ul id="top_menuu" role="menu" class="nav navbar-nav top_menuu o_menu_loading  mx-auto nav-pills">
-                <li role="presentation" class="nav-item  dropdown position-static">
+              <ul id="top_menuu" role="menu" class="nav navbar-nav top_menuu o_menu_loading mx-auto nav-pills">
+                <li role="presentation" class="nav-item dropdown position-static">
                   <a data-bs-toggle="dropdown" href="#" role="menuitem" class="nav-link dropdown-toggle o_mega_menu_toggle  " data-bs-display="static">
                     <span data-oe-xpath="/t[1]/li[2]/a[1]/span[1]" data-oe-model="website.menu" data-oe-id="19" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Kurumsal</span>
                   </a>
                   <div data-name="Mega Menu" data-oe-xpath="/t[1]/li[2]/div[1]" class="dropdown-menu o_mega_menu o_no_parent_editor" data-oe-model="website.menu" data-oe-id="19" data-oe-field="mega_menu_content" data-oe-type="html" data-oe-expression="submenu.mega_menu_content">
-                    <section class="s_mega_menu_odoo_menu pt16  o_colored_level o_cc o_cc1" style="position: relative; background-color: rgb(252, 252, 252); background-image: none; height: 24rem;" data-tilt-feature="" data-aos="">
-                      <div class="container-fluid  px-5 pt-3">
-                        <div class="row d-flex justify-content-around" data-row-count="9">
+                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1"  data-tilt-feature="" data-aos="">
+                      <div class="container-fluid">
+                        <div class="row d-flex justify-content-center ms-2" data-row-count="9">
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="  o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
@@ -39,7 +31,7 @@
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
                             <nav class="nav flex-column">
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/akreditasyon" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Akreditasyon</font>
                               </a>
@@ -157,7 +149,7 @@
                     <span data-oe-xpath="/t[1]/li[2]/a[1]/span[1]" data-oe-model="website.menu" data-oe-id="22" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Periyodik Kontroller</span>
                   </a>
                   <div data-name="Mega Menu" data-oe-xpath="/t[1]/li[2]/div[1]" class="dropdown-menu o_mega_menu o_no_parent_editor" data-oe-model="website.menu" data-oe-id="22" data-oe-field="mega_menu_content" data-oe-type="html" data-oe-expression="submenu.mega_menu_content">
-                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1" style="position: relative; background-color: rgb(252, 252, 252); background-image: none; height: 24rem;" data-tilt-feature="">
+                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1"  data-tilt-feature="">
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center" data-row-count="9">
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
@@ -261,7 +253,7 @@
                     <span data-oe-xpath="/t[1]/li[2]/a[1]/span[1]" data-oe-model="website.menu" data-oe-id="9" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">İş Hijyeni Laboratuvarı</span>
                   </a>
                   <div data-name="Mega Menu" data-oe-xpath="/t[1]/li[2]/div[1]" class="dropdown-menu o_mega_menu o_no_parent_editor" data-oe-model="website.menu" data-oe-id="9" data-oe-field="mega_menu_content" data-oe-type="html" data-oe-expression="submenu.mega_menu_content">
-                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1" style="position: relative; background-color: rgb(252, 252, 252); background-image: none; height: 24rem;" data-tilt-feature="">
+                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1"  data-tilt-feature="">
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center" data-row-count="9">
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
@@ -300,7 +292,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0" style="overflow: unset;">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/fiziksel_etkenler.png'" alt="" />
+                                <img class="pt-2" t-att-src="'/vita_header/static/src/img/fiziksel_etkenler.png'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Fİzİksel etkenler</font>
@@ -339,13 +331,13 @@
                     <span data-oe-xpath="/t[1]/li[2]/a[1]/span[1]" data-oe-model="website.menu" data-oe-id="10" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Mühendislik Hizmetleri</span>
                   </a>
                   <div data-name="Mega Menu" data-oe-xpath="/t[1]/li[2]/div[1]" class="dropdown-menu o_mega_menu o_no_parent_editor" data-oe-model="website.menu" data-oe-id="10" data-oe-field="mega_menu_content" data-oe-type="html" data-oe-expression="submenu.mega_menu_content">
-                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1" style="position: relative; background-color: rgb(252, 252, 252); background-image: none; height: 24rem;" data-tilt-feature="">
+                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1" data-tilt-feature="">
                       <div class="container-fluid">
-                        <div class="row d-flex justify-content-around" data-row-count="9">
+                        <div class="row d-flex justify-content-center" data-row-count="9">
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/MÜHENDİSLİK_HİZMETLERİ.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/muhendislik_hizmetleri.png'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">mÜHENDİSLİK HİZMETLERİ</font>

@@ -18,13 +18,20 @@
 }
 
 [data-name="Mega Menu"] h4 div{
-  height: 5rem !important;
+  height: 4rem !important;
+}
+[data-name="Mega Menu"] h4 div {
+ margin-left: 2rem;
+ margin-top: 30px;
+}
+
+[data-name="Mega Menu"] h4 font {
+ margin-top: 1px !important;
 }
 
 [data-name="Mega Menu"] h4 img{
   width: 20%;
-
-}
+  }
 
 @media (max-width: 992px) {
   #mega_nav{
@@ -39,6 +46,15 @@
   .navbar .nav-item {
     margin: 0px 0.5rem !important;
   }
+}
+
+.s_mega_menu_odoo_menu {
+position: relative;
+ background-color: rgb(252, 252, 252);
+background-image: none;
+height: 26rem;
+overflow-y: auto; /* Dikey kaydırmayı kapatır */
+max-height: 100%;
 }
 
 .navbar-brand {
