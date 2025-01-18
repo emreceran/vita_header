@@ -47,7 +47,14 @@
     margin: 0px 0.5rem !important;
   }
 }
+.nav-link {
+transition: transform 0.3s ease; /* Animasyon için geçiş süresi */
+transform-origin: left center; /* Büyüme, linkin sol kenarından başlar */
+}
+.nav-link:hover {
+    transform: scale(1.1); /* Linki %10 büyütür */
 
+}
 .s_mega_menu_odoo_menu {
 position: relative;
  background-color: rgb(252, 252, 252);
