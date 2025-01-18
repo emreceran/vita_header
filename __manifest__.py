@@ -18,20 +18,22 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base_setup', 'website', 'website_profile'],
+    'depends': ['base', 'web', 'website',   'website_profile'],
 
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         # 'views/views.xml',
+        # 'views/assets.xml',
         'views/carousel.xml',
         'views/header_ivot.xml',
+
     ],
 
     'assets': {
         'web.assets_frontend': [
             'vita_header/static/src/css/header.css',
-            'vita_header/static/src/js/header.js',
+            # 'vita_header/static/src/js/header.js',
         ],
 
     },

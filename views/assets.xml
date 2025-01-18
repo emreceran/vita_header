@@ -1,0 +1,9 @@
+<odoo>
+    <template id="assets_backend" inherit_id="web.assets_backend" name="custom ">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/vita.header/static/src/js/header.js"/>
+            <link rel="stylesheet" type="text/css" href="/vita.header/static/src/css/header.css"/>
+
+        </xpath>
+    </template>
+</odoo>
