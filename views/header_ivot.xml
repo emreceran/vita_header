@@ -39,11 +39,11 @@
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Hakkımızda</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/ilke-ve-degerlerimiz" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> İlke ve Değerlerimiz</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/organizasyon-semas" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Organizasyon Şeması</font>
                               </a>
@@ -61,15 +61,15 @@
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
                             <nav class="nav flex-column">
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/hesap-numaralar" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Hesap Numaraları</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/insan-kaynaklar" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> İnsan Kaynakları</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/kvkk-metni" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> KVKK Metni</font>
                               </a>
@@ -91,19 +91,19 @@
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
                             <nav class="nav flex-column">
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/sikayet-oneri-itiraz" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Şikayet-Öneri-İtiraz</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/muayene-on-hazrlk-bilgi-formu" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Muayene Ön Hazırlık Bilgi Formu</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/musteri-hizmet-proseduru" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1">Müşteri Hizmet Prosedürü</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/tarafsizlik-ve-gizlilik-tahutnamesi" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1">Tarafsızlık ve Gizlilik Taahhütname</font>
                               </a>
@@ -121,19 +121,19 @@
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
                             <nav class="nav flex-column">
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/tanitim-katalogu" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
-                                <font class="text-o-color-1"> Tanıtım Katoloğu</font>
+                                <font class="text-o-color-1"> Tanıtım Kataloğu</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/blog/uzman-gorusleri-4" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Uzman Görüşleri</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/blog/sektorel-haberler-6" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Sektörel Haberler</font>
                               </a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/foto-galeri" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 <font class="text-o-color-1"> Foto Galeri</font>
                               </a>
@@ -164,10 +164,10 @@
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
                             <nav class="nav flex-column">
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/shop/topraklama-olcumu-periyodik-137" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 Topraklama Ölçümleri</a>
-                              <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/shop/elektrik-ic-tesisat-uygunluk-188" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
                                 Elektrik İç Tesisat Uygunluk</a>
                               <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
@@ -417,10 +417,10 @@
                                   <a href="/hakkmzda" class="nav-link text-start">Hakkımızda</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link text-start">İlke ve Değerlerimiz</a>
+                                  <a href="/ilke-ve-degerlerimiz" class="nav-link text-start">İlke ve Değerlerimiz</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link text-start">Organizasyon Şeması</a>
+                                  <a href="/organizasyon-semas" class="nav-link text-start">Organizasyon Şeması</a>
                                 </li>
                               </ol>
                             </div>
@@ -430,13 +430,13 @@
                             <div class="collapse " id="menu1-2" data-bs-parent="#accordionExample1">
                               <ol class="nav flex-column align-items-start ms-5">
                                 <li>
-                                  <a href="#" class="nav-link">Hesap Numaraları</a>
+                                  <a href="/hesap-numaralar" class="nav-link">Hesap Numaraları</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link">İnsan Kaynakları</a>
+                                  <a href="/insan-kaynaklar" class="nav-link">İnsan Kaynakları</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link">KVKK Metni</a>
+                                  <a href="/kvkk-metni" class="nav-link">KVKK Metni</a>
                                 </li>
                                 <li>
                                   <a href="#" class="nav-link">Şirket Künyesi</a>
@@ -449,16 +449,16 @@
                             <div class="collapse " id="menu1-3" data-bs-parent="#accordionExample1">
                               <ol class="nav flex-column align-items-start ms-5">
                                 <li>
-                                  <a href="#" class="nav-link">Şikayet-Öneri-İtiraz</a>
+                                  <a href="/sikayet-oneri-itiraz" class="nav-link">Şikayet-Öneri-İtiraz</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link">Muayene Ön Hazırlık Bilgi Formu</a>
+                                  <a href="/muayene-on-hazrlk-bilgi-formu" class="nav-link">Muayene Ön Hazırlık Bilgi Formu</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link">Müşteri Hizmet Prosedürü</a>
+                                  <a href="/musteri-hizmet-proseduru" class="nav-link">Müşteri Hizmet Prosedürü</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link">Tarafsızlık ve Gizlilik Taahhütname</a>
+                                  <a href="/tarafsizlik-ve-gizlilik-tahutnamesi" class="nav-link">Tarafsızlık ve Gizlilik Taahhütname</a>
                                 </li>
                               </ol>
                             </div>
@@ -468,16 +468,16 @@
                             <div class="collapse " id="menu1-4" data-bs-parent="#accordionExample1">
                               <ol class="nav flex-column align-items-start ms-5">
                                 <li>
-                                  <a href="#" class="nav-link">Tanıtım Katoloğu</a>
+                                  <a href="/tanitim-katalogu" class="nav-link">Tanıtım Kataloğu</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link">Uzman Görüşleri</a>
+                                  <a href="/blog/uzman-gorusleri-4" class="nav-link">Uzman Görüşleri</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link">Sektörel Haberler</a>
+                                  <a href="/blog/sektorel-haberler-6" class="nav-link">Sektörel Haberler</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link">Foto Galeri</a>
+                                  <a href="/foto-galeri" class="nav-link">Foto Galeri</a>
                                 </li>
                               </ol>
                             </div>
@@ -496,10 +496,10 @@
                             <div class="collapse " id="menu2-1" data-bs-parent="#accordionExample2">
                               <ol class="nav flex-column align-items-start ms-5">
                                 <li>
-                                  <a href="#" class="nav-link">Topraklama Ölçümleri</a>
+                                  <a href="/shop/topraklama-olcumu-periyodik-137" class="nav-link">Topraklama Ölçümleri</a>
                                 </li>
                                 <li>
-                                  <a href="#" class="nav-link">Elektrik İç Tesisat Uygunluk</a>
+                                  <a href="/shop/elektrik-ic-tesisat-uygunluk-188" class="nav-link">Elektrik İç Tesisat Uygunluk</a>
                                 </li>
                                 <li>
                                   <a href="#" class="nav-link">Paratoner Yıldırımdan Korunma</a>
