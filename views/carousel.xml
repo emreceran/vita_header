@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <template id="homepage_inherit" inherit_id="website.homepage" name="Custom home">
+        <template id="carsd_inherit" inherit_id="website.homepage" name="Custom home">
+
         <xpath expr="//div[@id='wrap'][1]" position="before">
             <!-- Stil Ayarları -->
 
@@ -265,5 +266,9 @@
 
             </div>
         </xpath>
+
+<!--        <xpath expr="//div[@id='s_dynamic_snippet_1']//div[hasclass('h6')]" position="attributes">-->
+<!--            <attribute name="class" add="bg-dark" separator=" " />-->
+<!--        </xpath>-->
     </template>
 </odoo>
