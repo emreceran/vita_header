@@ -33,7 +33,7 @@
                                 opacity: 1 !important; /* Görünür yap */
                             }
                         </style>
-                        <div class="card-text p-3 h6" t-esc="record.custom_description_html[:447] + ('...' if len(record.custom_description_html) > 450 else '')"/>
+                        <div class="card-text p-3 h6" t-esc="record.description_sale"/>
                     </div>
                 </a>
             </div>
