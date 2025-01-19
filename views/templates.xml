@@ -7,9 +7,13 @@
                 <a class="o_carousel_product_img_link o_dynamic_product_hovered overflow-hidden" t-att-href="record.website_url">
                     <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>
                     <div class="o_carousel_product_card_body card-body d-flex flex-column justify-content-between">
-                        <div class="card-title bg-white h5" t-field="record.display_name"/>
+                        <div class="bg-white text-center" t-field="record.display_name"
+                        style="color:red important;" />
                         <style>
+                             @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap');
                             .card-text {
+                                letter-spacing: 0.05em !important; /* Karakterler arası boşluk */
+                                font-family: 'Merriweather', serif !important; /* Artistik font */
                                 position: absolute !important;
                                 bottom: -100% !important; /* Yazı başlangıç pozisyonu (görünmez) */
                                 left: 0 !important;
@@ -21,13 +25,15 @@
                                 padding: 2rem !important;
                                 box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1) !important; /* Hafif gölge efekti */
                             font-weight:bold !important;
+                            letter-spacing: 0.05em !important; /* Karakterler arası boşluk */
+                            color:#001f3f 'important;
                             }
                             .o_carousel_product_card:hover .card-text {
                                 bottom: 0 !important; /* Yazıyı yukarı çıkar */
                                 opacity: 1 !important; /* Görünür yap */
                             }
                         </style>
-                        <div class="card-text p-3 h6" t-field="record.custom_description_html"/>
+                        <div class="card-text p-3 h6" t-esc="record.custom_description_html[:447] + ('...' if len(record.custom_description_html) > 450 else '')"/>
                     </div>
                 </a>
             </div>
