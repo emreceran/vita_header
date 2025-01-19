@@ -62,26 +62,24 @@
         <xpath expr="//div[1]" position="replace">
 
 
-            <div class="o_carousel_product_card card h-100 w-100" t-att-data-add2cart-rerender="data.get('_add2cart_rerender')">
-                <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
-                <a class="o_carousel_product_img_link o_dynamic_product_hovered overflow-hidden" t-att-href="record.website_url">
-                    <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>
-
-                    <div class="o_carousel_product_card_body card-body d-flex flex-column justify-content-between">
-                        <div class="card-title bg-white h5" t-field="record.display_name"/>
-                        <style>
+            <div class="o_carousel_product_card roundded bordered card h-100 w-100" t-att-data-add2cart-rerender="data.get('_add2cart_rerender')">
+                 <style>
 
                             .card-body .card-text { /* Orijinal card-text'i seçin */
                             display: none;
+                            border-radius: 50px !important ;
+                     border: 5px solid navy !important;
                             }
                             .card-title {
 
                             color: #001f3f;
+                     text-center
                             }
 
                             .card-text2 {
                             position: absolute;
                             color: #001f3f;
+                            font-size:1rem;
 
                             top: 0;
                             left: 0;
@@ -92,7 +90,7 @@
                             background-color: rgba(255, 255, 255, 0.8); /* Arkaplan rengi ve opaklık ekleyin */
                             z-index: 1;
                             overflow: hidden; /* Taşan içeriği gizle */
-                            display: -webkit-box; /* line-clamp için gerekli */
+                            display: -webkit-box !important ; /* line-clamp için gerekli */
                             -webkit-line-clamp: 6; /* Görüntülenecek maksimum satır sayısı */
                             -webkit-box-orient: vertical;
                             }
@@ -104,6 +102,13 @@
                             }
 
                         </style>
+                <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
+                <a class="o_carousel_product_img_link o_dynamic_product_hovered overflow-hidden" t-att-href="record.website_url">
+                    <img class="card-img-top o_img_product_square img-fluid bordered h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>
+
+                    <div class="o_carousel_product_card_body card-body rounded d-flex flex-column justify-content-center">
+                        <div class="card-title  text-center bg-white h5" t-field="record.display_name"/>
+
                         <div class="card-text2 p-3  h6" t-field="record.custom_description_html"/>
 
                     </div>
