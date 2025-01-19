@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+
+    dynamic_filter_template_product_product_view_detail
     <template id="carts_inherit" inherit_id="website_sale.dynamic_filter_template_product_product_card_group" name="cards iherit">
         <!--                <xpath expr="//div[hasclass('o_kanban_mobile')]" position="attributes">-->
         <xpath expr="//div[1]" position="replace">
@@ -54,4 +56,67 @@
 
 
     </template>
+
+    <template id="detail_carts_inherit" inherit_id="website_sale.dynamic_filter_template_product_product_view_detail" name="cards iherit">
+        <!--                <xpath expr="//div[hasclass('o_kanban_mobile')]" position="attributes">-->
+        <xpath expr="//div[1]" position="replace">
+
+
+            <div class="o_carousel_product_card card h-100 w-100" t-att-data-add2cart-rerender="data.get('_add2cart_rerender')">
+                <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
+                <a class="o_carousel_product_img_link o_dynamic_product_hovered overflow-hidden" t-att-href="record.website_url">
+                    <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>
+
+                    <div class="o_carousel_product_card_body card-body d-flex flex-column justify-content-between">
+                        <div class="card-title bg-white h5" t-field="record.display_name"/>
+                        <style>
+
+                            .card-body .card-text { /* Orijinal card-text'i seçin */
+                            display: none;
+                            }
+                            .card-title {
+
+                            color: #001f3f;
+                            }
+
+                            .card-text {
+                            position: absolute;
+                            color: #001f3f;
+
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0;
+                            transition: opacity 0.3s ease; /* Geçiş efekti ekleyin */
+                            background-color: rgba(255, 255, 255, 0.8); /* Arkaplan rengi ve opaklık ekleyin */
+                            z-index: 1;
+                            overflow: hidden; /* Taşan içeriği gizle */
+                            display: -webkit-box; /* line-clamp için gerekli */
+                            -webkit-line-clamp: 6; /* Görüntülenecek maksimum satır sayısı */
+                            -webkit-box-orient: vertical;
+                            }
+                            .card-text:hover {
+                            opacity: 1;
+                            display:block;
+                            z-index: 2;
+
+                            }
+
+                        </style>
+                        <div class="card-text p-3  h6" t-field="record.custom_description_html"/>
+
+                    </div>
+                </a>
+
+            </div>
+
+
+
+        </xpath>
+
+
+    </template>
+
+
 </odoo>
