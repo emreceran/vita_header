@@ -1,127 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-
-    dynamic_filter_template_product_product_view_detail
-    <template id="carts_inherit" inherit_id="website_sale.dynamic_filter_template_product_product_card_group" name="cards iherit">
-        <!--                <xpath expr="//div[hasclass('o_kanban_mobile')]" position="attributes">-->
+    <template id="detail_carts_inherit" inherit_id="website_sale.dynamic_filter_template_product_product_view_detail" name="cards inherit">
         <xpath expr="//div[1]" position="replace">
-
-
-            <div class="o_carousel_product_card m-3 card w-100" t-att-data-url="record.website_url"
-                 style="border:2px solid #001f3f !important;">
-                <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
-                <input type="hidden" name="product-id" t-att-data-product-id="record.id"/>
-                <div class="o_carousel_product_card_body card-body justify-content-between h-100 p-3">
-                    <div class="row h-100">
-                        <div class="col-8  d-flex flex-column">
-                            <div class="card_isim bg-white  h5" t-field="record.display_name"
-                                 style="
-                             font-size: 1.2rem;
-                    font-weight: bold; /* Kalın metin */
-                    color: #001f3f; /* Lacivert renk */
-
-                                    " />
-                            <div class="card-text mt-3 h6 text-muted" t-field="record.custom_description_html"
-                                 style="
-                             display: -webkit-box;
-                    -webkit-line-clamp: 6; /* 6 satır sınırı */
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                    text-overflow: ellipsis; /* Fazlalık için  ekler */
-                            "           />
-                            <!--                            <div class="d-flex justify-content-between align-items-center flex-wrap w-100 mt-auto">-->
-                            <!--                                <div class="h5 text-primary mb-0 me-2">-->
-                            <!--                                    <t t-call="website_sale.price_dynamic_filter_template_product_product"/>-->
-                            <!--                                </div>-->
-                            <!--                                <t t-if="is_view_active('website_sale.product_comment')" t-call="portal_rating.rating_widget_stars_static">-->
-                            <!--                                    <t t-set="rating_avg" t-value="record.rating_avg"/>-->
-                            <!--                                    <t t-set="rating_count" t-value="record.rating_count"/>-->
-                            <!--                                </t>-->
-                            <!--                            </div>-->
-                        </div>
-                        <div class="col-4 position-static">
-                            <div class="overflow-hidden position-static">
-                                <a class="stretched-link o_dynamic_product_hovered" t-att-href="record.website_url">
-                                    <img class="img img-fluid o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-        </xpath>
-
-
-    </template>
-
-    <template id="detail_carts_inherit" inherit_id="website_sale.dynamic_filter_template_product_product_view_detail" name="cards iherit">
-        <!--                <xpath expr="//div[hasclass('o_kanban_mobile')]" position="attributes">-->
-        <xpath expr="//div[1]" position="replace">
-
-
-            <div class="o_carousel_product_card roundded bordered card h-100 w-100" t-att-data-add2cart-rerender="data.get('_add2cart_rerender')">
-                 <style>
-
-                            .card-body .card-text { /* Orijinal card-text'i seçin */
-                            display: none;
-                            border-radius: 50px !important ;
-                     border: 5px solid navy !important;
-                            }
-                            .card-title {
-
-                            color: #001f3f;
-                     text-center
-                            }
-
-                            .card-text2 {
-                            position: absolute;
-                            color: #001f3f;
-                            font-size:1rem;
-
-                            top: 0;
-                            left: 0;
-                            width: 100%;
-                            height: 100%;
-                            opacity: 0;
-                            transition: opacity 0.3s ease; /* Geçiş efekti ekleyin */
-                            background-color: rgba(255, 255, 255, 0.8); /* Arkaplan rengi ve opaklık ekleyin */
-                            z-index: 1;
-                            overflow: hidden; /* Taşan içeriği gizle */
-                            display: -webkit-box !important ; /* line-clamp için gerekli */
-                            -webkit-line-clamp: 6; /* Görüntülenecek maksimum satır sayısı */
-                            -webkit-box-orient: vertical;
-                            }
-                            .card-text2:hover {
-                            opacity: 1;
-                            display:block;
-                            z-index: 2;
-
-                            }
-
-                        </style>
+            <div class="o_carousel_product_card card h-100 w-100" t-att-data-add2cart-rerender="data.get('_add2cart_rerender')">
                 <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
                 <a class="o_carousel_product_img_link o_dynamic_product_hovered overflow-hidden" t-att-href="record.website_url">
-                    <img class="card-img-top o_img_product_square img-fluid bordered h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>
-
-                    <div class="o_carousel_product_card_body card-body rounded d-flex flex-column justify-content-center">
-                        <div class="card-title  text-center bg-white h5" t-field="record.display_name"/>
-
-                        <div class="card-text2 p-3  h6" t-field="record.custom_description_html"/>
-
+                    <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>
+                    <div class="o_carousel_product_card_body card-body d-flex flex-column justify-content-between">
+                        <div class="card-title bg-white h5" t-field="record.display_name"/>
+                        <style>
+                            .card-text {
+                                position: absolute !important;
+                                bottom: -100% !important; /* Yazı başlangıç pozisyonu (görünmez) */
+                                left: 0 !important;
+                                width: 100% !important;
+                                height: 100% !important;
+                                opacity: 0 !important;
+                                transition: all 0.5s ease-in-out !important; /* Geçiş animasyonu */
+                                background-color: rgba(255, 255, 255, 0.9) !important; /* Arkaplan rengi ve opaklık */
+                                padding: 2rem !important;
+                                box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1) !important; /* Hafif gölge efekti */
+                            font-weight:bold !important;
+                            }
+                            .o_carousel_product_card:hover .card-text {
+                                bottom: 0 !important; /* Yazıyı yukarı çıkar */
+                                opacity: 1 !important; /* Görünür yap */
+                            }
+                        </style>
+                        <div class="card-text p-3 h6" t-field="record.custom_description_html"/>
                     </div>
                 </a>
-
             </div>
-
-
-
         </xpath>
-
-
     </template>
-
-
 </odoo>
