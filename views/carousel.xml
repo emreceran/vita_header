@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-        <template id="carsd_inherit" inherit_id="website.homepage" name="Custom home">
+    <template id="carsd_inherit" inherit_id="website.homepage" name="Custom home">
 
         <xpath expr="//div[@id='wrap'][1]" position="before">
             <!-- Stil Ayarları -->
 
+            <style>
+                /* Mobil cihazlar için medya sorgusu */
+                @media (max-width: 768px) {
+                .komple {
+                display:none !important;
+                }
+                }
+            </style>
 
-            <div class="vh-100">
+            <div class="komple vh-100">
 
                 <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet"/>
 
@@ -267,8 +275,8 @@
             </div>
         </xpath>
 
-<!--        <xpath expr="//div[@id='s_dynamic_snippet_1']//div[hasclass('h6')]" position="attributes">-->
-<!--            <attribute name="class" add="bg-dark" separator=" " />-->
-<!--        </xpath>-->
+        <!--        <xpath expr="//div[@id='s_dynamic_snippet_1']//div[hasclass('h6')]" position="attributes">-->
+        <!--            <attribute name="class" add="bg-dark" separator=" " />-->
+        <!--        </xpath>-->
     </template>
 </odoo>
