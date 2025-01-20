@@ -128,7 +128,7 @@
 
                     .gradient-box:hover {
                     transform: scale(1.1); /* Hover durumunda büyüme */
-                    background: linear-gradient(to right, #630311, #f50528);
+                    background: linear-gradient(to right, black, #f50528);
                     border: none;
                     <!--                    border-radius: 40px;-->
                     <!--                    box-shadow: 1px 1px 5px lightblue;-->

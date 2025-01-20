@@ -383,14 +383,14 @@
             </div>
           </nav>
           <nav data-name="Navbar" aria-label="Mobile" class="navbar navbar-light o_colored_level o_cc o_header_mobile d-block d-lg-none shadow-sm px-0 o_full_border mx-1 rounded-pill">
-            <div class="o_main_nav container flex-wrap justify-content-between">
+            <div class="o_main_nav container flex-wrap justify-content-between pe-2 ps-2">
               <a data-name="Navbar Logo" href="/" class="navbar-brand logo">
                 <img src="/vita_header/static/src/img/Vita.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy"/>
               </a>
               <ul class="o_header_mobile_buttons_wrap navbar-nav flex-row align-items-center gap-2 mb-0">
                 <li>
                   <button class="nav-link btn me-auto p-2 o_not_editable" type="button" data-bs-toggle="offcanvas" data-bs-target="#top_menu_collapse_mobile" aria-controls="top_menu_collapse_mobile" aria-expanded="false" aria-label="Geçiş navigasyonu">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                   </button>
                 </li>
               </ul>
