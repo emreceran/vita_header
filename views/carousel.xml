@@ -22,6 +22,17 @@
 
 
                 <style>
+
+                    .carousel-indicators li {
+                    background-color: #fff; /* Noktaların rengi */
+                    border-radius: 50%; /* Yuvarlak yapmak için */
+                    width: 10px; /* Nokta boyutu */
+                    height: 10px;
+                    }
+
+                    .carousel-indicators li.active {
+                    background-color: #007bff; /* Aktif noktanın rengi */
+                    }
                     .carousel-container {
                     height: 75% !important; /* Üst div yüksekliği */
                     background-color: #3498db; /* Arka plan rengi */
@@ -69,7 +80,7 @@
                 <!-- Üst Div ve Carousel -->
                 <div class="carousel-container">
                     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="width: 100%; height: 100%;">
-                        <ol class="carousel-indicators o_we_no_overlay">
+                        <ol class="carousel-indicators">
                             <li data-bs-slide-to="0" data-bs-target="#carouselExample"></li>
                             <li data-bs-slide-to="1" data-bs-target="#carouselExample" class="active" aria-current="true"></li>
                             <li data-bs-slide-to="2" data-bs-target="#carouselExample"></li>
@@ -128,6 +139,7 @@
                     justify-content: center;
                     color: white;
                     font-weight: bold;
+                    border-x: 2px solid white;
                     font-size: 1em;
                     padding: 2.5rem 0.5rem 2rem 1rem; /* Yazılara daha fazla boşluk */
                     transition: transform 0.5s ease, background-color 0.5s ease; /* Animasyon için eklenen özellikler */
@@ -166,12 +178,12 @@
                     .box-1 {
                     <!--                    background-color: #001f3f; /* Koyu lacivert */-->
                     text-align: right; /* Sol kutunun içeriği sağa yaslandı */
-                    border-right: 5px solid black; /* Sol kenar */
+                    <!--                    border-right: 5px solid white; /* Sol kenar */-->
                     }
 
                     .box-2 {
                     <!--                    background-color: #003f7f; /* Orta lacivert */-->
-                    border-right: 5px solid black; /* Sol kenar */
+                    <!--                    border-right: 5px solid white; /* Sol kenar */-->
 
                     }
 
@@ -194,8 +206,9 @@
                     background-color: #824209; /* Lacivert ton */
                     color: white;
                     <!--                    text-align: left;-->
-                    padding: 5px 20px; /* İçerik için padding azaltıldı */
+                    padding: 10px 20px; /* İçerik için padding azaltıldı */
                     font-size: 8px; /* Font boyutu küçültüldü */
+                    <!--                    border: 3px solid white;-->
 
                     }
 
@@ -210,10 +223,16 @@
                     .social-media a:hover {
                     color: #dddddd;
                     }
+
+                    .komp {
+                    background: linear-gradient(to right, #001f3f , #0074d9   );
+                    border: 3px solid white;
+                    }
+
                 </style>
 
                 <div class="container-fluid p-0 m-0 h-25" >
-                    <div class="row h-75" style="background: linear-gradient(to right, #001f3f , #0074d9   );">
+                    <div class="row h-75 komp " style="">
                         <div class="container  h-100 w-75">
 
                             <div class="row h-100 ">
