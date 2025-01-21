@@ -65,6 +65,12 @@
         text-transform: capitalize;
         }
 
+        .icerik {
+        text-transform: capitalize !important;
+        font-size:1rem;
+         line-height: 50% !important;
+        }
+
 
 
       </style>
@@ -103,19 +109,19 @@
                             <nav class="nav flex-column">
                               <a href="/akreditasyon" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Akreditasyon
+                                <span class="icerik"> Akreditasyon </span>
                               </a>
                               <a href="/hakkmzda" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Hakkımızda
+                                 <span class="icerik"> Hakkımızda</span>
                               </a>
                               <a href="/ilke-ve-degerlerimiz" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                İlke ve Değerlerimiz
+                                 <span class="icerik"> İlke ve Değerlerimiz</span>
                               </a>
                               <a href="/organizasyon-semas" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Organizasyon Şeması
+                                 <span class="icerik"> cOrganizasyon Şeması</span>
                               </a>
                             </nav>
                           </div>
@@ -133,19 +139,19 @@
                             <nav class="nav flex-column">
                               <a href="/hesap-numaralar" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Hesap Numaraları
+                                 <span class="icerik"> Hesap Numaraları</span>
                               </a>
                               <a href="/insan-kaynaklar" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                İnsan Kaynakları
+                                 <span class="icerik"> İnsan Kaynakları</span>
                               </a>
                               <a href="/kvkk-metni" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                KVKK Metni
+                                <span class="icerik">  KVKK Metni</span>
                               </a>
                               <a href="#" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Şirket Künyesi
+                                <span class="icerik">  Şirket Künyesi</span>
                               </a>
                             </nav>
                           </div>
@@ -163,19 +169,19 @@
                             <nav class="nav flex-column">
                               <a href="/sikayet-oneri-itiraz" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Şikayet-Öneri-İtiraz
+                                <span class="icerik">  Şikayet-Öneri-İtiraz</span>
                               </a>
                               <a href="/muayene-on-hazrlk-bilgi-formu" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Muayene Ön Hazırlık Bilgi Formu
+                                 <span class="icerik"> Muayene Ön Hazırlık Bilgi Formu</span>
                               </a>
                               <a href="/musteri-hizmet-proseduru" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                >Müşteri Hizmet Prosedürü
+                                 <span class="icerik"> >Müşteri Hizmet Prosedürü</span>
                               </a>
                               <a href="/tarafsizlik-ve-gizlilik-tahutnamesi" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Tarafsızlık ve Gizlilik Taahhütname
+                                 <span class="icerik"> Tarafsızlık ve Gizlilik Taahhütname</span>
                               </a>
                             </nav>
                           </div>
@@ -193,19 +199,19 @@
                             <nav class="nav flex-column">
                               <a href="/tanitim-katalogu" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Tanıtım Kataloğu
+                                 <span class="icerik"> Tanıtım Kataloğu</span>
                               </a>
                               <a href="/blog/uzman-gorusleri-4" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Uzman Görüşleri
+                                <span class="icerik">  Uzman Görüşleri</span>
                               </a>
                               <a href="/blog/sektorel-haberler-6" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Sektörel Haberler
+                                 <span class="icerik"> Sektörel Haberler</span>
                               </a>
                               <a href="/foto-galeri" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Foto Galeri
+                                <span class="icerik">  Foto Galeri</span>
                               </a>
                             </nav>
                           </div>
@@ -245,16 +251,16 @@
                             <nav class="nav flex-column">
                               <a href="/shop/topraklama-olcumu-periyodik-137" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Topraklama Ölçümleri</a>
+                                 <span class="icerik"> Topraklama Ölçümleri</span></a>
                               <a href="/shop/elektrik-ic-tesisat-uygunluk-188" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Elektrik İç Tesisat Uygunluk</a>
+                                 <span class="icerik"> Elektrik İç Tesisat Uygunluk</span></a>
                               <a href="/shop/paratoner-yldrmdan-korunma-sistemleri-periyodik-kontrolleri-139?category=79" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Paratoner Yıldırımdan Korunma</a>
+                                <span class="icerik">  Paratoner Yıldırımdan Korunma</span></a>
                               <a href="/shop/artk-kacak-akm-rolesi-periyodik-kontrolleri-140" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Kaçak Artık Akım Rolesi</a>
+                                 <span class="icerik"> Kaçak Artık Akım Rolesi</span></a>
 
                             </nav>
                           </div>
@@ -280,16 +286,16 @@
                             <nav class="nav flex-column">
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-kaldrma-iletme-ekipmanlar-81" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Kaldırma İletme Ekipmanları</a>
+                                 <span class="icerik"> Kaldırma İletme Ekipmanları</span></a>
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-basncl-kaplar-82" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Basınçlı Kaplar</a>
+                                 <span class="icerik"> Basınçlı Kaplar</span></a>
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-makine-tezgahlar-83" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Makine Tezgahları</a>
+                                <span class="icerik">  Makine Tezgahları</span></a>
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-is-makineleri-84" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                İş Makineleri </a>
+                                 <span class="icerik"> İş Makineleri</span> </a>
 
                             </nav>
                           </div>
@@ -314,16 +320,16 @@
                             <nav class="nav flex-column">
                               <a href="/shop/category/periyodik-kontroller-tesisat-grubu-yangn-tesisat-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Yangın Tesisatı</a>
+                                 <span class="icerik"> Yangın Tesisatı</span></a>
                               <a href="/shop/yangn-pompalar-motor-performans-tesatleri-periyodik-kontrolleri-146" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Motor Performans Testi</a>
+                                 <span class="icerik"> Motor Performans Testi</span></a>
                               <a href="/shop/pompa-istasyon-dairesi-periyodik-kontrolleri-147" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Pompa İstasyon Dairesi</a>
+                                 <span class="icerik"> Pompa İstasyon Dairesi</span></a>
                               <a href="/shop/su-deposu-periyodik-kontrolleri-148" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Su Deposu</a>
+                                 <span class="icerik"> Su Deposu</span></a>
 
                             </nav>
                           </div>
@@ -349,16 +355,20 @@
                             <nav class="nav flex-column">
                               <a href="/shop/category/periyodik-kontroller-tesisat-grubu-yangn-tesisat-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Kaçış Yolu Basınçlandırma</a>
+                                 <span class="icerik"> Kaçış Yolu Basınçlandırma</span>
+                              </a>
                               <a href="/shop/yangn-pompalar-motor-performans-tesatleri-periyodik-kontrolleri-146" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Motor Verim Testi</a>
+                                <span class="icerik">  Motor Verim Testi</span>
+                              </a>
                               <a href="/shop/pompa-istasyon-dairesi-periyodik-kontrolleri-147" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Çevrim Sayısı</a>
+                                <span class="icerik">  Çevrim Sayısı</span>
+                              </a>
                               <a href="/shop/su-deposu-periyodik-kontrolleri-148" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Sistem Gereklilikleri</a>
+                                <span class="icerik">  Sistem Gereklilikleri</span>
+                              </a>
 
                             </nav>
                           </div>
@@ -401,18 +411,18 @@
                                 <nav class="nav flex-column">
                                   <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
 
-                                    Toplam Toz Numune Alma ve Analiz
+                                    <span class="icerik">  Toplam Toz Numune Alma ve Analiz</span>
                                   </a>
                                   <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                    Solunabilir Toz Numune Alma ve Analiz
+                                    <span class="icerik">  Solunabilir Toz Numune Alma ve Analiz</span>
                                   </a>
                                   <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                    Gaz ve Buhar Konsantrasyon Ölçümü</a>
+                                    <span class="icerik">  Gaz ve Buhar Konsantrasyon Ölçümü</span></a>
                                   <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                    VOC Numune Alma ve Analiz
+                                    <span class="icerik">  VOC Numune Alma ve Analiz</span>
                                   </a>
 
                                 </nav>
@@ -420,16 +430,16 @@
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
                                   <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
-                                    Ağır Metal Numune Alma Ve Analiz
+                                    <span class="icerik">  Ağır Metal Numune Alma Ve Analiz</span>
                                   </a>
                                   <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Kişisel Gaz Maruziyeti Ölçümü
+                                    <span class="icerik">  Kişisel Gaz Maruziyeti Ölçümü</span>
                                   </a>
                                   <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Asit Konsantrasyon Ölçümü
+                                    <span class="icerik">  Asit Konsantrasyon Ölçümü</span>
                                   </a>
                                   <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Asit Konsantrasyon Ölçümü
+                                   <span class="icerik">   Asit Konsantrasyon Ölçümü</span>
                                   </a>
 
 
@@ -459,16 +469,16 @@
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
                                   <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
-                                    Aydınlatma Ölçümü
+                                   <span class="icerik">   Aydınlatma Ölçümü</span>
                                   </a>
                                   <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Kişisel Gürültü Maruziyeti Ölçümü
+                                    <span class="icerik">  Kişisel Gürültü Maruziyeti Ölçümü</span>
                                   </a>
                                   <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Ortam Gürültü Ölçümü
+                                    <span class="icerik">  Ortam Gürültü Ölçümü</span>
                                   </a>
                                   <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Termal Konfor Ölçümü
+                                    <span class="icerik">  Termal Konfor Ölçümü</span>
                                   </a>
 
 
@@ -477,16 +487,16 @@
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
                                   <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
-                                    Vücut Titreşim Maruziyeti Ölçümü
+                                    <span class="icerik"> Vücut Titreşim Maruziyeti Ölçümü</span>
                                   </a>
                                   <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Elektromanyetik Alan Ölçümü
+                                    <span class="icerik">  Elektromanyetik Alan Ölçümü</span>
                                   </a>
                                   <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Elektromanyetik Alan Ölçümü
+                                    <span class="icerik"> Elektromanyetik Alan Ölçümü</span>
                                   </a>
                                   <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Elektromanyetik Alan Ölçümü
+                                   <span class="icerik">  Elektromanyetik Alan Ölçümü</span>
                                   </a>
 
 
@@ -537,32 +547,32 @@
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
                                   <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Patlamadan Korunma Dökümantasyonu
+                                   <span class="icerik">  Patlamadan Korunma Dökümantasyonu</span>
                                   </a>
                                   <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Statik Analiz
+                                    <span class="icerik"> Statik Analiz</span>
                                   </a>
                                   <a href="/shop/category/muhendislik-hizmetleri-tesisat-proje-degerlendirme-117" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Yangın Tesisatı Proje
+                                    <span class="icerik"> Yangın Tesisatı Proje</span>
                                   </a>
                                   <a href="/shop/category/muhendislik-hizmetleri-77" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Havalandırma Tesisatı Proje
+                                    <span class="icerik"> Havalandırma Tesisatı Proje</span>
                                   </a>
                                 </nav>
                               </div>
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
                                   <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Algılama Alarm Sistemleri
+                                    <span class="icerik"> Algılama Alarm Sistemleri</span>
                                   </a>
                                   <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Elektrik Tesisatı Proje
+                                   <span class="icerik">  Elektrik Tesisatı Proje</span>
                                   </a>
                                   <a href="/shop/category/muhendislik-hizmetleri-tesisat-proje-degerlendirme-117" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Paratoner Tesisatı Proje
+                                   <span class="icerik">  Paratoner Tesisatı Proje</span>
                                   </a>
                                   <a href="/shop/category/muhendislik-hizmetleri-77" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    Tesisat Grubu Proje
+                                   <span class="icerik">  Tesisat Grubu Proje</span>
                                   </a>
                                 </nav>
                               </div>
