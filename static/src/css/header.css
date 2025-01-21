@@ -59,7 +59,7 @@ transform-origin: left center; /* Büyüme, linkin sol kenarından başlar */
 position: relative;
  background-color: rgb(252, 252, 252);
 background-image: none;
-height: 26rem;
+height: 27rem;
 overflow-y: auto; /* Dikey kaydırmayı kapatır */
 max-height: 100%;
 }

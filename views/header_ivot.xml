@@ -22,7 +22,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="  o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/sirket_profili.png'" alt=""/>
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/şirket profili.svg'" alt=""/>
                               </div>
                               <br/>
                               <font class="text-800">Şİrket profİlİ</font>
@@ -52,7 +52,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/kurumsal_bilgiler.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/kurumsal bilgiler.svg'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Kurumsal Bİlgİler</font>
@@ -82,7 +82,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/dökümantasyon.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Dökümantasyon</font>
@@ -112,7 +112,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/medya.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/medya.svg'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Medya</font>
@@ -155,7 +155,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/elektrik_grubu.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/elektrik gurubu.svg'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Elektrİk Grubu</font>
@@ -185,7 +185,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/makine_grubu.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/makine grubu.svg'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Makİne Grubu</font>
@@ -215,7 +215,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/tesisat_grubu.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/tesisat grubu.svg'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Tesİsat Grubu</font>
@@ -259,7 +259,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/kimyasal_etkenler.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Kİmyasal etkenler</font>
@@ -292,7 +292,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0" style="overflow: unset;">
                               <div>
-                                <img class="pt-2" t-att-src="'/vita_header/static/src/img/fiziksel_etkenler.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/fiziksel etkenler.svg'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Fİzİksel etkenler</font>
@@ -337,7 +337,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/muhendislik_hizmetleri.png'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/mühendislik hizmetleri.svg'" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">mÜHENDİSLİK HİZMETLERİ</font>
@@ -348,13 +348,13 @@
                             <nav class="nav flex-column">
                               <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
-                                PATLAMADAN KORUNMA DÖKÜMANTASYONU</a>
+                                Patlamadan Korunma Dökümantasyonu</a>
                               <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
-                                STATİK ANALİZ</a>
+                                Statik Analiz</a>
                               <a href="/shop/category/muhendislik-hizmetleri-tesisat-proje-degerlendirme-117" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span class="fa fa-chevron-right"/>
-                                TESİSAT PROJE DEĞERLENDİRME
+                                Tesisat Proje Değerlendirme
                               </a>
                               <a href="/shop/category/muhendislik-hizmetleri-77" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span>Diğer Hizmetler</span>
@@ -626,13 +626,13 @@
                             <div class="collapse " id="menu4-1" data-bs-parent="#accordionExample4">
                               <ol class="nav flex-column align-items-start ms-5">
                                 <li>
-                                  <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link">PATLAMADAN KORUNMA DÖKÜMANTASYONU</a>
+                                  <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link">Patlamadan Korunma Dökümantasyonu</a>
                                 </li>
                                 <li>
-                                  <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link">STATİK ANALİZ</a>
+                                  <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link">Statik Analiz</a>
                                 </li>
                                 <li>
-                                  <a href="/shop/category/muhendislik-hizmetleri-tesisat-proje-degerlendirme-117" class="nav-link">TESİSAT PROJE DEĞERLENDİRME</a>
+                                  <a href="/shop/category/muhendislik-hizmetleri-tesisat-proje-degerlendirme-117" class="nav-link">Tesisat Proje Değerlendirme</a>
                                 </li>
                                 <li>
                                   <a href="/shop/category/muhendislik-hizmetleri-77" class="nav-link">Diğer Hizmetler</a>
