@@ -39,11 +39,12 @@
         }
 
         .nav-link {
-        transition: transform 0.3s ease;
+        <!--        transition: transform 0.3s ease;-->
+        text-transform: capitalize !important;
         }
 
         .nav-link:hover {
-        transform: scale(1.1);
+        color:navy;
         }
 
         @media (max-width: 992px) {
@@ -63,6 +64,8 @@
         font {
         text-transform: capitalize;
         }
+
+
 
       </style>
 
@@ -87,7 +90,7 @@
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center ms-" data-row-count="9">
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
-                            <h4 class="  o_default_snippet_text text-uppercase h5 fw-bold mt-0 mb-0">
+                            <h4 class="  o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
                                 <img t-att-src="'/vita_header/static/src/img/iconlar/şirket profili.svg'" alt=""/>
                               </div>
@@ -376,11 +379,10 @@
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center" data-row-count="9">
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
-
+                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
-                                <div>
+                                <div class="col-6" >
                                   <img t-att-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'" alt="" />
                                 </div>
                                 <br/>
@@ -391,149 +393,109 @@
                                 <small>Diğer...</small>
                               </a>
                             </div>
-
-
-
                             <div class="s_hr text-start pt4 pb16 text-o-color-3" style="--o-border-color: currentColor;" data-name="Separator">
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
-                            <nav class="nav flex-column">
-                              <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <nav class="nav flex-column">
+                                  <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
 
-                                Toplam Toz Numune Alma ve Analiz
-                              </a>
-                              <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Toplam Toz Numune Alma ve Analiz
+                                  </a>
+                                  <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Solunabilir Toz Numune Alma ve Analiz
-                              </a>
-                              <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Solunabilir Toz Numune Alma ve Analiz
+                                  </a>
+                                  <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Gaz ve Buhar Konsantrasyon Ölçümü</a>
-                              <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Gaz ve Buhar Konsantrasyon Ölçümü</a>
+                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                VOC Numune Alma ve Analiz
-                              </a>
+                                    VOC Numune Alma ve Analiz
+                                  </a>
 
-                            </nav>
+                                </nav>
+                              </div>
+                              <div class="col-md-6">
+                                <nav class="nav flex-column">
+                                  <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
+                                    Ağır Metal Numune Alma Ve Analiz
+                                  </a>
+                                  <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Kişisel Gaz Maruziyeti Ölçümü
+                                  </a>
+                                  <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Asit Konsantrasyon Ölçümü
+                                  </a>
+                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Asit Konsantrasyon Ölçümü
+                                  </a>
+
+
+                                </nav>
+                              </div>
+                            </div>
                           </div>
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
-
+                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
-                                <div>
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'" alt="" />
-                                </div>
-                                <br/>
-                                <font class="text-800">Kİmyasal etkenler</font>
-                              </h4>
-                              <a href="/shop/category/is-hijyeni-laboratuvar-kimyasal-etkenler-101" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-
-                                <small>Diğer...</small>
-                              </a>
-                            </div>
-
-
-
-                            <div class="s_hr text-start pt4 pb16 text-o-color-3" style="--o-border-color: currentColor;" data-name="Separator">
-                              <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
-                            </div>
-                            <nav class="nav flex-column">
-                              <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
-
-                                Toplam Toz Numune Alma ve Analiz
-                              </a>
-                              <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-
-                                Solunabilir Toz Numune Alma ve Analiz
-                              </a>
-                              <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-
-                                Gaz ve Buhar Konsantrasyon Ölçümü</a>
-                              <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
-
-                                VOC Numune Alma ve Analiz
-                              </a>
-
-                            </nav>
-                          </div>
-
-
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
-
-                            <div class="d-flex align-items-end">
-                              <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0" style="overflow: unset;">
-                                <div>
+                                <div class="col-6" >
                                   <img t-att-src="'/vita_header/static/src/img/iconlar/fiziksel etkenler.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Fİzİksel etkenler</font>
                               </h4>
-
                               <a href="/shop/category/is-hijyeni-laboratuvar-fiziksel-etkenler-100" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <small>Diğer...</small>
+
                               </a>
                             </div>
-
-
                             <div class="s_hr text-start pt4 pb16 text-o-color-3" style="--o-border-color: currentColor;" data-name="Separator">
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
-                            <nav class="nav flex-column">
-                              <a href="/shop/aydnlatma-olcumu-92" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <nav class="nav flex-column">
+                                  <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
+                                    Aydınlatma Ölçümü
+                                  </a>
+                                  <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Kişisel Gürültü Maruziyeti Ölçümü
+                                  </a>
+                                  <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Ortam Gürültü Ölçümü
+                                  </a>
+                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Termal Konfor Ölçümü
+                                  </a>
 
-                                Aydınlatma Ölçümü</a>
-                              <a href="/shop/kisisel-gurultu-maruziyeti-olcumu-93" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Kişisel Gürültü Maruziyeti Ölçümü</a>
-                              <a href="/shop/ortam-gurultu-olcumu-94" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                </nav>
+                              </div>
+                              <div class="col-md-6">
+                                <nav class="nav flex-column">
+                                  <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
+                                    Vücut Titreşim Maruziyeti Ölçümü
+                                  </a>
+                                  <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Elektromanyetik Alan Ölçümü
+                                  </a>
+                                  <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Elektromanyetik Alan Ölçümü
+                                  </a>
+                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    Elektromanyetik Alan Ölçümü
+                                  </a>
 
-                                Ortam Gürültü Ölçümü</a>
-                              <a href="/shop/termal-konfor-olcumu-95" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                Termal Konfor Ölçümü</a>
-
-
-                            </nav>
+                                </nav>
+                              </div>
+                            </div>
                           </div>
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
 
-                            <div class="d-flex align-items-end">
-                              <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0" style="overflow: unset;">
-                                <div>
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/fiziksel etkenler.svg'" alt="" />
-                                </div>
-                                <br/>
-                                <font class="text-800">Fİzİksel etkenler</font>
-                              </h4>
-
-                              <a href="/shop/category/is-hijyeni-laboratuvar-fiziksel-etkenler-100" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                <small>Diğer...</small>
-                              </a>
-                            </div>
-
-
-                            <div class="s_hr text-start pt4 pb16 text-o-color-3" style="--o-border-color: currentColor;" data-name="Separator">
-                              <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
-                            </div>
-                            <nav class="nav flex-column">
-                              <a href="/shop/aydnlatma-olcumu-92" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-
-                                Aydınlatma Ölçümü</a>
-                              <a href="/shop/kisisel-gurultu-maruziyeti-olcumu-93" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-
-                                Kişisel Gürültü Maruziyeti Ölçümü</a>
-                              <a href="/shop/ortam-gurultu-olcumu-94" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-
-                                Ortam Gürültü Ölçümü</a>
-                              <a href="/shop/termal-konfor-olcumu-95" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-
-                                Termal Konfor Ölçümü</a>
-
-
-                            </nav>
-                          </div>
                         </div>
                       </div>
                     </section>
@@ -562,7 +524,7 @@
 
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
-                              <div class="col-6" >
+                              <div class="col-5" >
                                 <img t-att-src="'/vita_header/static/src/img/iconlar/mühendislik hizmetleri.svg'" alt="" />
                               </div>
                               <br/>
