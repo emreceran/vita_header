@@ -27,7 +27,7 @@
                             text-align: justify;
                             box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1) !important; /* Hafif gölge efekti */
 
-<!--                            letter-spacing: 0.05em !important; /* Karakterler arası boşluk */-->
+                            <!--                            letter-spacing: 0.05em !important; /* Karakterler arası boşluk */-->
                             color:white !important;
                             font-size: 12px !important;
                             }
@@ -40,8 +40,6 @@
 
                             .o_carousel_product_card:hover .cardim-name {
                             transform: scale(1.05);
-
-
                             }
 
                             .cardim-name {
@@ -55,17 +53,19 @@
                             font-family: Copperplate;
                             z-index: 3 !important;
                             width: 100%;
-<!--                            border-radius: 30px;-->
+                            height:70px !important;
+
+                            <!--                            border-radius: 30px;-->
                             }
                         </style>
 
                         <div class="cardim-name bg-white text-center" t-field="record.display_name"
-                             />
+                        />
                         <div class="cardim-text d-flex flex-column">
-<!--                            <div class="bg-white text-center" t-field="record.display_name"-->
-<!--                             style="color:red important;" />-->
-                        <div class=" " t-esc="record.description_sale"/>
-                            </div>
+                            <!--                            <div class="bg-white text-center" t-field="record.display_name"-->
+                            <!--                             style="color:red important;" />-->
+                            <div class=" " t-esc="record.description_sale"/>
+                        </div>
                     </div>
                 </a>
             </div>
