@@ -19,7 +19,7 @@
                             top: 100% !important; /* Yazı başlangıç pozisyonu (görünmez) */
                             left: 0 !important;
                             width: 100% !important;
-                            height: 85% !important;
+                            height: 90% !important;
                             opacity: 0 !important;
                             transition: all 0.5s ease-in-out !important; /* Geçiş animasyonu */
                             background-color: rgba(74, 70, 61, 0.6) !important; /* Arkaplan rengi ve opaklık */
@@ -38,10 +38,24 @@
 
                             }
 
+                            .o_carousel_product_card:hover .cardim-name {
+                            transform: scale(1.05);
+
+
+                            }
+
                             .cardim-name {
-                            font-size: 12px;
+                            position:absolute;
+                            left:0;
+                            bottom: 0;
+                            padding: 5px;
+                            font-size: 20px;
                             color: #001f3f;
-                            font-weight: bold;
+                            font-weight: light;
+                            font-family: Copperplate;
+                            z-index: 3 !important;
+                            width: 100%;
+<!--                            border-radius: 30px;-->
                             }
                         </style>
 
@@ -69,7 +83,7 @@
         <!--            <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>-->
         <!--            <div class="o_carousel_product_card_body card-body d-flex flex-column justify-content-between">-->
         <!--                <div class="bg-white text-center" t-field="record.display_name"-->
-        <!--                     style="color:red important;" />-->
+        <!--                     styl e="color:red important;" />-->
         <!--                <style>-->
         <!--                    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap');-->
         <!--                    .card-text {-->
