@@ -7,40 +7,50 @@
             <div class="o_carousel_product_card card h-100 w-100" t-att-data-add2cart-rerender="data.get('_add2cart_rerender')">
                 <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
                 <a class="o_carousel_product_img_link o_dynamic_product_hovered overflow-hidden" t-att-href="record.website_url">
-                    <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>
+                    <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="website.image_url(record, 'img_2')" t-att-alt="record.display_name"/>
                     <div class="o_carousel_product_card_body card-body d-flex flex-column justify-content-between">
-                        <div class="bg-white text-center" t-field="record.display_name"
-                             style="color:red important;" />
+
                         <style>
                             @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap');
-                            .card-text {
-                            letter-spacing: 0.05em !important; /* Karakterler arası boşluk */
+                            .cardim-text {
+
                             font-family: 'Merriweather', serif !important; /* Artistik font */
                             position: absolute !important;
                             top: 100% !important; /* Yazı başlangıç pozisyonu (görünmez) */
                             left: 0 !important;
                             width: 100% !important;
-                            height: 80% !important;
+                            height: 85% !important;
                             opacity: 0 !important;
                             transition: all 0.5s ease-in-out !important; /* Geçiş animasyonu */
                             background-color: rgba(74, 70, 61, 0.6) !important; /* Arkaplan rengi ve opaklık */
                             padding: 1rem !important;
                             text-align: justify;
                             box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1) !important; /* Hafif gölge efekti */
-                            font-weight:bold !important;
-                            letter-spacing: 0.05em !important; /* Karakterler arası boşluk */
+
+<!--                            letter-spacing: 0.05em !important; /* Karakterler arası boşluk */-->
                             color:white !important;
+                            font-size: 12px !important;
                             }
-                            .o_carousel_product_card:hover .card-text {
+                            .o_carousel_product_card:hover .cardim-text {
                             bottom: 0 !important; /* Yazıyı yukarı çıkar */
                             opacity: 1 !important; /* Görünür yap */
                             top: 0 !important;
+
+                            }
+
+                            .cardim-name {
+                            font-size: 12px;
+                            color: #001f3f;
+                            font-weight: bold;
                             }
                         </style>
-                        <div class="card-text d-flex flex-column">
+
+                        <div class="cardim-name bg-white text-center" t-field="record.display_name"
+                             />
+                        <div class="cardim-text d-flex flex-column">
 <!--                            <div class="bg-white text-center" t-field="record.display_name"-->
 <!--                             style="color:red important;" />-->
-                        <div class=" p-3 h6" t-esc="record.description_sale"/>
+                        <div class=" " t-esc="record.description_sale"/>
                             </div>
                     </div>
                 </a>
