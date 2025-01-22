@@ -53,7 +53,7 @@
                     left: 100%; /* Sağdan sola giriş için başlangıç konumu */
                     transform: translateY(-50%);
                     color: white;
-                    font-size: 5rem; /* Yazı büyüklüğü */
+                    font-size: 3rem; /* Yazı büyüklüğü */
                     font-weight: bold;
                     font-family: "Playball", serif;
                     white-space: nowrap;
