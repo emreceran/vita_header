@@ -2,9 +2,14 @@
 <odoo>
 
 
+
+
+
     <template id="detail_carts_inherit" inherit_id="website_sale.dynamic_filter_template_product_product_mini_name" name="cards inherit">
         <xpath expr="//div[1]" position="replace">
+
             <div class="o_carousel_product_card card h-100 w-100" t-att-data-add2cart-rerender="data.get('_add2cart_rerender')">
+
                 <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
                 <a class="o_carousel_product_img_link o_dynamic_product_hovered overflow-hidden" t-att-href="record.website_url">
                     <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="website.image_url(record, 'img_2')" t-att-alt="record.display_name"/>
