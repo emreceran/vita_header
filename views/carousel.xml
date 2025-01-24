@@ -85,7 +85,7 @@
                 <div class="carousel-container">
                     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="width: 100%; height: 100%;">
                         <div id="caroselindik">
-                            <ol class="carousel-indicators bg-dark">
+                            <ol class="carousel-indicators ">
                                 <li data-bs-slide-to="0" data-bs-target="#carouselExample"></li>
                                 <li data-bs-slide-to="1" data-bs-target="#carouselExample" class="active" aria-current="true"></li>
                                 <li data-bs-slide-to="2" data-bs-target="#carouselExample"></li>
