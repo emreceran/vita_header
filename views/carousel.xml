@@ -19,6 +19,14 @@
                 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&amp;family=Pacifico&amp;family=Playball&amp;family=Playwrite+IN:wght@100..400&amp;display=swap" rel="stylesheet"/>
                 <style>
 
+                    <!--                    #caroselindik {-->
+                    <!--                    position:absolute;-->
+                    <!--                    right: 50%;-->
+                    <!--                    top: 50%;-->
+                    <!--                    z-index:50;-->
+                    <!--                    background-color: red;-->
+                    <!--                    }-->
+
                     .carousel-indicators li {
                     background-color: #fff; /* Noktaların rengi */
                     border-radius: 50%; /* Yuvarlak yapmak için */
@@ -53,8 +61,8 @@
                     left: 100%; /* Sağdan sola giriş için başlangıç konumu */
                     transform: translateY(-50%);
                     color: white;
-                    font-size: 60px; /* Yazı büyüklüğü */
-                    font-weight: bold;
+                    font-size: 80px; /* Yazı büyüklüğü */
+                    font-weight: light;
                     font-family: "Playball", serif;
                     white-space: nowrap;
                     animation: slideInRight 2s ease-out forwards;
@@ -76,33 +84,35 @@
                 <!-- Üst Div ve Carousel -->
                 <div class="carousel-container">
                     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="width: 100%; height: 100%;">
-                        <ol class="carousel-indicators">
-                            <li data-bs-slide-to="0" data-bs-target="#carouselExample"></li>
-                            <li data-bs-slide-to="1" data-bs-target="#carouselExample" class="active" aria-current="true"></li>
-                            <li data-bs-slide-to="2" data-bs-target="#carouselExample"></li>
-                            <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
-                            <li data-bs-target="#carouselExample" data-bs-slide-to="4"></li>
-                        </ol>
+                        <div id="caroselindik">
+                            <ol class="carousel-indicators bg-dark">
+                                <li data-bs-slide-to="0" data-bs-target="#carouselExample"></li>
+                                <li data-bs-slide-to="1" data-bs-target="#carouselExample" class="active" aria-current="true"></li>
+                                <li data-bs-slide-to="2" data-bs-target="#carouselExample"></li>
+                                <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
+                                <li data-bs-target="#carouselExample" data-bs-slide-to="4"></li>
+                            </ol>
+                        </div>
 
                         <div class="carousel-inner">
                             <!-- Slider 1 -->
                             <div class="carousel-item active img-fluid" style="background-image: url('/vita_header/static/src/img/slider1.webp'); position: relative;">
-                                <div class="slider-slogan">Güven İçin Çalışıyoruz... </div>
+                                <div class="slider-slogan">Güven İçin Çalışıyoruz </div>
                             </div>
 
                             <!-- Slider 2 -->
                             <div class="carousel-item img-fluid" style="background-image: url('/vita_header/static/src/img/slider2.webp'); position: relative;">
-                                <div class="slider-slogan">Sağlık İçin Denetliyoruz... </div>
+                                <div class="slider-slogan">Sağlık İçin Denetliyoruz </div>
                             </div>
 
                             <!-- Slider 3 -->
                             <div class="carousel-item img-fluid" style="background-image: url('/vita_header/static/src/img/slider3.webp'); position: relative;">
-                                <div class="slider-slogan">Kalite İçin Planlıyoruz...</div>
+                                <div class="slider-slogan">Kalite İçin Planlıyoruz</div>
                             </div>
 
                             <!-- Slider 4 -->
                             <div class="carousel-item img-fluid" style="background-image: url('/vita_header/static/src/img/slider4.jpg'); position: relative;">
-                                <div class="slider-slogan">Net Sonuç ve Çözümler İçin...</div>
+                                <div class="slider-slogan">Net Sonuç ve Çözümler İçin</div>
                             </div>
 
                             <!-- Slider 5 -->
@@ -137,7 +147,7 @@
                     font-weight: bold;
                     <!--                    border-x: 2px solid white;-->
                     font-size: 1em;
-                    padding: 2.5rem 0.5rem 2rem 1rem; /* Yazılara daha fazla boşluk */
+<!--                    padding: 2.5rem 0.5rem 2rem 1rem; /* Yazılara daha fazla boşluk */-->
                     transition: transform 0.5s ease, background-color 0.5s ease; /* Animasyon için eklenen özellikler */
 
                     }
@@ -173,7 +183,7 @@
 
                     .box-1 {
                     <!--                    background-color: #001f3f; /* Koyu lacivert */-->
-                    text-align: right; /* Sol kutunun içeriği sağa yaslandı */
+                    text-align: left; /* Sol kutunun içeriği sağa yaslandı */
                     <!--                                        border-right: 5px solid white; /* Sol kenar */-->
                     }
 
@@ -237,13 +247,18 @@
                     font-size: 1rem; /* Ana yazı boyutu */
                     margin-bottom: 0.5rem; /* p ile span arasında mesafe */
                     text-align: left; /* İsteğe bağlı: hizalama */
+
+                    font-family: "Raleway", "Odoo Unicode Support Noto", sans-serif;
+
                     }
 
                     .gradient-box span {
                     font-size: 0.75rem; /* Span yazısı daha küçük */
                     display: block; /* Alt satıra geçmesini sağlar */
+                    font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
 
                     text-align: left; /* İsteğe bağlı: hizalama */
+                    color: #f1f1f1;
 
                     }
 
@@ -251,6 +266,11 @@
                     <!--                    transform: scale(3); /* Logoyu %30 büyütür */-->
                     <!--                    transition: transform 0.3s ease-in-out; /* Yumuşak geçiş efekti */-->
                     <!--                    }-->
+
+                    .gradient-box.box-1 a {
+                    margin-left: 2rem; /* Resimlerin altına boşluk */
+                    }
+
 
                     .gradient-box.box-2 div {
                     margin-right: 1rem; /* İki resim arasına boşluk */
@@ -268,19 +288,19 @@
                     }
 
                     .gradient-box.box-1 a img:hover {
-                    transform: scale(3); /* Büyütme oranı */
+                    transform: scale(1.5); /* Büyütme oranı */
                     }
 
                     .gradient-box.box-2 a img:hover {
-                    transform: scale(3); /* Büyütme oranı */
+                    transform: scale(1.5); /* Büyütme oranı */
                     }
 
                     .gradient-box.box-2 a:nth-child(1) img:hover {
-                    transform: scale(3) translate(-30px, 0); /* İlk resim sola kayar */
+                    transform: scale(1.5) translate(-30px, 0); /* İlk resim sola kayar */
                     }
 
                     .gradient-box.box-2 a:nth-child(2) img:hover {
-                    transform: scale(3) translate(50, 0); /* İkinci resim sağa kayar */
+                    transform: scale(1.5) translate(50, 0); /* İkinci resim sağa kayar */
                     }
 
 
@@ -294,7 +314,7 @@
                                 <div class="col-3 gradient-box box-1">
                                     <div class="d-block">
                                         <p>A Tipi Muayene Kuruluşu</p>
-                                        <span class="">
+                                        <span class="text-left">
                                             Peryodik Kontroller
                                         </span>
                                     </div>
@@ -329,7 +349,7 @@
                                     </div>
 
                                     <a href="https://wa.me/+905325219786" style="text-align: center;" target="_blank">
-                                        <i class="fa fa-whatsapp" style="font-size: 50px; color: white;"></i>
+                                        <i class="fa fa-headset" style="font-size: 50px; color: white;"></i>
                                     </a>
 
 
@@ -340,14 +360,14 @@
                                 <!--                                    <img src="/vita_header/static/src/img/isgum_logo.png" class="img-fluid ms-2" style="max-width: 4em;" alt="Akreditasyon Sertifikası Görüntüle"/>-->
                                 <!--                                </div>-->
 
-<!--                                <div class="col-3 gradient-box what box-4">-->
-<!--                                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">-->
-<!--                                        <p style="margin-bottom: 10px; text-align: center;">Whatsapp İletişim Hattı</p>-->
-<!--                                        <a href="https://wa.me/+905325219786" style="text-align: center;" target="_blank">-->
-<!--                                            <i class="fa fa-whatsapp" style="font-size: 50px; color: white;"></i>-->
-<!--                                        </a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
+                                <!--                                <div class="col-3 gradient-box what box-4">-->
+                                <!--                                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">-->
+                                <!--                                        <p style="margin-bottom: 10px; text-align: center;">Whatsapp İletişim Hattı</p>-->
+                                <!--                                        <a href="https://wa.me/+905325219786" style="text-align: center;" target="_blank">-->
+                                <!--                                            <i class="fa fa-whatsapp" style="font-size: 50px; color: white;"></i>-->
+                                <!--                                        </a>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
 
 
 

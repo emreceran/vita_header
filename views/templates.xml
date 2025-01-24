@@ -18,44 +18,43 @@
                         <style>
                             @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap');
                             .cardim-text {
-
                             font-family: 'Merriweather', serif !important; /* Artistik font */
                             position: absolute !important;
-                            top: 100% !important; /* Yazı başlangıç pozisyonu (görünmez) */
+                            top: 100% !important; /* Yazı başlangıç pozisyonu (aşağıda) */
                             left: 0 !important;
                             width: 100% !important;
-                            height: 90% !important;
-                            opacity: 0 !important;
+                            height: 50% !important;
+                            opacity: 0 !important; /* Görünmez */
                             transition: all 0.5s ease-in-out !important; /* Geçiş animasyonu */
-                            background-color: rgba(74, 70, 61, 0.6) !important; /* Arkaplan rengi ve opaklık */
+                            background-color: rgba(245, 245, 220, 0.9) !important; /* Arkaplan rengi ve opaklık */
                             padding: 1rem !important;
                             text-align: justify;
                             box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1) !important; /* Hafif gölge efekti */
-
-                            <!--                            letter-spacing: 0.05em !important; /* Karakterler arası boşluk */-->
-                            color:white !important;
+                            color: black !important;
                             font-size: 12px !important;
-                            }
-                            .o_carousel_product_card:hover .cardim-text {
-                            bottom: 0 !important; /* Yazıyı yukarı çıkar */
-                            opacity: 1 !important; /* Görünür yap */
-                            top: 0 !important;
 
+                            }
+
+                            .o_carousel_product_card:hover .cardim-text {
+                            top: 30% !important; /* Hover'da yazı %70'e gelir */
+                            opacity: 1 !important; /* Görünür hale gelir */
                             }
 
                             .o_carousel_product_card:hover .cardim-name {
                             transform: scale(1.05);
                             }
 
+
                             .cardim-name {
                             position:absolute;
                             left:0;
                             bottom: 0;
                             padding: 5px;
-                            font-size: 20px;
-                            color: #001f3f;
-                            font-weight: light;
-                            font-family: Copperplate;
+                            font-size: 16px;
+                            color: black;
+                            font-weight: bold;
+                            font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
+
                             z-index: 3 !important;
                             width: 100%;
                             height:70px !important;
@@ -79,43 +78,3 @@
 
 
 </odoo>
-
-        <!--<template id="detail_carts_inherit" inherit_id="website_sale.dynamic_filter_template_product_product_view_detail" name="cards inherit">-->
-        <!--<xpath expr="//div[1]" position="replace">-->
-        <!--    <div class="o_carousel_product_card card h-100 w-100" t-att-data-add2cart-rerender="data.get('_add2cart_rerender')">-->
-        <!--        <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>-->
-        <!--        <a class="o_carousel_product_img_link o_dynamic_product_hovered overflow-hidden" t-att-href="record.website_url">-->
-        <!--            <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="data['image_512']" t-att-alt="record.display_name"/>-->
-        <!--            <div class="o_carousel_product_card_body card-body d-flex flex-column justify-content-between">-->
-        <!--                <div class="bg-white text-center" t-field="record.display_name"-->
-        <!--                     styl e="color:red important;" />-->
-        <!--                <style>-->
-        <!--                    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap');-->
-        <!--                    .card-text {-->
-        <!--                    letter-spacing: 0.05em !important; /* Karakterler arası boşluk */-->
-        <!--                    font-family: 'Merriweather', serif !important; /* Artistik font */-->
-        <!--                    position: absolute !important;-->
-        <!--                    bottom: -100% !important; /* Yazı başlangıç pozisyonu (görünmez) */-->
-        <!--                    left: 0 !important;-->
-        <!--                    width: 100% !important;-->
-        <!--                    height: 100% !important;-->
-        <!--                    opacity: 0 !important;-->
-        <!--                    transition: all 0.5s ease-in-out !important; /* Geçiş animasyonu */-->
-        <!--                    background-color: rgba(255, 255, 255, 0.9) !important; /* Arkaplan rengi ve opaklık */-->
-        <!--                    padding: 2rem !important;-->
-        <!--                    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1) !important; /* Hafif gölge efekti */-->
-        <!--                    font-weight:bold !important;-->
-        <!--                    letter-spacing: 0.05em !important; /* Karakterler arası boşluk */-->
-        <!--                    color:#001f3f 'important;-->
-        <!--                    }-->
-        <!--                    .o_carousel_product_card:hover .card-text {-->
-        <!--                    bottom: 0 !important; /* Yazıyı yukarı çıkar */-->
-        <!--                    opacity: 1 !important; /* Görünür yap */-->
-        <!--                    }-->
-        <!--                </style>-->
-        <!--                <div class="card-text p-3 h6" t-esc="record.description_sale"/>-->
-        <!--            </div>-->
-        <!--        </a>-->
-        <!--    </div>-->
-        <!--</xpath>-->
-        <!--</template>-->
