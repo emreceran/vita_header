@@ -12,11 +12,13 @@
         }
 
         [data-name="Mega Menu"].active {
-<!--        transform: scaleY(1);-->
+        transform: scaleY(1);
         opacity: 1;
         visibility: visible;
         border-radius: 0 0 28px 28px !important;
         }
+
+
 
         .dropdown-toggle::after,
         .dropdown-toggle::before {
@@ -30,6 +32,8 @@
         header .nav-link:hover {
         background-color: #edf0f2 !important;
         }
+
+
 
         .s_mega_menu_odoo_menu {
         background-color: #edf0f2 !important;
@@ -77,15 +81,43 @@
 
         .o_cc1 {
         text-transform: capitalize !important;
+        }
+
+        .nav-link {
         font-size: 14px !important;
         color: #343A40 !important;
+        }
 
+        .icerik:hover {
+         all: unset !important;
+        font-size: 14px !important;
+        color: #ad0312 !important;
         }
 
         .dropdown-toggle {
         border-radius: 5px 5px 0 0 !important;
+        text-transform: uppercase !important;
+        font-weight: normal !important;
+
+<!--        font-style: oblique !important;-->
+<!--        letter-spacing: 0.01em !important;-->
 
         }
+
+         .dropdown-toggle:hover {
+        transform: scale(1);
+        color: #82010e !important;
+        }
+
+        .nav-link:hover {
+
+        transform: scale(1) !important;
+        color: #82010e !important;
+
+        }
+
+
+
 
 
 
