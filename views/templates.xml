@@ -26,11 +26,11 @@
                             height: 50% !important;
                             opacity: 0 !important; /* Görünmez */
                             transition: all 0.5s ease-in-out !important; /* Geçiş animasyonu */
-                            background-color: rgba(245, 245, 220, 0.9) !important; /* Arkaplan rengi ve opaklık */
+                            background-color: rgba(181, 178, 177, 0.9) !important; /* Arkaplan rengi ve opaklık */
                             padding: 1rem !important;
                             text-align: justify;
                             box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1) !important; /* Hafif gölge efekti */
-                            color: black !important;
+                            color: white !important;
                             font-size: 12px !important;
 
                             }
@@ -46,10 +46,10 @@
 
 
                             .cardim-name {
-                            position:absolute;
+                            position:relative;
                             left:0;
                             bottom: 0;
-                            padding: 5px;
+<!--                            padding: 5px;-->
                             font-size: 16px;
                             color: black;
                             font-weight: bold;
@@ -61,10 +61,19 @@
 
                             <!--                            border-radius: 30px;-->
                             }
+
+                            cardim-nameustu {
+                            z-index: 4;
+                            }
                         </style>
 
-                        <div class="cardim-name bg-white text-center" t-field="record.display_name"
-                        />
+                        <div class="cardim-nameustu bg-white text-start mt-2">
+                            <span t-field="record.snippet_isim_ustu" />
+                        </div>
+
+                        <div class="cardim-name  text-start mt-2">
+                            <span style="width:100%;" t-field="record.display_name" />
+                        </div>
                         <div class="cardim-text d-flex flex-column">
                             <!--                            <div class="bg-white text-center" t-field="record.display_name"-->
                             <!--                             style="color:red important;" />-->
