@@ -12,10 +12,10 @@
         }
 
         [data-name="Mega Menu"].active {
-        transform: scaleY(1);
+<!--        transform: scaleY(1);-->
         opacity: 1;
         visibility: visible;
-        border-radius: 0 0 28px 28px;
+        border-radius: 0 0 28px 28px !important;
         }
 
         .dropdown-toggle::after,
@@ -28,25 +28,21 @@
         }
 
         header .nav-link:hover {
-        background-color: #f8f9fa !important;
-        transition: background-color 0.3s ease;
+        background-color: #edf0f2 !important;
         }
 
         .s_mega_menu_odoo_menu {
-        background-color: #f8f9fa !important;
+        background-color: #edf0f2 !important;
         height: 27rem;
         overflow-y: auto;
         }
 
         a.nav-link.px-0 {
-        <!--        transition: transform 0.3s ease;-->
+
         text-transform: capitalize !important;
         line-height: 80%;
         }
 
-        .nav-link:hover {
-        color:navy;
-        }
 
         @media (max-width: 992px) {
         #mega_nav {
@@ -66,11 +62,7 @@
         text-transform: capitalize;
         }
 
-        .icerik {
-        text-transform: capitalize !important;
-        font-size: 14px;
 
-        }
 
         [data-name="Mega Menu"] h4 div {
         margin-left: 2px;
@@ -81,16 +73,22 @@
         margin-top: 1px !important;
         }
 
-        .navbar-nav.nav-pills .nav-link {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-        font-size: 18px;
-        font-family: 'Merriweather', serif !important; /* Artistik font */
 
-        <!--        font-weight: bold;-->
+
+        .o_cc1 {
+        text-transform: capitalize !important;
+        font-size: 14px !important;
         color: #343A40 !important;
-        <!--        border-radius: 10rem;-->
+
         }
+
+        .dropdown-toggle {
+        border-radius: 5px 5px 0 0 !important;
+
+        }
+
+
+
 
 
 
@@ -128,6 +126,8 @@
                             <div class="s_hr text-start pt4 pb16 text-o-color-3" style="--o-border-color: currentColor;" data-name="Separator">
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
+
+
                             <nav class="nav flex-column">
                               <a href="/akreditasyon" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
@@ -264,7 +264,8 @@
                               </h4>
 
                               <a href="/shop/category/periyodik-kontroller-elektrik-grubu-79" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                <small>Diğer...</small>
+                                <span>Tümü &#8594;</span>
+
                               </a>
                             </div>
                             <div class="s_hr text-start pt4 pb16 text-o-color-3" style="--o-border-color: currentColor;" data-name="Separator">
@@ -298,7 +299,7 @@
                                 <font class="text-800">Makİne Grubu</font>
                               </h4>
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-78" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                <small>Diğer...</small>
+                                 <span>Tümü &#8594;</span>
                               </a>
                             </div>
 
@@ -332,7 +333,7 @@
                                 <font class="text-800">Yangın Tesisatı</font>
                               </h4>
                               <a href="/shop/category/periyodik-kontroller-tesisat-grubu-80" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                <small>Diğer...</small>
+                                 <span>Tümü &#8594;</span>
                               </a>
                             </div>
 
@@ -367,7 +368,7 @@
                                 <font class="text-800">Havalandırma Tesisatı</font>
                               </h4>
                               <a href="/shop/category/periyodik-kontroller-tesisat-grubu-80" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                <small>Diğer...</small>
+                                 <span>Tümü &#8594;</span>
                               </a>
                             </div>
 
@@ -422,7 +423,7 @@
                               </h4>
                               <a href="/shop/category/is-hijyeni-laboratuvar-kimyasal-etkenler-101" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <small>Diğer...</small>
+                                 <span>Tümü &#8594;</span>
                               </a>
                             </div>
                             <div class="s_hr text-start pt4 pb16 text-o-color-3" style="--o-border-color: currentColor;" data-name="Separator">
@@ -480,7 +481,7 @@
                                 <font class="text-800">Fİzİksel etkenler</font>
                               </h4>
                               <a href="/shop/category/is-hijyeni-laboratuvar-fiziksel-etkenler-100" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                <small>Diğer...</small>
+                                 <span>Tümü &#8594;</span>
 
                               </a>
                             </div>
