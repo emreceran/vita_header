@@ -9,6 +9,7 @@
         opacity: 0;
         visibility: hidden;
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+
         }
 
         [data-name="Mega Menu"].active {
@@ -16,6 +17,7 @@
         opacity: 1;
         visibility: visible;
         border-radius: 0 0 28px 28px !important;
+        margin-top: 5px !important;
         }
 
 
@@ -37,7 +39,7 @@
 
         .s_mega_menu_odoo_menu {
         background-color: #edf0f2 !important;
-        height: 27rem;
+        height: 22rem;
         overflow-y: auto;
         }
 
@@ -71,40 +73,58 @@
         [data-name="Mega Menu"] h4 div {
         margin-left: 2px;
         margin-top: 10px;
+
+
+        }
+
+        [data-name="Mega Menu"] h4 {
+        line-height:0.5;
         }
 
         font.text-800 {
         margin-top: 1px !important;
+        text-transform: uppercase !important;
+        font-size: 14px !important;
         }
 
 
 
         .o_cc1 {
-        text-transform: capitalize !important;
+
         }
 
-        .nav-link {
+                .nav-link span{
+                font-size: 15px !important;
+                color: #343A40 !important;
+                font-weight: bold;
+                }
+
+
+        .icerik {
+
         font-size: 14px !important;
-        color: #343A40 !important;
+
         }
 
         .icerik:hover {
-         all: unset !important;
-        font-size: 14px !important;
+        all: unset !important;
+        font-size: 10px !important;
         color: #ad0312 !important;
         }
 
         .dropdown-toggle {
         border-radius: 5px 5px 0 0 !important;
         text-transform: uppercase !important;
-        font-weight: normal !important;
+        font-weight: 400 !important;
+        font-size: 17px !important;
+        color: #343A40 !important;
 
-<!--        font-style: oblique !important;-->
-<!--        letter-spacing: 0.01em !important;-->
+        <!--        font-style: oblique !important;-->
+        <!--        letter-spacing: 0.01em !important;-->
 
         }
 
-         .dropdown-toggle:hover {
+        .dropdown-toggle:hover {
         transform: scale(1);
         color: #82010e !important;
         }
@@ -150,7 +170,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="  o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/şirket profili.svg'" alt=""/>
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/şirket profili.svg'" style="width:50px" alt=""/>
                               </div>
                               <br/>
                               <font class="text-800">Şİrket profİlİ</font>
@@ -175,14 +195,14 @@
                               </a>
                               <a href="/organizasyon-semas" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> cOrganizasyon Şeması</span>
+                                <span class="icerik"> Organizasyon Şeması</span>
                               </a>
                             </nav>
                           </div>
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/kurumsal bilgiler.svg'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/kurumsal bilgiler.svg'" style="width:50px"  alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Kurumsal Bİlgİler</font>
@@ -212,10 +232,10 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'"  style="width:50px" alt="" />
                               </div>
                               <br/>
-                              <font class="text-800">Dökümantasyon</font>
+                              <font class="text-800">Dokumantasyon</font>
                             </h4>
                             <div class="s_hr text-start pt4 pb16 text-o-color-3" style="--o-border-color: currentColor;" data-name="Separator">
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
@@ -231,7 +251,7 @@
                               </a>
                               <a href="/musteri-hizmet-proseduru" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> >Müşteri Hizmet Prosedürü</span>
+                                <span class="icerik"> Müşteri Hizmet Prosedürü</span>
                               </a>
                               <a href="/tarafsizlik-ve-gizlilik-tahutnamesi" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
@@ -242,7 +262,7 @@
                           <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/medya.svg'" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/medya.svg'" style="width:50px" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Medya</font>
@@ -331,7 +351,7 @@
                                 <font class="text-800">Makİne Grubu</font>
                               </h4>
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-78" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                 <span>Tümü &#8594;</span>
+                                <span>Tümü &#8594;</span>
                               </a>
                             </div>
 
@@ -365,7 +385,7 @@
                                 <font class="text-800">Yangın Tesisatı</font>
                               </h4>
                               <a href="/shop/category/periyodik-kontroller-tesisat-grubu-80" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                 <span>Tümü &#8594;</span>
+                                <span>Tümü &#8594;</span>
                               </a>
                             </div>
 
@@ -400,7 +420,7 @@
                                 <font class="text-800">Havalandırma Tesisatı</font>
                               </h4>
                               <a href="/shop/category/periyodik-kontroller-tesisat-grubu-80" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                 <span>Tümü &#8594;</span>
+                                <span>Tümü &#8594;</span>
                               </a>
                             </div>
 
@@ -448,14 +468,14 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div class="col-6" >
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'" alt="" />
+                                  <img t-att-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'"  alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Kİmyasal etkenler</font>
                               </h4>
                               <a href="/shop/category/is-hijyeni-laboratuvar-kimyasal-etkenler-101" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                 <span>Tümü &#8594;</span>
+                                <span>Tümü &#8594;</span>
                               </a>
                             </div>
                             <div class="s_hr text-start pt4 pb16 text-o-color-3" style="--o-border-color: currentColor;" data-name="Separator">
@@ -513,7 +533,7 @@
                                 <font class="text-800">Fİzİksel etkenler</font>
                               </h4>
                               <a href="/shop/category/is-hijyeni-laboratuvar-fiziksel-etkenler-100" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                 <span>Tümü &#8594;</span>
+                                <span>Tümü &#8594;</span>
 
                               </a>
                             </div>
