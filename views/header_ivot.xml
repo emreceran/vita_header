@@ -721,7 +721,7 @@
     display: inline-block;
     background-color: #001f3f; /* Lacivert arkaplan */
     color: white !important;; /* Beyaz yazı rengi */
-    padding: 10px 20px; /* İç boşluk */
+    padding: 6px 15px; /* İç boşluk */
     border: 2px solid #001f5b; /* Lacivert kenarlık */
     border-radius: 50px; /* Köşelerin yumuşatılması */
     text-decoration: none; /* Alt çizgi olmaması */
