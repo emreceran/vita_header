@@ -33,13 +33,14 @@
                     }
 
                     .o_carousel_product_card:hover .cardim-text {
-<!--                    top: 20% !important; /* Hover'da yazı %70'e gelir */-->
-                    opacity: 0.9 !important; /* Görünür hale gelir */
-                     top: 21% !important;
+                    <!--                    top: 20% !important; /* Hover'da yazı %70'e gelir */-->
+                    opacity: 1 !important; /* Görünür hale gelir */
+                    top: calc(40% + 10px) !important;
+                    z-index: 3 !important;
                     }
 
                     .o_carousel_product_card:hover .nameustu {
-                    opacity:0;
+                    display:none;
                     }
 
                     .o_dynamic_product_hovered:hover  {
@@ -48,44 +49,34 @@
 
 
                     .cardim-name {
-                    position:relative;
-                    left:0;
-                    bottom: 0;
-                    <!--                            padding: 5px;-->
+
                     font-size: 16px;
                     color: #001f3f;
                     font-weight: bold;
+                    line-height: 0.8;
+
 
                     font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
 
-                    <!--                            z-index: 3 !important;-->
+
                     width: 100%;
-                    height:70px !important;
+                    height:auto !important;
+
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1; /* Satır sayısını belirleyin (örnek: 2 satır) */
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
                     <!--                            border-radius: 30px;-->
                     }
 
                     .nameustu {
-                    z-index: 4;
+
                     font-size:15px;
                     color: #212529;
                     font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
 
-                    }
-
-                    .cardim-name,
-                    .nameustu {
-                    text-decoration: none !important;
-                    }
-
-                    .o_carousel_product_card .cardim-name,
-                    .o_carousel_product_card .nameustu {
-                    text-decoration: none !important; /* Underline tamamen kaldır */
-                    }
-
-                    .o_carousel_product_card:hover .cardim-name,
-                    .o_carousel_product_card:hover .nameustu {
-                    text-decoration: none !important; /* Hover durumunda da underline kaldır */
                     }
 
                     a.o_carousel_product_img_link:hover,
@@ -95,9 +86,26 @@
                     all: unset; /* Varsayılan tarayıcı stilini sıfırlar */
                     }
 
-<!--                    img {-->
-<!--                    border: 1px solid black !important;-->
-<!--                    }-->
+                    img {
+                    border: 1px solid black !important;
+                    }
+
+                    .o_carousel_product_card_body {
+                    z-index: 15;
+                    }
+
+                    .o_carousel_product_card_body {
+                    position:absolute;
+                    bottom:0;
+                    left:0;
+                    z-index: 100;
+                    background-color:white;
+                    width: 100%;
+                    }
+
+
+
+
 
 
 
@@ -110,18 +118,18 @@
                 <a class="o_carousel_product_img_link o_dynamic_product_hovered overflow-hidden" t-att-href="record.website_url">
                     <img class="card-img-top o_img_product_square o_img_product_cover h-auto" loading="lazy" t-att-src="website.image_url(record, 'img_2')" t-att-alt="record.display_name"/>
                     <div class="cardim-text d-flex flex-column">
-                            <div class=" " t-esc="record.description_sale"/>
-                        </div>
+                        <div class=" " t-esc="record.description_sale"/>
+                    </div>
 
-                    <div class="o_carousel_product_card_body card-body d-flex flex-column justify-content-between">
+                    <div class="o_carousel_product_card_body bg-white card-body d-flex flex-column justify-content-center">
 
 
 
-                        <div class="nameustu pt-1 pb-1 text-start" style="text-decoration: none !important;">
+                        <div class="nameustu pt-1 text-start" style="text-decoration: none !important;">
                             <p class="text-decoration-none" t-field="record.snippet_isim_ustu" style="text-decoration: none !important;" />
                         </div>
 
-                        <div class="cardim-name  text-start" style="text-decoration: none !important;" t-field="record.display_name" />
+                        <div class="cardim-name mt-0  text-start"  t-field="record.display_name" />
 
 
 
