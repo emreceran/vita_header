@@ -713,15 +713,16 @@
               <ul class="navbar-nav align-items-center gap-1 flex-wrap flex-shrink-0 justify-content-end ps-3">
                 <li role="presentation" class="nav-item">
                   <a role="menuitem" href="/contactus" class="custom-contact-button">
-    <span data-oe-model="website.menu" data-oe-id="6" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Bize Ulaşın</span>
+    <span data-oe-model="website.menu" data-oe-id="6" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">İletişim </span>
 </a>
 
 <style>
 .custom-contact-button {
     display: inline-block;
+  font-size:16px;
     background-color: #001f3f; /* Lacivert arkaplan */
     color: white !important;; /* Beyaz yazı rengi */
-    padding: 6px 15px; /* İç boşluk */
+    padding: 7px 14px; /* İç boşluk */
     border: 2px solid #001f5b; /* Lacivert kenarlık */
     border-radius: 50px; /* Köşelerin yumuşatılması */
     text-decoration: none; /* Alt çizgi olmaması */
