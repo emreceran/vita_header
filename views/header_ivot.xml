@@ -712,9 +712,33 @@
               </ul>
               <ul class="navbar-nav align-items-center gap-1 flex-wrap flex-shrink-0 justify-content-end ps-3">
                 <li role="presentation" class="nav-item">
-                  <a role="menuitem" href="/contactus" class="nav-link ">
-                    <span data-oe-model="website.menu" data-oe-id="6" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Bize Ulaşın</span>
-                  </a>
+                  <a role="menuitem" href="/contactus" class="custom-contact-button">
+    <span data-oe-model="website.menu" data-oe-id="6" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Bize Ulaşın</span>
+</a>
+
+<style>
+.custom-contact-button {
+    display: inline-block;
+    background-color: #001f3f; /* Lacivert arkaplan */
+    color: white !important;; /* Beyaz yazı rengi */
+    padding: 10px 20px; /* İç boşluk */
+    border: 2px solid #001f5b; /* Lacivert kenarlık */
+    border-radius: 50px; /* Köşelerin yumuşatılması */
+    text-decoration: none; /* Alt çizgi olmaması */
+    font-weight: bold; /* Kalın yazı */
+    transition: all 0.3s ease; /* Hover için geçiş efekti */
+}
+
+.custom-contact-button:hover {
+    background-color: #003080; /* Hover rengi */
+    border-color: #003080; /* Hover border rengi */
+    color: #fff; /* Hover'da yazı rengi */
+    cursor: pointer; /* El simgesi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Hover gölge efekti */
+  text-decoration:none;
+}
+</style>
+
                 </li>
               </ul>
             </div>
