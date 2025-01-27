@@ -48,7 +48,9 @@
 
         a.nav-link.px-0 {
         text-transform: capitalize !important;
-        line-height: 80%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
         }
 
 
@@ -60,7 +62,7 @@
         }
         }
 
-        .sh_snippet_adv_shadow_hover_2 {
+        . {
         border-right: 1px solid #ddd;
         }
 
@@ -105,20 +107,7 @@
         margin-bottom: 0 !important;
         }
 
-        <!--        .nav-link.px-0:hover {-->
 
-        <!--        all: unset !important;-->
-        <!--&lt;!&ndash;        line-height: 80%;&ndash;&gt;-->
-        <!--&lt;!&ndash;        transform: scale(5);&ndash;&gt;-->
-        <!--        }-->
-
-
-        <!--        .nav-link.px-0 .icerik:hover  {-->
-        <!--&lt;!&ndash;        all: unset !important;&ndash;&gt;-->
-        <!--        transform: scale(1);-->
-        <!--        color: green !important;-->
-
-        <!--        }-->
 
         .dropdown-toggle {
         border-radius: 5px 5px 0 0 !important;
@@ -127,15 +116,15 @@
         font-size: 17px !important;
         color: #343A40 !important;
         display: inline-block;
-    transform: scale(1); /* Varsayılan ölçek */
-    transform-origin: top center; /* Üstten büyüme başlangıcı */
-    transition: transform 0.3s ease-in-out; /*
+        transform: scale(1); /* Varsayılan ölçek */
+        transform-origin: top center; /* Üstten büyüme başlangıcı */
+        transition: transform 0.3s ease-in-out; /*
 
 
         }
 
         .dropdown-toggle:hover {
-         transform: scale(1.2); /* %20 büyüt */
+        transform: scale(1.2); /* %20 büyüt */
 
 
         }
@@ -159,7 +148,7 @@
         <!--        line-height: 80%;-->
         font-size: 14px !important;
         color: #212529 !important;
-        font-weight: bold;
+        <!--        font-weight: bold;-->
         margin-bottom:4px;
         font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
 
@@ -170,7 +159,6 @@
         color:#ad0312 !important;
         text-decoration:none;
         }
-
 
 
 
@@ -203,7 +191,7 @@
                     <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1"  data-tilt-feature="" data-aos="">
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center ms-" data-row-count="9">
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="  o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
                                 <img t-att-src="'/vita_header/static/src/img/iconlar/şirket profili.svg'" style="width:50px" alt=""/>
@@ -235,7 +223,7 @@
                               </a>
                             </nav>
                           </div>
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
                                 <img t-att-src="'/vita_header/static/src/img/iconlar/kurumsal bilgiler.svg'" style="width:50px"  alt="" />
@@ -265,7 +253,7 @@
                               </a>
                             </nav>
                           </div>
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
                                 <img t-att-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'"  style="width:50px" alt="" />
@@ -295,7 +283,7 @@
                               </a>
                             </nav>
                           </div>
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
                                 <img t-att-src="'/vita_header/static/src/img/iconlar/medya.svg'" style="width:50px" alt="" />
@@ -341,7 +329,7 @@
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center" data-row-count="9">
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
@@ -352,7 +340,7 @@
                               </h4>
 
                               <a href="/shop/category/periyodik-kontroller-elektrik-grubu-79" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                <span>Tümü &#8594;</span>
+                                <span >Tümü &#8594;</span>
 
                               </a>
                             </div>
@@ -376,7 +364,7 @@
                             </nav>
                           </div>
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
 
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
@@ -412,7 +400,7 @@
                             </nav>
                           </div>
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
@@ -446,7 +434,7 @@
                             </nav>
                           </div>
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
 
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
@@ -501,7 +489,7 @@
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center" data-row-count="9">
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div class="col-6" >
@@ -561,7 +549,7 @@
                             </div>
                           </div>
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div class="col-6" >
@@ -637,7 +625,7 @@
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center" data-row-count="9">
 
-                          <div class=" o_colored_level sh_snippet_adv_shadow_hover_2  col-lg-3" data-tilt-feature="" style="">
+                          <div class=" o_colored_level   col-lg-3" data-tilt-feature="" style="">
                             <h4 class=" text-uppercase h5 fw-bold mt-0">
                               <div class="kucukresim">
                                 <img class="img-fluid" t-att-src="'/vita_header/static/src/img/muh2.jpg'"  alt="" />
@@ -648,7 +636,7 @@
 
                           </div>
 
-                          <div class="col-md-6 o_colored_level sh_snippet_adv_shadow_hover_2 o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
+                          <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div class="col-5" >
                                 <img t-att-src="'/vita_header/static/src/img/iconlar/mühendislik hizmetleri.svg'" alt="" />
@@ -698,7 +686,7 @@
                           </div>
 
 
-                          <div class=" o_colored_level sh_snippet_adv_shadow_hover_2  col-lg-3" data-tilt-feature="" style="">
+                          <div class=" o_colored_level   col-lg-3" data-tilt-feature="" style="">
                             <h4 class=" text-uppercase h5 fw-bold mt-0">
                               <div class="kucukresim">
                                 <img class="img-fluid" t-att-src="'/vita_header/static/src/img/muh1.jpg'"  alt="" />
