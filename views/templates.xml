@@ -35,7 +35,7 @@
                     .o_carousel_product_card:hover .cardim-text {
 <!--                    top: 20% !important; /* Hover'da yazı %70'e gelir */-->
                     opacity: 0.9 !important; /* Görünür hale gelir */
-                     top: calc(20% + 20px) !important;
+                     top: 21% !important;
                     }
 
                     .o_carousel_product_card:hover .nameustu {
@@ -52,7 +52,7 @@
                     left:0;
                     bottom: 0;
                     <!--                            padding: 5px;-->
-                    font-size: 14px;
+                    font-size: 16px;
                     color: #001f3f;
                     font-weight: bold;
 
@@ -67,8 +67,9 @@
 
                     .nameustu {
                     z-index: 4;
-                    font-size:12px;
-                    color: #b5b1b0;
+                    font-size:15px;
+                    color: #212529;
+                    font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
 
                     }
 
@@ -93,6 +94,10 @@
                     text-decoration: none !important;
                     all: unset; /* Varsayılan tarayıcı stilini sıfırlar */
                     }
+
+<!--                    img {-->
+<!--                    border: 1px solid black !important;-->
+<!--                    }-->
 
 
 
