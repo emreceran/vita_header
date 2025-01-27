@@ -103,7 +103,7 @@
 
                             <!-- Slider 2 -->
 
-                            <div class="carousel-item  img-fluid" style="background-image: url('/vita_header/static/src/img/slider2_son.JPG'); position: relative;">
+                            <div class="carousel-item  img-fluid" style="background-image: url('/vita_header/static/src/img/slider2_son.jpg'); position: relative;">
                                 <div class="slider-slogan">Güven İçin Çalışıyoruz </div>
                             </div>
 
@@ -267,8 +267,8 @@
 
                     text-align: left; /* İsteğe bağlı: hizalama */
                     color: #f1f1f1;
-                    font-weight: 200;
-                    line-height: 0.8;
+<!--                    font-weight: 200;-->
+<!--                    line-height: 0.8;-->
 
                     }
 
