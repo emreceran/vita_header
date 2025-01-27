@@ -18,7 +18,7 @@
         opacity: 1;
         visibility: visible;
         border-radius: 0 0 28px 28px !important;
-        margin-top: 5px !important;
+        margin-top: 1px !important;
 
         }
 
@@ -115,16 +115,16 @@
         font-weight: 400 !important;
         font-size: 17px !important;
         color: #343A40 !important;
-        display: inline-block;
-        transform: scale(1); /* Varsayılan ölçek */
-        transform-origin: top center; /* Üstten büyüme başlangıcı */
-        transition: transform 0.3s ease-in-out; /*
+        height:100%;
+
+
 
 
         }
 
         .dropdown-toggle:hover {
-        transform: scale(1.2); /* %20 büyüt */
+        transform: scale(1); /* %20 büyüt */
+<!--        height: 110%;-->
 
 
         }
