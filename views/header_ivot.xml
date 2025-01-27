@@ -41,7 +41,7 @@
 
         .s_mega_menu_odoo_menu {
         background-color: #f2f2f2 !important;
-        height: 16rem;
+        height: 17rem;
         overflow-y: auto;
         }
 
@@ -102,22 +102,23 @@
         .nav-link.px-0 span {
         font-size: 12px !important;
         color: black !important;
+        margin-bottom: 0 !important;
         }
 
-        .nav-link.px-0:hover {
+        <!--        .nav-link.px-0:hover {-->
 
-        all: unset !important;
-<!--        line-height: 80%;-->
-<!--        transform: scale(5);-->
-        }
+        <!--        all: unset !important;-->
+        <!--&lt;!&ndash;        line-height: 80%;&ndash;&gt;-->
+        <!--&lt;!&ndash;        transform: scale(5);&ndash;&gt;-->
+        <!--        }-->
 
 
-        .nav-link.px-0 .icerik:hover  {
-<!--        all: unset !important;-->
-        transform: scale(1);
-        color: green !important;
+        <!--        .nav-link.px-0 .icerik:hover  {-->
+        <!--&lt;!&ndash;        all: unset !important;&ndash;&gt;-->
+        <!--        transform: scale(1);-->
+        <!--        color: green !important;-->
 
-        }
+        <!--        }-->
 
         .dropdown-toggle {
         border-radius: 5px 5px 0 0 !important;
@@ -125,18 +126,23 @@
         font-weight: 400 !important;
         font-size: 17px !important;
         color: #343A40 !important;
-       
+        display: inline-block;
+    transform: scale(1); /* Varsayılan ölçek */
+    transform-origin: top center; /* Üstten büyüme başlangıcı */
+    transition: transform 0.3s ease-in-out; /*
+
 
         }
 
         .dropdown-toggle:hover {
-        transform: scale(1);
+         transform: scale(1.2); /* %20 büyüt */
+
 
         }
 
         .dropdown-toggle:hover span {
 
-         color: #ad0312 !important;
+        color: #ad0312 !important;
         }
 
         .kucukresim img{
@@ -150,10 +156,13 @@
         }
 
         a.nav-link2 {
-<!--        line-height: 80%;-->
-        font-size: 12px !important;
-        color:black !important;
-        margin-top:2px;
+        <!--        line-height: 80%;-->
+        font-size: 14px !important;
+        color: #212529 !important;
+        font-weight: bold;
+        margin-bottom:4px;
+        font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
+
         }
 
         a.nav-link2:hover {
@@ -389,6 +398,7 @@
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-kaldrma-iletme-ekipmanlar-81" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                 <span class="icerik"> Kaldırma İletme Ekipmanları</span></a>
+
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-basncl-kaplar-82" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                 <span class="icerik"> Basınçlı Kaplar</span></a>
@@ -411,7 +421,7 @@
                                 <br/>
                                 <font class="text-800">Yangın Tesisatı</font>
                               </h4>
-                              <a href="/shop/category/periyodik-kontroller-tesisat-grubu-80" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/shop/category/periyodik-kontroller-tesisat-grubu-yangn-tesisat-97" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span>Tümü &#8594;</span>
                               </a>
                             </div>
@@ -441,12 +451,12 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/tesisat grubu.svg'" alt="" />
+                                  <img t-att-src="'/vita_header/static/src/img/iconlar/havalandırma tesisatı.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Havalandırma Tesisatı</font>
                               </h4>
-                              <a href="/shop/category/periyodik-kontroller-tesisat-grubu-80" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/shop/category/periyodik-kontroller-tesisat-grubu-havalandrma-tesisat-98" class="nav-link px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                 <span>Tümü &#8594;</span>
                               </a>
                             </div>
@@ -455,19 +465,19 @@
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
                             <nav class="nav flex-column">
-                              <a href="/shop/category/periyodik-kontroller-tesisat-grubu-yangn-tesisat-97" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="#" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                 <span class="icerik"> Kaçış Yolu Basınçlandırma</span>
                               </a>
-                              <a href="/shop/yangn-pompalar-motor-performans-tesatleri-periyodik-kontrolleri-146" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="#" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                 <span class="icerik">  Motor Verim Testi</span>
                               </a>
-                              <a href="/shop/pompa-istasyon-dairesi-periyodik-kontrolleri-147" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="#" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                 <span class="icerik">  Çevrim Sayısı</span>
                               </a>
-                              <a href="/shop/su-deposu-periyodik-kontrolleri-148" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="#" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                 <span class="icerik">  Sistem Gereklilikleri</span>
                               </a>
@@ -522,7 +532,7 @@
                                   <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                     <span class="icerik">  Gaz ve Buhar Konsantrasyon Ölçümü</span></a>
-                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/voc-numune-alma-ve-analiz-100" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                     <span class="icerik">  VOC Numune Alma ve Analiz</span>
                                   </a>
@@ -531,16 +541,17 @@
                               </div>
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
-                                  <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
+                                  <a href="/shop/agr-metal-numune-alma-ve-analiz-101" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
                                     <span class="icerik">  Ağır Metal Numune Alma Ve Analiz</span>
                                   </a>
-                                  <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/kisisel-gaz-maruziyeti-olcumu-102" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Kişisel Gaz Maruziyeti Ölçümü</span>
                                   </a>
-                                  <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+
+                                  <a href="/shop/asit-konsantrasyon-olcumu-103" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Asit Konsantrasyon Ölçümü</span>
                                   </a>
-                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/asit-konsantrasyon-olcumu-103" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">   Asit Konsantrasyon Ölçümü</span>
                                   </a>
 
@@ -570,16 +581,18 @@
                             <div class="row">
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
-                                  <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
+                                  <a href="/shop/aydnlatma-olcumu-92" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
                                     <span class="icerik">   Aydınlatma Ölçümü</span>
                                   </a>
-                                  <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/kisisel-gurultu-maruziyeti-olcumu-93" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Kişisel Gürültü Maruziyeti Ölçümü</span>
                                   </a>
-                                  <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+
+                                  <a href="/shop/gortam-gurultu-olcumu-94" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Ortam Gürültü Ölçümü</span>
                                   </a>
-                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
+
+                                  <a href="/shop/termal-konfor-olcumu-95" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Termal Konfor Ölçümü</span>
                                   </a>
 
@@ -588,16 +601,17 @@
                               </div>
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
-                                  <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
+                                  <a href="/shop/el-kol-tum-vucut-titresim-maruziyeti-olcumu-96" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
                                     <span class="icerik"> Vücut Titreşim Maruziyeti Ölçümü</span>
                                   </a>
-                                  <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+
+                                  <a href="/shop/elektromanyetik-alan-maruziyet-olcumu-159" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Elektromanyetik Alan Ölçümü</span>
                                   </a>
-                                  <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/elektromanyetik-alan-maruziyet-olcumu-159" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik"> Elektromanyetik Alan Ölçümü</span>
                                   </a>
-                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link nav-linkk px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/elektromanyetik-alan-maruziyet-olcumu-159" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Elektromanyetik Alan Ölçümü</span>
                                   </a>
 
@@ -654,26 +668,28 @@
                                   <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik"> Statik Analiz</span>
                                   </a>
-                                  <a href="/shop/category/muhendislik-hizmetleri-tesisat-proje-degerlendirme-117" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+
+                                  <a href="/shop/yangn-tesisat-proje-degerlendirme-207" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik"> Yangın Tesisatı Proje</span>
                                   </a>
-                                  <a href="/shop/category/muhendislik-hizmetleri-77" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+
+                                  <a href="/shop/havalandrma-tesisat-proje-degerlendirme-208" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik"> Havalandırma Tesisatı Proje</span>
                                   </a>
                                 </nav>
                               </div>
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
-                                  <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/alglama-alarm-sistemleri-proje-degerlendirme-209" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik"> Algılama Alarm Sistemleri</span>
                                   </a>
-                                  <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/category/elektrik-tesisat-proje-degerlendirme-210" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Elektrik Tesisatı Proje</span>
                                   </a>
-                                  <a href="/shop/category/muhendislik-hizmetleri-tesisat-proje-degerlendirme-117" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/paratoner-tesisat-proje-degerlendirme-211" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Paratoner Tesisatı Proje</span>
                                   </a>
-                                  <a href="/shop/category/muhendislik-hizmetleri-77" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                  <a href="/shop/tesisat-grubu-proje-degerlendirme-213" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Tesisat Grubu Proje</span>
                                   </a>
                                 </nav>
