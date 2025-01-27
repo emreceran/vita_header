@@ -76,6 +76,11 @@
                     font-size:15px;
                     color: #212529;
                     font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
+                    margin-top: 0 !important;
+                    padding-top: 0 !important;
+                    margin-bottom: 0 !important;
+                    padding-bottom: 0 !important;
+                    line-height: 0.7;
 
                     }
 
@@ -86,9 +91,9 @@
                     all: unset; /* Varsayılan tarayıcı stilini sıfırlar */
                     }
 
-                    img {
-                    border: 1px solid black !important;
-                    }
+<!--                    img {-->
+<!--                    border: 1px solid black !important;-->
+<!--                    }-->
 
                     .o_carousel_product_card_body {
                     z-index: 15;
@@ -125,8 +130,8 @@
 
 
 
-                        <div class="nameustu pt-1 text-start" style="text-decoration: none !important;">
-                            <p class="text-decoration-none" t-field="record.snippet_isim_ustu" style="text-decoration: none !important;" />
+                        <div class="nameustu pt-0 mt-0 text-start" >
+                            <p class="text-decoration-none" t-field="record.snippet_isim_ustu"  />
                         </div>
 
                         <div class="cardim-name mt-0  text-start"  t-field="record.display_name" />
