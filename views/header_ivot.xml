@@ -38,7 +38,7 @@
 
 
         .s_mega_menu_odoo_menu {
-        background-color: #edf0f2 !important;
+        background-color: #f2f2f2 !important;
         height: 22rem;
         overflow-y: auto;
         }
@@ -102,7 +102,7 @@
 
         .icerik {
 
-        font-size: 14px !important;
+        font-size: 12px !important;
 
         }
 
