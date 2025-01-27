@@ -150,7 +150,7 @@
                     <!--                    border-x: 2px solid white;-->
                     font-size: 1em;
 <!--                    padding: 2.5rem 0.5rem 2rem 1rem; /* Yazılara daha fazla boşluk */-->
-                    transition: transform 0.5s ease, background-color 0.5s ease; /* Animasyon için eklenen özellikler */
+                    transition: transform 1s ease, background-color 1s ease; /* Animasyon için eklenen özellikler */
 
                     }
 
@@ -261,7 +261,7 @@
                     }
 
                     .gradient-box span {
-                    font-size: 0.75rem; /* Span yazısı daha küçük */
+                    font-size: 0.85rem; /* Span yazısı daha küçük */
                     display: block; /* Alt satıra geçmesini sağlar */
                     font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
 
@@ -272,10 +272,6 @@
 
                     }
 
-                    <!--                    .gradient-box:hover img {-->
-                    <!--                    transform: scale(3); /* Logoyu %30 büyütür */-->
-                    <!--                    transition: transform 0.3s ease-in-out; /* Yumuşak geçiş efekti */-->
-                    <!--                    }-->
 
                     .gradient-box.box-1 a {
                     margin-left: 2rem; /* Resimlerin altına boşluk */
@@ -300,10 +296,10 @@
                     }
 
                     .gradient-box.box-2 a img {
-                    transition: transform 0.3s ease, translate 0.3s ease; /* Geçiş efekti */
+                    transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
                     }
                     .gradient-box.box-1 a img {
-                    transition: transform 0.3s ease, translate 0.3s ease; /* Geçiş efekti */
+                    transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
                     }
 
                     .gradient-box.box-1 a img:hover {
