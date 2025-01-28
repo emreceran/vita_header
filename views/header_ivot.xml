@@ -2,18 +2,13 @@
 <odoo>
   <template id="custom_theme_header" inherit_id="website.layout" name="Custom Theme Header">
     <xpath expr="//header" position="replace">
-      <style>
-        [data-name="Mega Menu"] {
-        transform-origin: top;
-        transform: scaleY(0);
-        opacity: 0;
-        visibility: hidden;
-        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-
-
-        }
-
-        [data-name="Mega Menu"].active {
+      <style>       [data-name="Mega Menu"] {
+          transform-origin: top;
+          transform: scaleY(0);
+          opacity: 0;
+          visibility: hidden;
+          transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        } [data-name="Mega Menu"].active {
         transform: scaleY(1);
         opacity: 1;
         visibility: visible;
@@ -33,10 +28,7 @@
         color: #000 !important;
         }
 
-        header .nav-link:hover {
-        background-color: #edf0f2 !important;
-        }
-
+        
 
 
         .s_mega_menu_odoo_menu {
@@ -66,22 +58,16 @@
         border-right: 1px solid #ddd;
         }
 
-        .row > .col-md-6:last-child {
+        .row &gt; .col-md-6:last-child {
         border-right: none !important;
         }
 
         font {
         text-transform: capitalize;
-        }
-
-
-
-        [data-name="Mega Menu"] h4 div {
+        } [data-name="Mega Menu"] h4 div {
         margin-left: 2px;
         margin-top: 10px;
-        }
-
-        [data-name="Mega Menu"] h4 {
+        } [data-name="Mega Menu"] h4 {
         line-height:0.5;
         }
 
@@ -116,17 +102,10 @@
         font-size: 17px !important;
         color: #343A40 !important;
         height:100%;
-
-
-
-
         }
 
         .dropdown-toggle:hover {
         transform: scale(1); /* %20 büyüt */
-<!--        height: 110%;-->
-
-
         }
 
         .dropdown-toggle:hover span {
@@ -145,35 +124,73 @@
         }
 
         a.nav-link2 {
-        <!--        line-height: 80%;-->
         font-size: 14px !important;
         color: #212529 !important;
-        <!--        font-weight: bold;-->
         margin-bottom:4px;
         font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
 
         }
 
         a.nav-link2:hover {
-
         color:#ad0312 !important;
         text-decoration:none;
         }
+        .custom-contact-button {
+          display: inline-block;
+          font-size:16px;
+          background-color: #001f3f; /* Lacivert arkaplan */
+          color: white !important;; /* Beyaz yazı rengi */
+          padding: 7px 14px; /* İç boşluk */
+          border: 2px solid #001f5b; /* Lacivert kenarlık */
+          border-radius: 50px; /* Köşelerin yumuşatılması */
+          text-decoration: none; /* Alt çizgi olmaması */
+          font-weight: bold; /* Kalın yazı */
+          transition: all 0.3s ease; /* Hover için geçiş efekti */
+        }
 
-
-
-
-
-
-
-
-
+        .custom-contact-button:hover {
+            background-color: #003080; /* Hover rengi */
+            border-color: #003080; /* Hover border rengi */
+            color: #fff; /* Hover'da yazı rengi */
+            cursor: pointer; /* El simgesi */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Hover gölge efekti */
+          text-decoration:none;
+        }
+        .offcanvas-body{
+          overflow-x: hidden !important;
+        }
+       
+        .offcanvas-body ul li{
+        width: 100%;
+        }
+                                     
+        .offcanvas-body ul li ul li ul li {
+           margin-top:10px; 
+           margin-bottom:10px; 
+        } 
+          .offcanvas-body ul li ul li ul li a{
+            white-space: normal; /* Metni satır sonlarında sarmala */
+            word-wrap: break-word; /* Gerekirse kelimeyi bölerek alt satıra geçir */
+            overflow: visible; /* Taşan alanları göster */
+            width: 100%;
+        }
+       .offcanvas-body ul li ul li ul li::after {
+          content: ""; /* Boş bir içerik tanımlanır */
+          display: block; /* Görünür bir alan oluşturur */
+          width: 100%; /* Genişlik %100 */
+          border-bottom: 1px solid #888; /* Alt kısma kırmızı çizgi ekler */
+        }
+        .bg-light{
+          overflow-x: hidden !important;
+          padding:5px;
+        }
 
       </style>
 
       <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Extra items button" class="   o_hoverable_dropdown o_header_disappears" style=" ">
 
         <div class="container py-3 px-0">
+          <!-- MASAÜSTÜ -->
           <nav id="mega_nav" data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc o_full_border d-none d-lg-block  py-2 px-3 shadow-sm ">
             <div id="o_main_nav" class="o_main_nav container">
               <a data-name="Navbar Logo" href="/" class="navbar-brand logo me-4">
@@ -181,14 +198,12 @@
                 <img src="/vita_header/static/src/img/Vita.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy"/>
               </a>
               <ul id="top_menuu" role="menu" class="nav navbar-nav top_menuu o_menu_loading mx-auto nav-pills">
-
-
                 <li role="presentation " class="nav-item dropdown position-static">
                   <a data-bs-toggle="dropdown" href="#" role="menuitem" class="nav-link dropdown-toggle o_mega_menu_toggle  " data-bs-display="static">
                     <span data-oe-xpath="/t[1]/li[2]/a[1]/span[1]" data-oe-model="website.menu" data-oe-id="19" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Kurumsal</span>
                   </a>
                   <div data-name="Mega Menu" data-oe-xpath="/t[1]/li[2]/div[1]" class="dropdown-menu o_mega_menu o_no_parent_editor" data-oe-model="website.menu" data-oe-id="19" data-oe-field="mega_menu_content" data-oe-type="html" data-oe-expression="submenu.mega_menu_content">
-                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1"  data-tilt-feature="" data-aos="">
+                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1" data-tilt-feature="" data-aos="">
                       <div class="container-fluid">
 
                         <div class="row d-flex justify-content-center ms-" data-row-count="9">
@@ -227,7 +242,7 @@
                           <div class="col-md-6 o_colored_level  kenarlik o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/kurumsal bilgiler.svg'" style="width:50px"  alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/kurumsal bilgiler.svg'" style="width:50px" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Kurumsal Bİlgİler</font>
@@ -257,7 +272,7 @@
                           <div class="col-md-6 o_colored_level  kenarlik o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'"  style="width:50px" alt="" />
+                                <img t-att-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'" style="width:50px" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Dokumantasyon</font>
@@ -326,7 +341,7 @@
                     <span data-oe-xpath="/t[1]/li[2]/a[1]/span[1]" data-oe-model="website.menu" data-oe-id="22" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">Periyodik Kontroller</span>
                   </a>
                   <div data-name="Mega Menu" data-oe-xpath="/t[1]/li[2]/div[1]" class="dropdown-menu o_mega_menu o_no_parent_editor" data-oe-model="website.menu" data-oe-id="22" data-oe-field="mega_menu_content" data-oe-type="html" data-oe-expression="submenu.mega_menu_content">
-                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1"  data-tilt-feature="">
+                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1" data-tilt-feature="">
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center" data-row-count="9">
 
@@ -351,16 +366,20 @@
                             <nav class="nav flex-column">
                               <a href="/shop/topraklama-olcumu-periyodik-137" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Topraklama Ölçümleri</span></a>
+                                <span class="icerik"> Topraklama Ölçümleri</span>
+                              </a>
                               <a href="/shop/elektrik-ic-tesisat-uygunluk-188" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Elektrik İç Tesisat Uygunluk</span></a>
+                                <span class="icerik"> Elektrik İç Tesisat Uygunluk</span>
+                              </a>
                               <a href="/shop/paratoner-yldrmdan-korunma-sistemleri-periyodik-kontrolleri-139?category=79" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik">  Paratoner Yıldırımdan Korunma</span></a>
+                                <span class="icerik">  Paratoner Yıldırımdan Korunma</span>
+                              </a>
                               <a href="/shop/artk-kacak-akm-rolesi-periyodik-kontrolleri-140" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Kaçak Artık Akım Rolesi</span></a>
+                                <span class="icerik"> Kaçak Artık Akım Rolesi</span>
+                              </a>
 
                             </nav>
                           </div>
@@ -386,17 +405,21 @@
                             <nav class="nav flex-column">
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-kaldrma-iletme-ekipmanlar-81" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Kaldırma İletme Ekipmanları</span></a>
+                                <span class="icerik"> Kaldırma İletme Ekipmanları</span>
+                              </a>
 
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-basncl-kaplar-82" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Basınçlı Kaplar</span></a>
+                                <span class="icerik"> Basınçlı Kaplar</span>
+                              </a>
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-makine-tezgahlar-83" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik">  Makine Tezgahları</span></a>
+                                <span class="icerik">  Makine Tezgahları</span>
+                              </a>
                               <a href="/shop/category/periyodik-kontroller-makine-grubu-is-makineleri-84" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> İş Makineleri</span> </a>
+                                <span class="icerik"> İş Makineleri</span>
+                              </a>
 
                             </nav>
                           </div>
@@ -421,16 +444,20 @@
                             <nav class="nav flex-column">
                               <a href="/shop/category/periyodik-kontroller-tesisat-grubu-yangn-tesisat-97" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Yangın Tesisatı</span></a>
+                                <span class="icerik"> Yangın Tesisatı</span>
+                              </a>
                               <a href="/shop/yangn-pompalar-motor-performans-tesatleri-periyodik-kontrolleri-146" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Motor Performans Testi</span></a>
+                                <span class="icerik"> Motor Performans Testi</span>
+                              </a>
                               <a href="/shop/pompa-istasyon-dairesi-periyodik-kontrolleri-147" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Pompa İstasyon Dairesi</span></a>
+                                <span class="icerik"> Pompa İstasyon Dairesi</span>
+                              </a>
                               <a href="/shop/su-deposu-periyodik-kontrolleri-148" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Su Deposu</span></a>
+                                <span class="icerik"> Su Deposu</span>
+                              </a>
 
                             </nav>
                           </div>
@@ -486,15 +513,15 @@
                     <span data-oe-xpath="/t[1]/li[2]/a[1]/span[1]" data-oe-model="website.menu" data-oe-id="9" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">İş Hijyeni Laboratuvarı</span>
                   </a>
                   <div data-name="Mega Menu" data-oe-xpath="/t[1]/li[2]/div[1]" class="dropdown-menu o_mega_menu o_no_parent_editor" data-oe-model="website.menu" data-oe-id="9" data-oe-field="mega_menu_content" data-oe-type="html" data-oe-expression="submenu.mega_menu_content">
-                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1"  data-tilt-feature="">
+                    <section class="s_mega_menu_odoo_menu pt16 o_colored_level o_cc o_cc1" data-tilt-feature="">
                       <div class="container-fluid">
                         <div class="row d-flex justify-content-center" data-row-count="9">
 
                           <div class="col-md-6 o_colored_level kenarlik  o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
-                                <div class="col-6" >
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'"  alt="" />
+                                <div class="col-6">
+                                  <img t-att-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Kİmyasal etkenler</font>
@@ -520,7 +547,8 @@
                                   </a>
                                   <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                    <span class="icerik">  Gaz ve Buhar Konsantrasyon Ölçümü</span></a>
+                                    <span class="icerik">  Gaz ve Buhar Konsantrasyon Ölçümü</span>
+                                  </a>
                                   <a href="/shop/voc-numune-alma-ve-analiz-100" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                     <span class="icerik">  VOC Numune Alma ve Analiz</span>
@@ -538,7 +566,7 @@
                                   </a>
 
                                   <a href="/shop/asit-konsantrasyon-olcumu-103" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    <span class="icerik">  Asit Konsantrasyon Ölçümü</span>
+                                    <span class="icerik">  ⁠Yağ Buharı Analizi</span>
                                   </a>
                                   <a href="/shop/asit-konsantrasyon-olcumu-103" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">   Asit Konsantrasyon Ölçümü</span>
@@ -553,7 +581,7 @@
                           <div class="col-md-6 o_colored_level kenarlik  o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
-                                <div class="col-6" >
+                                <div class="col-6">
                                   <img t-att-src="'/vita_header/static/src/img/iconlar/fiziksel etkenler.svg'" alt="" />
                                 </div>
                                 <br/>
@@ -590,15 +618,14 @@
                               </div>
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
-                                  <a href="/shop/el-kol-tum-vucut-titresim-maruziyeti-olcumu-96" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
-                                    <span class="icerik"> Vücut Titreşim Maruziyeti Ölçümü</span>
+                                  <a href="#" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
+                                    <span class="icerik">Tüm Vücut Titreşim Maruziyeti Ölçümü</span>
                                   </a>
-
-                                  <a href="/shop/elektromanyetik-alan-maruziyet-olcumu-159" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    <span class="icerik">  Elektromanyetik Alan Ölçümü</span>
+                                  <a href="/shop/el-kol-tum-vucut-titresim-maruziyeti-olcumu-96" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    <span class="icerik">⁠El Kol Titreşim Maruziyet Ölçümü</span>
                                   </a>
-                                  <a href="/shop/elektromanyetik-alan-maruziyet-olcumu-159" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    <span class="icerik"> Elektromanyetik Alan Ölçümü</span>
+                                  <a href="#" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    <span class="icerik"> ⁠Ölçümlerin Haritalandırılması</span>
                                   </a>
                                   <a href="/shop/elektromanyetik-alan-maruziyet-olcumu-159" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  Elektromanyetik Alan Ölçümü</span>
@@ -629,7 +656,7 @@
                           <div class=" o_colored_level   col-lg-3" data-tilt-feature="" style="">
                             <h4 class=" text-uppercase h5 fw-bold mt-0">
                               <div class="kucukresim">
-                                <img class="img-fluid" t-att-src="'/vita_header/static/src/img/muh2.jpg'"  alt="" />
+                                <img class="img-fluid" t-att-src="'/vita_header/static/src/img/muh2.jpg'" alt="" />
                               </div>
 
                             </h4>
@@ -639,7 +666,7 @@
 
                           <div class="col-md-6 o_colored_level  o_grid_item g-col-lg-6 g-height-9 col-lg-6" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
-                              <div class="col-5" >
+                              <div class="col-5">
                                 <img t-att-src="'/vita_header/static/src/img/iconlar/mühendislik hizmetleri.svg'" alt="" />
                               </div>
                               <br/>
@@ -690,7 +717,7 @@
                           <div class=" o_colored_level   col-lg-3" data-tilt-feature="" style="">
                             <h4 class=" text-uppercase h5 fw-bold mt-0">
                               <div class="kucukresim">
-                                <img class="img-fluid" t-att-src="'/vita_header/static/src/img/muh1.jpg'"  alt="" />
+                                <img class="img-fluid" t-att-src="'/vita_header/static/src/img/muh1.jpg'" alt="" />
                               </div>
 
                             </h4>
@@ -706,44 +733,18 @@
                   </div>
                 </li>
 
-
-
-
               </ul>
               <ul class="navbar-nav align-items-center gap-1 flex-wrap flex-shrink-0 justify-content-end ps-3">
                 <li role="presentation" class="nav-item">
                   <a role="menuitem" href="/contactus" class="custom-contact-button">
-    <span data-oe-model="website.menu" data-oe-id="6" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">İletişim </span>
-</a>
-
-<style>
-.custom-contact-button {
-    display: inline-block;
-  font-size:16px;
-    background-color: #001f3f; /* Lacivert arkaplan */
-    color: white !important;; /* Beyaz yazı rengi */
-    padding: 7px 14px; /* İç boşluk */
-    border: 2px solid #001f5b; /* Lacivert kenarlık */
-    border-radius: 50px; /* Köşelerin yumuşatılması */
-    text-decoration: none; /* Alt çizgi olmaması */
-    font-weight: bold; /* Kalın yazı */
-    transition: all 0.3s ease; /* Hover için geçiş efekti */
-}
-
-.custom-contact-button:hover {
-    background-color: #003080; /* Hover rengi */
-    border-color: #003080; /* Hover border rengi */
-    color: #fff; /* Hover'da yazı rengi */
-    cursor: pointer; /* El simgesi */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Hover gölge efekti */
-  text-decoration:none;
-}
-</style>
-
+                    <span data-oe-model="website.menu" data-oe-id="6" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">İletişim </span>
+                  </a>
                 </li>
               </ul>
             </div>
           </nav>
+
+          <!-- MOBİL -->
           <nav data-name="Navbar" aria-label="Mobile" class="navbar navbar-light o_colored_level o_cc o_header_mobile d-block d-lg-none shadow-sm px-0 o_full_border mx-1 rounded-pill">
             <div class="o_main_nav container flex-wrap justify-content-between pe-2 ps-2">
               <a data-name="Navbar Logo" href="/" class="navbar-brand logo">
@@ -763,300 +764,301 @@
                 <div class="offcanvas-body d-flex flex-column h-100 w-100">
                   <ul role="menu" class="nav navbar-nav text-start " id="accordionExample">
                     <li class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false">
-                        KURUMSAL
-                      </a>
-                      <div class="collapse bg-light rounded-3" id="menu1" data-bs-parent="#accordionExample">
-                        <ul class="nav flex-column align-items-start p-0" id="accordionExample1">
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu1-1" aria-expanded="false">ŞİRKET PROFİLİ</a>
-                            <div class="collapse" id="menu1-1" data-bs-parent="#accordionExample1">
-                              <ol class="nav flex-column align-items-start">
-                                <li>
-                                  <a href="/akreditasyon" class="nav-link text-start">Akreditasyon</a>
-                                </li>
-                                <li>
-                                  <a href="/hakkmzda" class="nav-link text-start">Hakkımızda</a>
-                                </li>
-                                <li>
-                                  <a href="/ilke-ve-degerlerimiz" class="nav-link text-start">İlke ve Değerlerimiz</a>
-                                </li>
-                                <li>
-                                  <a href="/organizasyon-semas" class="nav-link text-start">Organizasyon Şeması</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu1-2" aria-expanded="false">KURUMSAL BİLGİLER</a>
-                            <div class="collapse " id="menu1-2" data-bs-parent="#accordionExample1">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/hesap-numaralar" class="nav-link">Hesap Numaraları</a>
-                                </li>
-                                <li>
-                                  <a href="/insan-kaynaklar" class="nav-link">İnsan Kaynakları</a>
-                                </li>
-                                <li>
-                                  <a href="/kvkk-metni" class="nav-link">KVKK Metni</a>
-                                </li>
-                                <li>
-                                  <a href="#" class="nav-link">Şirket Künyesi</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu1-3" aria-expanded="false">DÖKÜMANTASYON</a>
-                            <div class="collapse " id="menu1-3" data-bs-parent="#accordionExample1">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/sikayet-oneri-itiraz" class="nav-link">Şikayet-Öneri-İtiraz</a>
-                                </li>
-                                <li>
-                                  <a href="/muayene-on-hazrlk-bilgi-formu" class="nav-link">Muayene Ön Hazırlık Bilgi Formu</a>
-                                </li>
-                                <li>
-                                  <a href="/musteri-hizmet-proseduru" class="nav-link">Müşteri Hizmet Prosedürü</a>
-                                </li>
-                                <li>
-                                  <a href="/tarafsizlik-ve-gizlilik-tahutnamesi" class="nav-link">Tarafsızlık ve Gizlilik Taahhütname</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu1-4" aria-expanded="false">MEDYA</a>
-                            <div class="collapse " id="menu1-4" data-bs-parent="#accordionExample1">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/tanitim-katalogu" class="nav-link">Tanıtım Kataloğu</a>
-                                </li>
-                                <li>
-                                  <a href="/blog/uzman-gorusleri-4" class="nav-link">Uzman Görüşleri</a>
-                                </li>
-                                <li>
-                                  <a href="/blog/sektorel-haberler-6" class="nav-link">Sektörel Haberler</a>
-                                </li>
-                                <li>
-                                  <a href="/foto-galeri" class="nav-link">Foto Galeri</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                        </ul>
+                      <div class="nav-link dropdown-toggle p-0" data-bs-toggle="collapse" data-bs-target="#menu1" aria-expanded="false">
+                        <div class="btn btn-outline-secondary w-100 d-flex justify-content-between">
+                          <div>KURUMSAL</div>
+                          <div>&#9660;</div>
+                        </div>
+                        <div class="collapse bg-light rounded-3" id="menu1" data-bs-parent="#accordionExample">
+                          <ul class="nav flex-column align-items-start mx-3" id="accordionExample1">
+                            <li>
+                              <div class="nav-link dropdown-toggle " data-bs-toggle="collapse" data-bs-target="#menu1-1" aria-expanded="false">ŞİRKET PROFİLİ</div>
+                              <div class="collapse" id="menu1-1" data-bs-parent="#accordionExample1">
+                                <ul class="nav flex-column align-items-start mx-3 w-100">
+                                  <li>
+                                    <a href="/akreditasyon" class="nav-link text-start">Akreditasyon</a>
+                                  </li>
+                                  <li>
+                                    <a href="/hakkmzda" class="nav-link text-start">Hakkımızda</a>
+                                  </li>
+                                  <li>
+                                    <a href="/ilke-ve-degerlerimiz" class="nav-link text-start">İlke ve Değerlerimiz</a>
+                                  </li>
+                                  <li>
+                                    <a href="/organizasyon-semas" class="nav-link text-start">Organizasyon Şeması</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu1-2" aria-expanded="false">KURUMSAL BİLGİLER</a>
+                              <div class="collapse " id="menu1-2" data-bs-parent="#accordionExample1">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/hesap-numaralar" class="nav-link">Hesap Numaraları</a>
+                                  </li>
+                                  <li>
+                                    <a href="/insan-kaynaklar" class="nav-link">İnsan Kaynakları</a>
+                                  </li>
+                                  <li>
+                                    <a href="/kvkk-metni" class="nav-link">KVKK Metni</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="nav-link">Şirket Künyesi</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu1-3" aria-expanded="false">DÖKÜMANTASYON</a>
+                              <div class="collapse " id="menu1-3" data-bs-parent="#accordionExample1">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/sikayet-oneri-itiraz" class="nav-link">Şikayet-Öneri-İtiraz</a>
+                                  </li>
+                                  <li>
+                                    <a href="/muayene-on-hazrlk-bilgi-formu" class="nav-link">Muayene Ön Hazırlık Bilgi Formu</a>
+                                  </li>
+                                  <li>
+                                    <a href="/musteri-hizmet-proseduru" class="nav-link">Müşteri Hizmet Prosedürü</a>
+                                  </li>
+                                  <li>
+                                    <a href="/tarafsizlik-ve-gizlilik-tahutnamesi" class="nav-link">Tarafsızlık ve Gizlilik Taahhütname</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu1-4" aria-expanded="false">MEDYA</a>
+                              <div class="collapse " id="menu1-4" data-bs-parent="#accordionExample1">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/tanitim-katalogu" class="nav-link">Tanıtım Kataloğu</a>
+                                  </li>
+                                  <li>
+                                    <a href="/blog/uzman-gorusleri-4" class="nav-link">Uzman Görüşleri</a>
+                                  </li>
+                                  <li>
+                                    <a href="/blog/sektorel-haberler-6" class="nav-link">Sektörel Haberler</a>
+                                  </li>
+                                  <li>
+                                    <a href="/foto-galeri" class="nav-link">Foto Galeri</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false">
-                        PERİYODİK KONTROLLER
-                      </a>
-                      <div class="collapse bg-light rounded-3" id="menu2" data-bs-parent="#accordionExample">
-                        <ul class="nav flex-column align-items-start ms-3" id="accordionExample2">
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu2-1" aria-expanded="false">ELEKTRİK GRUBU</a>
-                            <div class="collapse " id="menu2-1" data-bs-parent="#accordionExample2">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/shop/topraklama-olcumu-periyodik-137" class="nav-link">Topraklama Ölçümleri</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/elektrik-ic-tesisat-uygunluk-188" class="nav-link">Elektrik İç Tesisat Uygunluk</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/paratoner-yldrmdan-korunma-sistemleri-periyodik-kontrolleri-139?category=79" class="nav-link">Paratoner Yıldırımdan Korunma</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/artk-kacak-akm-rolesi-periyodik-kontrolleri-140" class="nav-link">Kaçak Artık Akım Rolesi</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/periyodik-kontroller-elektrik-grubu-79" class="nav-link">Diğer Hizmetler</a>
-                                </li>
-
-                              </ol>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu2-2" aria-expanded="false">MAKİNE GRUBU</a>
-                            <div class="collapse " id="menu2-2" data-bs-parent="#accordionExample2">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/shop/category/periyodik-kontroller-makine-grubu-kaldrma-iletme-ekipmanlar-81" class="nav-link">Kaldırma İletme Ekipmanları</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/periyodik-kontroller-makine-grubu-basncl-kaplar-82" class="nav-link">Basınçlı Kaplar</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/periyodik-kontroller-makine-grubu-makine-tezgahlar-83" class="nav-link">Makine Tezgahları</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/periyodik-kontroller-makine-grubu-is-makineleri-84" class="nav-link">İş Makineleri</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/periyodik-kontroller-makine-grubu-78" class="nav-link">Diğer Hizmetler</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu2-3" aria-expanded="false">TESİSAT GRUBU</a>
-                            <div class="collapse " id="menu2-3" data-bs-parent="#accordionExample2">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/shop/category/periyodik-kontroller-tesisat-grubu-yangn-tesisat-97" class="nav-link">Yangın Tesisatı</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/yangn-pompalar-motor-performans-tesatleri-periyodik-kontrolleri-146" class="nav-link">Motor Performans Testi</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/pompa-istasyon-dairesi-periyodik-kontrolleri-147" class="nav-link">Pompa İstasyon Dairesi</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/su-deposu-periyodik-kontrolleri-148" class="nav-link">Su Deposu</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/periyodik-kontroller-tesisat-grubu-80" class="nav-link">Diğer Hizmetler</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                        </ul>
+                      <div class="nav-link dropdown-toggle p-0" data-bs-toggle="collapse" data-bs-target="#menu2" aria-expanded="false">
+                        <div class="btn btn-outline-secondary w-100 d-flex justify-content-between">
+                          <div>PERİYODİK KONTROLLER</div>
+                          <div>&#9660;</div>
+                        </div>
+                        <div class="collapse bg-light rounded-3" id="menu2" data-bs-parent="#accordionExample">
+                          <ul class="nav flex-column align-items-start mx-3" id="accordionExample2">
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu2-1" aria-expanded="false">ELEKTRİK GRUBU</a>
+                              <div class="collapse " id="menu2-1" data-bs-parent="#accordionExample2">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/shop/topraklama-olcumu-periyodik-137" class="nav-link">Topraklama Ölçümleri</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/elektrik-ic-tesisat-uygunluk-188" class="nav-link">Elektrik İç Tesisat Uygunluk</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/paratoner-yldrmdan-korunma-sistemleri-periyodik-kontrolleri-139?category=79" class="nav-link">Paratoner Yıldırımdan Korunma</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/artk-kacak-akm-rolesi-periyodik-kontrolleri-140" class="nav-link">Kaçak Artık Akım Rolesi</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu2-2" aria-expanded="false">MAKİNE GRUBU</a>
+                              <div class="collapse " id="menu2-2" data-bs-parent="#accordionExample2">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/shop/category/periyodik-kontroller-makine-grubu-kaldrma-iletme-ekipmanlar-81" class="nav-link">Kaldırma İletme Ekipmanları</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/category/periyodik-kontroller-makine-grubu-basncl-kaplar-82" class="nav-link">Basınçlı Kaplar</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/category/periyodik-kontroller-makine-grubu-makine-tezgahlar-83" class="nav-link">Makine Tezgahları</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/category/periyodik-kontroller-makine-grubu-is-makineleri-84" class="nav-link">İş Makineleri</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu2-3" aria-expanded="false">YANGIN TESİSATI</a>
+                              <div class="collapse " id="menu2-3" data-bs-parent="#accordionExample2">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/shop/category/periyodik-kontroller-tesisat-grubu-yangn-tesisat-97" class="nav-link">Yangın Tesisatı</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/yangn-pompalar-motor-performans-tesatleri-periyodik-kontrolleri-146" class="nav-link">Motor Performans Testi</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/pompa-istasyon-dairesi-periyodik-kontrolleri-147" class="nav-link">Pompa İstasyon Dairesi</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/su-deposu-periyodik-kontrolleri-148" class="nav-link">Su Deposu</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu2-4" aria-expanded="false">HAVALANDIRMA TESİSATI</a>
+                              <div class="collapse " id="menu2-4" data-bs-parent="#accordionExample2">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/shop/category/periyodik-kontroller-tesisat-grubu-yangn-tesisat-97" class="nav-link">Kaçış Yolu Basınçlandırma</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/yangn-pompalar-motor-performans-tesatleri-periyodik-kontrolleri-146" class="nav-link">Motor Verim Testi</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/pompa-istasyon-dairesi-periyodik-kontrolleri-147" class="nav-link">Çevrim Sayısı</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/su-deposu-periyodik-kontrolleri-148" class="nav-link">Sistem Gereklilikleri</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false">
-                        İŞ HİJYENİ LABORATUVARI
-                      </a>
-                      <div class="collapse bg-light rounded-3" id="menu3" data-bs-parent="#accordionExample">
-                        <ul class="nav flex-column align-items-start ms-3" id="accordionExample3">
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu3-1" aria-expanded="false">KİMYASAL ETKENLER</a>
-                            <div class="collapse" id="menu3-1" data-bs-parent="#accordionExample3">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link">Toplam Toz Numune Alma ve Analiz</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link">Solunabilir Toz Numune Alma ve Analiz</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link">Gaz ve Buhar Konsantrasyon Ölçümü</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link">VOC Numune Alma ve Analiz</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/is-hijyeni-laboratuvar-kimyasal-etkenler-101" class="nav-link">Diğer Hizmetler</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu3-1" aria-expanded="false">KİMYASAL ETKENLER</a>
-                            <div class="collapse" id="menu3-1" data-bs-parent="#accordionExample3">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link">Toplam Toz Numune Alma ve Analiz</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link">Solunabilir Toz Numune Alma ve Analiz</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link">Gaz ve Buhar Konsantrasyon Ölçümü</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link">VOC Numune Alma ve Analiz</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/is-hijyeni-laboratuvar-kimyasal-etkenler-101" class="nav-link">Diğer Hizmetler</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-
-
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu3-2" aria-expanded="false">FİZİKSEL ETKENLER</a>
-                            <div class="collapse " id="menu3-2" data-bs-parent="#accordionExample3">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/shop/aydnlatma-olcumu-92" class="nav-link">Aydınlatma Ölçümü</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/kisisel-gurultu-maruziyeti-olcumu-93" class="nav-link">Kişisel Gürültü Maruziyeti Ölçümü</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/ortam-gurultu-olcumu-94" class="nav-link">Ortam Gürültü Ölçümüc</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/termal-konfor-olcumu-95" class="nav-link">Termal Konfor Ölçümü</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/is-hijyeni-laboratuvar-fiziksel-etkenler-100" class="nav-link">Diğer Hizmetler</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu3-2" aria-expanded="false">FİZİKSEL ETKENLER</a>
-                            <div class="collapse " id="menu3-2" data-bs-parent="#accordionExample3">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/shop/aydnlatma-olcumu-92" class="nav-link">Aydınlatma Ölçümü</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/kisisel-gurultu-maruziyeti-olcumu-93" class="nav-link">Kişisel Gürültü Maruziyeti Ölçümü</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/ortam-gurultu-olcumu-94" class="nav-link">Ortam Gürültü Ölçümüc</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/termal-konfor-olcumu-95" class="nav-link">Termal Konfor Ölçümü</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/is-hijyeni-laboratuvar-fiziksel-etkenler-100" class="nav-link">Diğer Hizmetler</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-
-
-                        </ul>
+                      <div class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu3" aria-expanded="false">
+                        <div class="btn btn-outline-secondary w-100 d-flex justify-content-between">
+                          <div>İŞ HİJYENİ LABORATUVARI</div>
+                          <div>&#9660;</div>
+                        </div>
+                        <div class="collapse bg-light rounded-3" id="menu3" data-bs-parent="#accordionExample">
+                          <ul class="nav flex-column align-items-start mx-3" id="accordionExample3">
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu3-1" aria-expanded="false">KİMYASAL ETKENLER</a>
+                              <div class="collapse" id="menu3-1" data-bs-parent="#accordionExample3">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/shop/toplam-toz-numune-alma-ve-analiz-97" class="nav-link">Toplam Toz Numune Alma ve Analiz</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/solunabilir-toz-numune-alma-ve-analiz-98" class="nav-link">Solunabilir Toz Numune Alma ve Analiz</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/gaz-ve-buhar-konsantrasyon-olcumu-99" class="nav-link">Gaz ve Buhar Konsantrasyon Ölçümü</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link">VOC Numune Alma ve Analiz</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/agr-metal-numune-alma-ve-analiz-101" class="nav-link">Ağır Metal Numune Alma Ve Analiz</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/kisisel-gaz-maruziyeti-olcumu-102" class="nav-link">Kişisel Gaz Maruziyeti Ölçümü</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="nav-link">Yağ Buharı Analizi</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/asit-konsantrasyon-olcumu-103" class="nav-link">Asit Konsantrasyon Ölçümü</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu3-2" aria-expanded="false">FİZİKSEL ETKENLER</a>
+                              <div class="collapse " id="menu3-2" data-bs-parent="#accordionExample3">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/shop/aydnlatma-olcumu-92" class="nav-link">Aydınlatma Ölçümü</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/kisisel-gurultu-maruziyeti-olcumu-93" class="nav-link">Kişisel Gürültü Maruziyeti Ölçümü</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/ortam-gurultu-olcumu-94" class="nav-link">Ortam Gürültü Ölçümüc</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/termal-konfor-olcumu-95" class="nav-link">Termal Konfor Ölçümü</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="nav-link">Tüm Vucut Titrşim Maruziyeti Ölçümü</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/el-kol-tum-vucut-titresim-maruziyeti-olcumu-96" class="nav-link">El Kol Titrşim Maruziyeti Ölçümü</a>
+                                  </li>
+                                  <li>
+                                    <a href="#" class="nav-link">⁠Ölçümlerin Haritalandırılması</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/elektromanyetik-alan-maruziyet-olcumu-159" class="nav-link">Elektromanyetik Alan Ölçümü</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </li>
                     <li class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false">
-                        MÜHENDİSLİK HİZMETLERİ
-                      </a>
-                      <div class="collapse bg-light rounded-3" id="menu4" data-bs-parent="#accordionExample">
+                      <div class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false">
+                        <div class="btn btn-outline-secondary w-100 d-flex justify-content-between">
+                          <div>MÜHENDİSLİK HİZMETLERİ</div>
+                          <div>&#9660;</div>
+                        </div>
+                        <div class="collapse bg-light rounded-3" id="menu4" data-bs-parent="#accordionExample">
 
-                        <ul class="nav flex-column align-items-start ms-3" id="accordionExample4">
-                          <li>
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu4-1" aria-expanded="false">MÜHENDİSLİK HİZMETLERİ</a>
-                            <div class="collapse " id="menu4-1" data-bs-parent="#accordionExample4">
-                              <ol class="nav flex-column align-items-start ms-5">
-                                <li>
-                                  <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link">Patlamadan Korunma Dökümantasyonu</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link">Statik Analiz</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/muhendislik-hizmetleri-tesisat-proje-degerlendirme-117" class="nav-link">Tesisat Proje Değerlendirme</a>
-                                </li>
-                                <li>
-                                  <a href="/shop/category/muhendislik-hizmetleri-77" class="nav-link">Diğer Hizmetler</a>
-                                </li>
-                              </ol>
-                            </div>
-                          </li>
-                        </ul>
+                          <ul class="nav flex-column align-items-start mx-3" id="accordionExample4">
+                            <li>
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu4-1" aria-expanded="false">MÜHENDİSLİK HİZMETLERİ</a>
+                              <div class="collapse " id="menu4-1" data-bs-parent="#accordionExample4">
+                                <ul class="nav flex-column align-items-start mx-3">
+                                  <li>
+                                    <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link">Patlamadan Korunma Dökümantasyonu</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link">Statik Analiz</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/yangn-tesisat-proje-degerlendirme-207" class="nav-link">Yangın Tesisatı Proje</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/havalandrma-tesisat-proje-degerlendirme-208" class="nav-link">Havalandırma Tesisatı Proje</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/alglama-alarm-sistemleri-proje-degerlendirme-209" class="nav-link">Algılama Alarm Sistemleriz</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/category/elektrik-tesisat-proje-degerlendirme-210" class="nav-link">Elektrik Tesisatı Proje</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/paratoner-tesisat-proje-degerlendirme-211" class="nav-link">Paratoner Tesisatı Proje</a>
+                                  </li>
+                                  <li>
+                                    <a href="/shop/tesisat-grubu-proje-degerlendirme-213" class="nav-link">Tesisat Grubu Proje</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a href="/contactus" class="nav-link" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false">
+                    <li class="nav-item dropdown text-end mt-5 pt-5">
+                      <a href="/contactus" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false">
                         Bize Ulaşın
                       </a>
                     </li>
