@@ -1057,9 +1057,9 @@
                         </div>
                       </div>
                     </li>
-                    <li class="nav-item dropdown text-end mt-5 pt-5">
-                      <a href="/contactus" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#menu5" aria-expanded="false">
-                        Bize Ulaşın
+                    <li class="nav-item text-end mt-5 pt-5">
+                      <a href="/contactus" class="btn btn-primary" data-bs-target="#menu5" aria-expanded="false">
+                        İletişim
                       </a>
                     </li>
                   </ul>
@@ -1072,6 +1072,20 @@
       </header>
       <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
+
+          document.querySelectorAll('.offcanvas-body ul li ul li ul li a').forEach(link =&gt; {
+              link.addEventListener('click', function(event) {
+                  console.log("Tıklanan link:", this.href); // Konsola tıklanan linkin URL'sini yazdırır
+
+                  // Eğer href boş değilse, yönlendirmeyi çalıştır ve collapse kapanmasını engelle
+                  if (this.href) {
+                      event.stopPropagation(); // Bootstrap'in "collapse" özelliğini devre dışı bırak
+                      window.location.href = this.href;
+                      console.log("devredışı")
+                  }
+              });
+          });
+
         // Tüm Mega Menu öğelerini seç
         const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
         const topMenu = document.querySelector('#top_menuu');
