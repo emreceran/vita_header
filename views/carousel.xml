@@ -7,78 +7,264 @@
 
             <style>
                 /* Mobil cihazlar için medya sorgusu */
-                @media (max-width: 768px) {
-                .komple {
-                display:none !important;
+                
+                .carousel-indicators li {
+                background-color: #fff; /* Noktaların rengi */
+                border-radius: 50%; /* Yuvarlak yapmak için */
+                width: 10px; /* Nokta boyutu */
+                height: 10px;
                 }
+
+                .carousel-indicators li.active {
+                background-color: #007bff; /* Aktif noktanın rengi */
+                }
+                .carousel-container {
+                height: 75% !important; /* Üst div yüksekliği */
+                background-color: #3498db; /* Arka plan rengi */
+                overflow: hidden;
+                }
+
+                .carousel-inner,
+                .carousel-item {
+                height: 100%; /* Carousel'in üst divi doldurması */
+                width: 100%;  /* Carousel genişliği */
+                }
+
+                .carousel-item {
+                background-size: cover; /* Resim divi tamamen dolduracak şekilde ölçeklenir */
+                background-position: bottom; /* Görsellerin ortalanmasını sağlar */
+                }
+
+                /* Slogan Stili */
+                .slider-slogan {
+                position: absolute;
+                top: 50%;
+                left: 100%; /* Sağdan sola giriş için başlangıç konumu */
+                transform: translateY(-50%);
+                color: white;
+                font-size: 80px; /* Yazı büyüklüğü */
+                font-weight: light;
+                font-family: "Playball", serif;
+                white-space: nowrap;
+                animation: slideInRight 2s ease-out forwards;
+                }
+                
+
+                /* Sağdan sola kayan animasyon */
+                @keyframes slideInRight {
+                from {
+                left: 100%; /* Yazı ekran dışında sağda başlar */
+                }
+                to {
+                left: 50%; /* Yazı ekranın ortasında durur */
+                transform: translateX(-50%) translateY(-50%);
+                }
+                }
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <!-- Alt Div: %10 Yükseklik -->
+
+                .gradient-box {
+                height: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-weight: bold;
+                font-size: 1em;
+                transition: transform 1s ease, background-color 1s ease; /* Animasyon için eklenen özellikler */
+
+                }
+
+                .gradient-box:hover {
+                transform: scale(1.1); /* Hover durumunda büyüme */
+                background: linear-gradient(to right, black, #f50528);
+                border: none;
+                }
+
+                .gradient-box p {
+                text-align: right;
+                }
+
+                .what:hover {
+                transform: scale(1.1); /* Hover durumunda büyüme */
+                background: linear-gradient(to right, #057d23, #05e63d);
+                }
+                #wrapwrap {
+                overflow-x:hidden;
+                }
+
+                .box-1 {
+                width: 30%;
+                text-align: left; /* Sol kutunun içeriği sağa yaslandı */
+                }
+
+                .box-2 {
+                width: 40%;
+                }
+
+                .box-3 {
+                width: 30%;
+                text-align: left; /* Sağ kutunun içeriği sola yaslandı */
+                }
+
+                .box-4 {
+                text-align: left; /* Sağ kutunun içeriği sola yaslandı */
+
+
+
+                }
+
+                .social-media {
+                background-color: #824209; /* Lacivert ton */
+                color: white;
+                padding: 10px 20px; /* İçerik için padding azaltıldı */
+                font-size: 8px; /* Font boyutu küçültüldü */
+                }
+
+                .social-media a {
+
+                color: white;
+                margin: 0 10px;
+                text-decoration: none;
+                font-size: 18px; /* İkon boyutu için ayar */
+                }
+
+                .social-media a:hover {
+                color: #dddddd;
+                }
+
+                .komp {
+                background: linear-gradient(
+                to right,
+                #001f3f 0%,    /* Koyu lacivert */
+                #001f3f 37.5%,   /* Koyu lacivert %25'e kadar */
+                #012e5c 37.5%,   /* Açık lacivert başlıyor */
+                #012e5c 62.5%,   /* Açık lacivert %75'e kadar */
+                #013973 62.5%,   /* Daha açık lacivert başlıyor */
+                #013973 100%   /* Daha açık lacivert sona kadar */
+                );
+                }
+
+                .gradient-box p {
+                font-size: 1rem; /* Ana yazı boyutu */
+                margin-bottom: 0.5rem; /* p ile span arasında mesafe */
+                text-align: left; /* İsteğe bağlı: hizalama */
+                font-family: "Raleway", "Odoo Unicode Support Noto", sans-serif;
+                }
+
+                .gradient-box span {
+                font-size: 0.85rem; /* Span yazısı daha küçük */
+                display: block; /* Alt satıra geçmesini sağlar */
+                font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
+                text-align: left; /* İsteğe bağlı: hizalama */
+                color: #f1f1f1;
+                font-weight: 200;
+                line-height: 0.8;
+                }
+
+
+                .gradient-box.box-1 a {
+                margin-left: 2rem; /* Resimlerin altına boşluk */
+                }
+
+                .gradient-box.box-1 div {
+                margin-left: 3rem; /* Resimlerin altına boşluk */
+                }
+
+                .gradient-box.box-3 div {
+                margin-left: 3rem; /* Resimlerin altına boşluk */
+                margin-right: 3rem; /* Resimlerin altına boşluk */
+                }
+
+
+                .gradient-box.box-2 div {
+                margin-right: 1rem; /* İki resim arasına boşluk */
+                }
+
+                .gradient-box.box-2 a {
+                margin-left: 1rem; /* Resimlerin altına boşluk */
+                }
+
+                .gradient-box.box-2 a img {
+                transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
+                }
+                .gradient-box.box-1 a img {
+                transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
+                }
+
+                .gradient-box.box-1 a img:hover {
+                transform: scale(1.5); /* Büyütme oranı */
+                }
+
+                .gradient-box.box-2 a img:hover {
+                transform: scale(1.5); /* Büyütme oranı */
+                }
+
+                .gradient-box.box-2 a:nth-child(1) img:hover {
+                transform: scale(1.5) translate(-30px, 0); /* İlk resim sola kayar */
+                }
+
+                .gradient-box.box-2 a:nth-child(2) img:hover {
+                transform: scale(1.5) translate(50, 0); /* İkinci resim sağa kayar */
+                }
+
+                @media (max-width: 992px) {
+                    .komple {
+                        height: 30vh !important;
+                        display: flex;
+                        flex-direction: column;
+                        overflow: hidden; /* Taşmaları engeller */
+                    }
+
+                    .carousel-container {
+                        height: 60% !important; /* Üst kısım yüksekliği */
+                    }
+
+                    .container-fluid {
+                        height: 40% !important; /* Alt kısım yüksekliği */
+                    }
+                    .slider-slogan{
+                        font-size: 40px; /* Yazı büyüklüğü */
+                    }
+                    .gradient-box div {
+                        display: none !important;
+                    }
+                    .gradient-box{
+                        text-align:center !important;
+                        justify-content: center !important;
+                        height: 100% !important;
+                    }
+                    .gradient-box a {
+                        margin:0 !important;
+                    }
+                    .gradient-box.box-1 a img {
+                        width: 40% !important;
+                    }
+                    .gradient-box.box-2 a img {
+                        width: 50% !important;
+                    }
+                    .gradient-box a i {
+                        font-size: 25px !important;
+                    }
+
+                     .social-media {
+                    padding: 3px 6px; /* İçerik için padding azaltıldı */
+                    font-size: 4px; /* Font boyutu küçültüldü */
+                    }
+
+                    .social-media a {
+                    font-size: 9px; /* İkon boyutu için ayar */
+                    }
                 }
             </style>
 
             <div class="komple vh-100">
 
                 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&amp;family=Pacifico&amp;family=Playball&amp;family=Playwrite+IN:wght@100..400&amp;display=swap" rel="stylesheet"/>
-                <style>
 
-                    <!--                    #caroselindik {-->
-                    <!--                    position:absolute;-->
-                    <!--                    right: 50%;-->
-                    <!--                    top: 50%;-->
-                    <!--                    z-index:50;-->
-                    <!--                    background-color: red;-->
-                    <!--                    }-->
-
-                    .carousel-indicators li {
-                    background-color: #fff; /* Noktaların rengi */
-                    border-radius: 50%; /* Yuvarlak yapmak için */
-                    width: 10px; /* Nokta boyutu */
-                    height: 10px;
-                    }
-
-                    .carousel-indicators li.active {
-                    background-color: #007bff; /* Aktif noktanın rengi */
-                    }
-                    .carousel-container {
-                    height: 75% !important; /* Üst div yüksekliği */
-                    background-color: #3498db; /* Arka plan rengi */
-                    overflow: hidden;
-                    }
-
-                    .carousel-inner,
-                    .carousel-item {
-                    height: 100%; /* Carousel'in üst divi doldurması */
-                    width: 100%;  /* Carousel genişliği */
-                    }
-
-                    .carousel-item {
-                    background-size: cover; /* Resim divi tamamen dolduracak şekilde ölçeklenir */
-                    background-position: bottom; /* Görsellerin ortalanmasını sağlar */
-                    }
-
-                    /* Slogan Stili */
-                    .slider-slogan {
-                    position: absolute;
-                    top: 50%;
-                    left: 100%; /* Sağdan sola giriş için başlangıç konumu */
-                    transform: translateY(-50%);
-                    color: white;
-                    font-size: 80px; /* Yazı büyüklüğü */
-                    font-weight: light;
-                    font-family: "Playball", serif;
-                    white-space: nowrap;
-                    animation: slideInRight 2s ease-out forwards;
-                    }
-
-                    /* Sağdan sola kayan animasyon */
-                    @keyframes slideInRight {
-                    from {
-                    left: 100%; /* Yazı ekran dışında sağda başlar */
-                    }
-                    to {
-                    left: 50%; /* Yazı ekranın ortasında durur */
-                    transform: translateX(-50%) translateY(-50%);
-                    }
-                    }
-                </style>
 
 
                 <!-- Üst Div ve Carousel -->
@@ -96,7 +282,7 @@
 
                         <div class="carousel-inner">
                             <!-- Slider 1 -->
-                             <div class="carousel-item active img-fluid" style="background-image: url('/vita_header/static/src/img/slider2.webp'); position: relative;">
+                            <div class="carousel-item active img-fluid" style="background-image: url('/vita_header/static/src/img/slider2.webp'); position: relative;">
                                 <div class="slider-slogan">Sağlık İçin Denetliyoruz </div>
                             </div>
 
@@ -136,196 +322,12 @@
                 </div>
 
 
-                <!-- Alt Div: %10 Yükseklik -->
-                <style>
-                    .gradient-box {
-                    height: 100%;
-                    text-align: center;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: center;
-                    color: white;
-                    font-weight: bold;
-                    <!--                    border-x: 2px solid white;-->
-                    font-size: 1em;
-<!--                    padding: 2.5rem 0.5rem 2rem 1rem; /* Yazılara daha fazla boşluk */-->
-                    transition: transform 1s ease, background-color 1s ease; /* Animasyon için eklenen özellikler */
 
-                    }
-
-                    .gradient-box:hover {
-                    transform: scale(1.1); /* Hover durumunda büyüme */
-                    background: linear-gradient(to right, black, #f50528);
-                    border: none;
-                    <!--                    border-radius: 40px;-->
-                    <!--                    box-shadow: 1px 1px 5px lightblue;-->
-                    }
-
-                    .gradient-box p {
-                    text-align: right;
-                    }
-
-                    .what:hover {
-                    transform: scale(1.1); /* Hover durumunda büyüme */
-                    <!--                    background: linear-gradient(to right, #630311, #f50528);-->
-                    background: linear-gradient(to right, #057d23, #05e63d);
-                    }
-
-                    <!--                    .box-1:hover {-->
-                    <!--                    transform: scale(1.1); /* Hover durumunda büyüme */-->
-                    <!--                    &lt;!&ndash;                    background: linear-gradient(to right, #630311, #f50528);&ndash;&gt;-->
-                    <!--                    background: linear-gradient(to right, #e37609, #d98634);-->
-                    <!--                    border-radius: 40px;-->
-                    <!--                    }-->
-
-                    #wrapwrap {
-                    overflow-x:hidden;
-                    }
-
-                    .box-1 {
-                    width: 30%;
-<!--                    border: 2px solid white;-->
-                    <!--                    background-color: #001f3f; /* Koyu lacivert */-->
-                    text-align: left; /* Sol kutunun içeriği sağa yaslandı */
-                    <!--                                        border-right: 5px solid white; /* Sol kenar */-->
-                    }
-
-                    .box-2 {
-                    width: 40%;
-<!--                                        border: 2px solid white;-->
-                    <!--                    background-color: #003f7f; /* Orta lacivert */-->
-                    <!--                                        border-right: 5px solid white; /* Sol kenar */-->
-
-                    }
-
-                    .box-3 {
-                    width: 30%;
-<!--                                        border: 2px solid white;-->
-                    <!--                    background-color: #005fbf; /* Açık lacivert */-->
-                    text-align: left; /* Sağ kutunun içeriği sola yaslandı */
-                    <!--                    border-right: 5px solid black; /* Sol kenar */-->
-
-                    }
-
-                    .box-4 {
-                    <!--                    background-color: #005fbf; /* Açık lacivert */-->
-                    text-align: left; /* Sağ kutunun içeriği sola yaslandı */
-
-
-
-                    }
-
-                    .social-media {
-                    background-color: #824209; /* Lacivert ton */
-                    color: white;
-                    <!--                    text-align: left;-->
-                    padding: 10px 20px; /* İçerik için padding azaltıldı */
-                    font-size: 8px; /* Font boyutu küçültüldü */
-                    <!--                    border: 3px solid white;-->
-
-                    }
-
-                    .social-media a {
-
-                    color: white;
-                    margin: 0 10px;
-                    text-decoration: none;
-                    font-size: 18px; /* İkon boyutu için ayar */
-                    }
-
-                    .social-media a:hover {
-                    color: #dddddd;
-                    }
-
-                    .komp {
-                    background: linear-gradient(
-                    to right,
-                    #001f3f 0%,    /* Koyu lacivert */
-                    #001f3f 37.5%,   /* Koyu lacivert %25'e kadar */
-                    #012e5c 37.5%,   /* Açık lacivert başlıyor */
-                    #012e5c 62.5%,   /* Açık lacivert %75'e kadar */
-                    #013973 62.5%,   /* Daha açık lacivert başlıyor */
-                    #013973 100%   /* Daha açık lacivert sona kadar */
-                    );
-                    <!--                    border: 3px solid white;-->
-                    }
-
-                    .gradient-box p {
-                    font-size: 1rem; /* Ana yazı boyutu */
-                    margin-bottom: 0.5rem; /* p ile span arasında mesafe */
-                    text-align: left; /* İsteğe bağlı: hizalama */
-
-                    font-family: "Raleway", "Odoo Unicode Support Noto", sans-serif;
-
-                    }
-
-                    .gradient-box span {
-                    font-size: 0.85rem; /* Span yazısı daha küçük */
-                    display: block; /* Alt satıra geçmesini sağlar */
-                    font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
-
-                    text-align: left; /* İsteğe bağlı: hizalama */
-                    color: #f1f1f1;
-                    font-weight: 200;
-                    line-height: 0.8;
-
-                    }
-
-
-                    .gradient-box.box-1 a {
-                    margin-left: 2rem; /* Resimlerin altına boşluk */
-                    }
-
-                    .gradient-box.box-1 div {
-                    margin-left: 3rem; /* Resimlerin altına boşluk */
-                    }
-
-                    .gradient-box.box-3 div {
-                    margin-left: 3rem; /* Resimlerin altına boşluk */
-                    margin-right: 3rem; /* Resimlerin altına boşluk */
-                    }
-
-
-                    .gradient-box.box-2 div {
-                    margin-right: 1rem; /* İki resim arasına boşluk */
-                    }
-
-                    .gradient-box.box-2 a {
-                    margin-left: 1rem; /* Resimlerin altına boşluk */
-                    }
-
-                    .gradient-box.box-2 a img {
-                    transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
-                    }
-                    .gradient-box.box-1 a img {
-                    transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
-                    }
-
-                    .gradient-box.box-1 a img:hover {
-                    transform: scale(1.5); /* Büyütme oranı */
-                    }
-
-                    .gradient-box.box-2 a img:hover {
-                    transform: scale(1.5); /* Büyütme oranı */
-                    }
-
-                    .gradient-box.box-2 a:nth-child(1) img:hover {
-                    transform: scale(1.5) translate(-30px, 0); /* İlk resim sola kayar */
-                    }
-
-                    .gradient-box.box-2 a:nth-child(2) img:hover {
-                    transform: scale(1.5) translate(50, 0); /* İkinci resim sağa kayar */
-                    }
-
-
-                </style>
-
-                <div class="container-fluid p-0 m-0 h-25" >
+                <div class="container-fluid p-0 m-0 h-25">
                     <div class="row h-75 komp " style="">
                         <div class="container  h-100 w-75">
 
-                            <div class="row h-100 ">
+                            <div class="row h-100 align-items-center">
                                 <div class="col gradient-box box-1">
                                     <div class="d-block">
                                         <p>A Tipi Muayene Kuruluşu</p>
@@ -340,10 +342,10 @@
                                 </div>
 
 
-                                <div class="col gradient-box box-2 justify-content-center">
+                                <div class="col gradient-box box-2 justify-content-center h-100">
 
                                     <div class="d-block">
-                                        <p class="" >İş Hijyeni Ölçüm </p>
+                                        <p class="">İş Hijyeni Ölçüm </p>
                                         <span>Test ve Analiz Laboratuvarı</span>
                                     </div>
 
@@ -356,10 +358,10 @@
                                     </a>
                                 </div>
 
-                                <div class="col gradient-box box-3 justify-content-start">
+                                <div class="col h-100  gradient-box box-3 justify-content-start">
 
                                     <div class="d-block">
-                                        <p class="" > Müşteri Temsilcisi </p>
+                                        <p class=""> Müşteri Temsilcisi </p>
                                         <span>Online 7/24</span>
                                     </div>
 
@@ -369,48 +371,28 @@
 
 
                                 </div>
-
-                                <!--                                <div class="col-3 gradient-box text-center box-3">-->
-                                <!--                                    <span>İş Hijyeni Laboratuvarı </span>-->
-                                <!--                                    <img src="/vita_header/static/src/img/isgum_logo.png" class="img-fluid ms-2" style="max-width: 4em;" alt="Akreditasyon Sertifikası Görüntüle"/>-->
-                                <!--                                </div>-->
-
-                                <!--                                <div class="col-3 gradient-box what box-4">-->
-                                <!--                                    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center;">-->
-                                <!--                                        <p style="margin-bottom: 10px; text-align: center;">Whatsapp İletişim Hattı</p>-->
-                                <!--                                        <a href="https://wa.me/+905325219786" style="text-align: center;" target="_blank">-->
-                                <!--                                            <i class="fa fa-whatsapp" style="font-size: 50px; color: white;"></i>-->
-                                <!--                                        </a>-->
-                                <!--                                    </div>-->
-                                <!--                                </div>-->
-
-
-
-
-
                             </div>
                         </div>
                     </div>
                     <!-- Sosyal Medya Alanı -->
                     <div class="row h-25 social-media  bg-dark ">
                         <div class="ms-auto col-11">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </xpath>
-
-        <!--        <xpath expr="//div[@id='s_dynamic_snippet_1']//div[hasclass('h6')]" position="attributes">-->
-        <!--            <attribute name="class" add="bg-dark" separator=" " />-->
-        <!--        </xpath>-->
     </template>
 </odoo>
