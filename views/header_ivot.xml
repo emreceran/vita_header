@@ -250,7 +250,7 @@
                               <hr class="w-100 mx-auto" style="border-top: 2px solid rgb(180, 68, 84);"/>
                             </div>
                             <nav class="nav flex-column">
-                              <a href="/hesap-numaralar" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/hesap-numaralari-1" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                 <span class="icerik"> Hesap Numaraları</span>
                               </a>
@@ -262,7 +262,7 @@
 
                                 <span class="icerik">  KVKK Metni</span>
                               </a>
-                              <a href="#" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/sirket-kunyesi" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
                                 <span class="icerik">  Şirket Künyesi</span>
                               </a>
@@ -558,10 +558,10 @@
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
                                   <a href="/shop/agr-metal-numune-alma-ve-analiz-101" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
+                                    <a href="/shop/kisisel-gaz-maruziyeti-olcumu-102" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                      <span class="icerik">  Kişisel Gaz Maruziyeti Ölçümü</span>
+                                    </a>
                                     <span class="icerik">  Ağır Metal Numune Alma Ve Analiz</span>
-                                  </a>
-                                  <a href="/shop/kisisel-gaz-maruziyeti-olcumu-102" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                    <span class="icerik">  Kişisel Gaz Maruziyeti Ölçümü</span>
                                   </a>
 
                                   <a href="/shop/asit-konsantrasyon-olcumu-103" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
@@ -793,7 +793,7 @@
                               <div class="collapse " id="menu1-2" data-bs-parent="#accordionExample1">
                                 <ul class="nav flex-column align-items-start mx-3">
                                   <li>
-                                    <a href="/hesap-numaralar" class="nav-link">Hesap Numaraları</a>
+                                    <a href="/hesap-numaralari-1" class="nav-link">Hesap Numaraları</a>
                                   </li>
                                   <li>
                                     <a href="/insan-kaynaklar" class="nav-link">İnsan Kaynakları</a>
@@ -802,7 +802,7 @@
                                     <a href="/kvkk-metni" class="nav-link">KVKK Metni</a>
                                   </li>
                                   <li>
-                                    <a href="#" class="nav-link">Şirket Künyesi</a>
+                                    <a href="/sirket-kunyesi" class="nav-link">Şirket Künyesi</a>
                                   </li>
                                 </ul>
                               </div>
@@ -962,10 +962,10 @@
                                     <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link">VOC Numune Alma ve Analiz</a>
                                   </li>
                                   <li>
-                                    <a href="/shop/agr-metal-numune-alma-ve-analiz-101" class="nav-link">Ağır Metal Numune Alma Ve Analiz</a>
+                                    <a href="/shop/kisisel-gaz-maruziyeti-olcumu-102" class="nav-link">Kişisel Gaz Maruziyeti Ölçümü</a>
                                   </li>
                                   <li>
-                                    <a href="/shop/kisisel-gaz-maruziyeti-olcumu-102" class="nav-link">Kişisel Gaz Maruziyeti Ölçümü</a>
+                                    <a href="/shop/agr-metal-numune-alma-ve-analiz-101" class="nav-link">Ağır Metal Numune Alma Ve Analiz</a>
                                   </li>
                                   <li>
                                     <a href="#" class="nav-link">Yağ Buharı Analizi</a>
