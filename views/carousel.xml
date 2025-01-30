@@ -268,12 +268,22 @@
                     .gradient-box.box-2 a:nth-child(2) img:hover {
                     transform: scale(1.5) translate(50, 0); /* İkinci resim sağa kayar */
                     }
+                    @keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  50% { transform: scale(1.5); box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+  100% { transform: scale(1); box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+}
+
+                    
 
                     @media (max-width: 992px) {
                         .gradient-box {
-                        height:33% !important;
+                            height:33% !important;
+                            justify-content: space-between;
                         }
-
+                        .gradient-box a img {
+    animation: pulse 3s infinite ease-in-out;
+  }
                         .komp .row{
                             height: 100% !important;
                         }
@@ -289,9 +299,7 @@
                             );
                             height: 90% !important;
                         }
-                        .gradient-box {
-                            justify-content: space-between;
-                        }
+                      
                         .gradient-box div{
                             margin: 0 0 0 1rem !important;
                         }
