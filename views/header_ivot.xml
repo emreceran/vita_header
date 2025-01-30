@@ -106,6 +106,7 @@
 
         .dropdown-toggle:hover {
         transform: scale(1); /* %20 büyüt */
+        background-color: #E9ECEF;
         }
 
         .dropdown-toggle:hover span {
@@ -188,7 +189,6 @@
       </style>
 
       <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Extra items button" class="   o_hoverable_dropdown o_header_disappears" style=" ">
-
         <div class="container py-3 px-0">
           <nav id="mega_nav" data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc o_full_border d-none d-lg-block  py-2 px-3 shadow-sm ">
             <div id="o_main_nav" class="o_main_nav container">
@@ -333,7 +333,6 @@
                     </section>
                   </div>
                 </li>
-
 
                 <li role="presentation" class="nav-item dropdown position-static">
                   <a data-bs-toggle="dropdown" href="#" role="menuitem" class="nav-link dropdown-toggle o_mega_menu_toggle  " data-bs-display="static">
@@ -506,7 +505,6 @@
                   </div>
                 </li>
 
-
                 <li role="presentation" class="nav-item dropdown position-static">
                   <a data-bs-toggle="dropdown" href="#" role="menuitem" class="nav-link dropdown-toggle o_mega_menu_toggle  " data-bs-display="static">
                     <span data-oe-xpath="/t[1]/li[2]/a[1]/span[1]" data-oe-model="website.menu" data-oe-id="9" data-oe-field="name" data-oe-type="char" data-oe-expression="submenu.name">İş Hijyeni Laboratuvarı</span>
@@ -557,13 +555,12 @@
                               </div>
                               <div class="col-md-6">
                                 <nav class="nav flex-column">
+                                  <a href="/shop/kisisel-gaz-maruziyeti-olcumu-102" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                                    <span class="icerik">  Kişisel Gaz Maruziyeti Ölçümü</span>
+                                  </a>
                                   <a href="/shop/agr-metal-numune-alma-ve-analiz-101" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="" aria-describedby="popover654448">
-                                    <a href="/shop/kisisel-gaz-maruziyeti-olcumu-102" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
-                                      <span class="icerik">  Kişisel Gaz Maruziyeti Ölçümü</span>
-                                    </a>
                                     <span class="icerik">  Ağır Metal Numune Alma Ve Analiz</span>
                                   </a>
-
                                   <a href="/shop/asit-konsantrasyon-olcumu-103" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
                                     <span class="icerik">  ⁠Yağ Buharı Analizi</span>
                                   </a>
@@ -987,7 +984,7 @@
                                     <a href="/shop/kisisel-gurultu-maruziyeti-olcumu-93" class="nav-link">Kişisel Gürültü Maruziyeti Ölçümü</a>
                                   </li>
                                   <li>
-                                    <a href="/shop/ortam-gurultu-olcumu-94" class="nav-link">Ortam Gürültü Ölçümüc</a>
+                                    <a href="/shop/ortam-gurultu-olcumu-94" class="nav-link">Ortam Gürültü Ölçümü</a>
                                   </li>
                                   <li>
                                     <a href="/shop/termal-konfor-olcumu-95" class="nav-link">Termal Konfor Ölçümü</a>
@@ -1068,6 +1065,7 @@
 
         </div>
       </header>
+
       <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
 
@@ -1143,5 +1141,4 @@
       </script>
     </xpath>
   </template>
-
 </odoo>

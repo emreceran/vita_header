@@ -289,6 +289,15 @@
                             );
                             height: 90% !important;
                         }
+                        .gradient-box {
+                            justify-content: space-between;
+                        }
+                        .gradient-box div{
+                            margin: 0 0 0 1rem !important;
+                        }
+                        .gradient-box a{
+                            text-align: right;
+                        }
                     }
                    
                 </style>
