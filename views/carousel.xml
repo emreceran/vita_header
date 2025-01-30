@@ -308,7 +308,7 @@
                             <div class="col-12 col-lg-4 h-lg-100 gradient-box box-1">
                                 <div class="d-block">
                                     <p>A Tipi Muayene Kuruluşu</p>
-                                    <span class="text-left">
+                                    <span>
                                             Peryodik Kontroller
                                     </span>
                                 </div>
@@ -321,7 +321,7 @@
 
                             <div class="col-12 col-lg-4 h-lg-100 gradient-box box-2">
                                 <div class="d-block">
-                                    <p class="">İş Hijyeni Ölçüm </p>
+                                    <p>İş Hijyeni Ölçüm </p>
                                     <span>Test ve Analiz Laboratuvarı</span>
                                 </div>
 
@@ -338,7 +338,7 @@
 
                             <div class="col-12 col-lg-4 h-lg-100 gradient-box box-3">
                                 <div class="d-block">
-                                    <p class=""> Müşteri Temsilcisi </p>
+                                    <p> Müşteri Temsilcisi </p>
                                     <span>Online 7/24</span>
                                 </div>
 
