@@ -155,7 +155,6 @@
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        justify-content: center;
                         width: 33%;
                         color: white;
                         font-weight: bold;
@@ -168,7 +167,18 @@
                         background: linear-gradient(to right, black, #f50528);
                         border: none;
                     }
-
+                    .gradient-box.box-1{
+                        justify-content: flex-end;
+                        padding-right: 2rem;
+                    }
+                    .gradient-box.box-2{
+                        justify-content: center;
+                    }
+                    .gradient-box.box-3{
+                        justify-content: flex-start;
+                        padding-left: 2rem;
+                        padding-right: 6rem;
+                    }
                     .gradient-box.box-3 .musteri,
                     .gradient-box.box-2 .hijyen,
                     .gradient-box.box-1 .a_tipi {
@@ -261,9 +271,20 @@
                         .gradient-box {
                             height:33% !important;
                             width: 100%;
-                            justify-content: space-between;
                             padding: 0 2rem !important;
                         }
+                        .gradient-box.box-1{
+                            padding-right: 0rem;
+                            justify-content: space-between;
+                        }
+                        .gradient-box.box-2{
+                            justify-content: space-between;
+                        }
+                        .gradient-box.box-3{
+                            padding-left: 0rem;
+                            justify-content: space-between;
+                        }
+
                         .gradient-box.box-3 .musteri,
                         .gradient-box.box-2 .hijyen,
                         .gradient-box.box-1 .a_tipi  {
@@ -305,7 +326,7 @@
                             #013973 66%,   /* Daha açık lacivert başlıyor */
                             #013973 100%   /* Daha açık lacivert sona kadar */
                             );
-                            height: 85% !important;
+                            height: 75% !important;
                         }
                     }
                    
