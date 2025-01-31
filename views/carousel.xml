@@ -135,6 +135,22 @@
 
                 <!-- Alt Div: %10 Yükseklik -->
                 <style>
+                    #wrapwrap {
+                        overflow-x:hidden;
+                    }
+
+                    .komp {
+                        background: linear-gradient(
+                        to right,
+                        #001f3f 0%,    /* Koyu lacivert */
+                        #001f3f 33%,   /* Koyu lacivert %25'e kadar */
+                        #012e5c 33%,   /* Açık lacivert başlıyor */
+                        #012e5c 66%,   /* Açık lacivert %75'e kadar */
+                        #013973 66%,   /* Daha açık lacivert başlıyor */
+                        #013973 100%   /* Daha açık lacivert sona kadar */
+                        );
+                    }
+
                     .gradient-box {
                         display: flex;
                         flex-direction: row;
@@ -146,7 +162,6 @@
                         font-size: 1em;
                         transition: transform 1s ease, background-color 1s ease; /* Animasyon için eklenen özellikler */
                     }
-                   
 
                     .gradient-box:hover {
                         transform: scale(1.1); /* Hover durumunda büyüme */
@@ -154,18 +169,60 @@
                         border: none;
                     }
 
+                    .gradient-box.box-3 .musteri,
+                    .gradient-box.box-2 .hijyen,
+                    .gradient-box.box-1 .a_tipi {
+                        width:40%;
+                    }
+                     
+                    .gradient-box p {
+                        font-size: 1rem; /* Ana yazı boyutu */
+                        margin-bottom: 0.5rem; /* p ile span arasında mesafe */
+                        text-align: left; /* İsteğe bağlı: hizalama */
+                        font-family: "Raleway", "Odoo Unicode Support Noto", sans-serif;
+                    }
 
-                    .what:hover {
-                        transform: scale(1.1); /* Hover durumunda büyüme */
-                        background: linear-gradient(to right, #057d23, #05e63d);
+                    .gradient-box span {
+                        font-size: 0.85rem; /* Span yazısı daha küçük */
+                        display: block; /* Alt satıra geçmesini sağlar */
+                        font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
+                        text-align: left; /* İsteğe bağlı: hizalama */
+                        color: #f1f1f1;
+                        font-weight: 200;
+                        line-height: 0.8;
+                    }
+
+                    .gradient-box.box-1 a img {
+                        transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
+                        max-width: 3em;
+                    }
+
+                    .gradient-box.box-2 .isgum img {
+                        max-width: 4em;
+                        transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
                     }
 
 
-                    #wrapwrap {
-                        overflow-x:hidden;
+                    .gradient-box.box-2 .turkak img {
+                        max-width: 3em;
+                        transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
                     }
 
-                  
+                    .gradient-box.box-3 a i {
+                        font-size: 50px; color: white;
+                    }
+
+                    .gradient-box.box-1 a img:hover {
+                        transform: scale(1.5); /* Büyütme oranı */
+                    }
+
+                    .gradient-box.box-2 .isgum img:hover {
+                        transform: scale(1.5);
+                    }
+
+                    .gradient-box.box-2 .turkak img:hover {
+                        transform: scale(1.5);
+                    }
 
                     .social-media {
                         background-color: #824209; /* Lacivert ton */
@@ -182,100 +239,59 @@
                     }
 
                     .social-media a:hover {
-                    color: #dddddd;
-                    }
-
-                    .komp {
-                    background: linear-gradient(
-                    to right,
-                    #001f3f 0%,    /* Koyu lacivert */
-                    #001f3f 33%,   /* Koyu lacivert %25'e kadar */
-                    #012e5c 33%,   /* Açık lacivert başlıyor */
-                    #012e5c 66%,   /* Açık lacivert %75'e kadar */
-                    #013973 66%,   /* Daha açık lacivert başlıyor */
-                    #013973 100%   /* Daha açık lacivert sona kadar */
-                    );
-                    }
-
-                    .gradient-box p {
-                    font-size: 1rem; /* Ana yazı boyutu */
-                    margin-bottom: 0.5rem; /* p ile span arasında mesafe */
-                    text-align: left; /* İsteğe bağlı: hizalama */
-                    font-family: "Raleway", "Odoo Unicode Support Noto", sans-serif;
-                    }
-
-                    .gradient-box span {
-                    font-size: 0.85rem; /* Span yazısı daha küçük */
-                    display: block; /* Alt satıra geçmesini sağlar */
-                    font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
-                    text-align: left; /* İsteğe bağlı: hizalama */
-                    color: #f1f1f1;
-                    font-weight: 200;
-                    line-height: 0.8;
-
-                    }
-                    .gradient-box.box-1 div {
-                    width:40%;
-                    }
-                    .gradient-box.box-2 div {
-                    width:40%;
-                    }
-
-                    .gradient-box.box-3 div {
-                    width:40%;
-                    } 
-
-                    .gradient-box.box-2 a img {
-                    transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
-                    }
-                    .gradient-box.box-1 a img {
-                    transition: transform 1s ease, translate 1s ease; /* Geçiş efekti */
-                    }
-
-                    .gradient-box.box-1 a img:hover {
-                    transform: scale(1.5); /* Büyütme oranı */
-                    }
-
-                    .gradient-box.box-2 a img:hover {
-                    transform: scale(1.5); /* Büyütme oranı */
-                    }
-                    
-                    .gradient-box.box-2 a:nth-child(1) img:hover {
-                    transform: scale(1.5);
-                    }
-
-                    .gradient-box.box-2 a:nth-child(2) img:hover {
-                    transform: scale(1.5);
+                        color: #dddddd;
                     }
                    
-                    @keyframes pulse {
-                   0% { 
-        transform: scale(1); 
-        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); 
-    }
-    50% { 
-        transform: scale(1.5); 
-        box-shadow: 0 0 20px 10px rgba(247, 64, 30, 0.5); 
-    }
-    100% { 
-        transform: scale(1); 
-        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); 
-    }
+                    @keyframes pulse {  
+                        0% { 
+                            transform: scale(1); 
+                            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); 
+                        }
+                        50% { 
+                            transform: scale(1.5); 
+                            box-shadow: 0 0 15px 8px rgba(255, 255, 255, 0.3); 
+                        }
+                        100% { 
+                            transform: scale(1); 
+                            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); 
+                        }
                     }
-
-                    
 
                     @media (max-width: 992px) {
                         .gradient-box {
                             height:33% !important;
                             width: 100%;
                             justify-content: space-between;
-                            padding: 0 35px !important;
+                            padding: 0 2rem !important;
+                        }
+                        .gradient-box.box-3 .musteri,
+                        .gradient-box.box-2 .hijyen,
+                        .gradient-box.box-1 .a_tipi  {
+                            width:60%;
+                        }
+                        .gradient-box.box-1 img,
+                        .gradient-box.box-2 .turkak img{
+                            border-radius: 10px 10px 0 0;
                         }
 
+                        .gradient-box .isgum img {
+                            border-radius: 50rem;
+                        }
                         .gradient-box a img {
                            animation: pulse 3s infinite ease-in-out;
                         }
+
+                        .box-1 img{
+                           animation-delay: 0s;
+                        }
+                        .box-2 .isgum img{
+                            animation-delay: 1s;
+                        }
+                        .box-2 .turkak img{
+                            animation-delay: 2s;
+                        }
+
+
                         .komp .row{
                             height: 100% !important;
                         }
@@ -289,58 +305,50 @@
                             #013973 66%,   /* Daha açık lacivert başlıyor */
                             #013973 100%   /* Daha açık lacivert sona kadar */
                             );
-                            height: 90% !important;
+                            height: 85% !important;
                         }
-                        
-                        
                     }
                    
                 </style>
 
-                <div class="container-fluid bg-danger p-0 m-0 h-50 h-lg-25">
-                    <div class="row h-75 komp " style="">
-                        <div class="row h-100">
+                <div class="container-fluid p-0 m-0 h-50 h-lg-25">
+                    <div class="row h-75 komp">
+                        <div class="row h-100 p-0 m-0">
                             <div class="col-12 col-lg-4 h-lg-100 gradient-box box-1">
-                                <div class="d-block  text-end">
+                                <div class="a_tipi">
                                     <p>A Tipi Muayene Kuruluşu</p>
                                     <span>
                                             Peryodik Kontroller
                                     </span>
                                 </div>
-
                                 <a href="https://asist.turkak.org.tr/tr/accreditation/accreditation-certificate/search/9709ab87-8f1f-4df5-40f5-08d957ee13bc" target="_blank">
-                                    <img src="/vita_header/static/src/img/turkak_muayene.png" class="img-fluid ms-2" style="max-width: 3em;" alt="Akreditasyon Sertifikası Görüntüle"/>
+                                    <img src="/vita_header/static/src/img/turkak_muayene.png" class="img-fluid" alt="Akreditasyon Sertifikası Görüntüle"/>
                                 </a>
                             </div>
 
 
                             <div class="col-12 col-lg-4 h-lg-100 gradient-box box-2">
-                                <div class="d-block">
+                                <div class="hijyen">
                                     <p>İş Hijyeni Ölçüm </p>
                                     <span>Test ve Analiz Laboratuvarı</span>
                                 </div>
-
-                                <a href="/vita_header/static/src/img/İSGÜM YETERLİK BELGESİ.pdf" target="_blank">
-                                    <img src="/vita_header/static/src/img/isgum.svg" class="img-fluid mx-2 " style="max-width: 4em;border: 1px solid #012e5c;
-                        background:red;
-                        border-radius: 50px;" alt="Akreditasyon Sertifikası Görüntüle"/>
-                                </a>
-
-                                <a href="https://asist.turkak.org.tr/tr/accreditation/accreditation-certificate/search/8e651a1a-1291-4231-a33c-73254a874ee0" target="_blank">
-                                    <img src="/vita_header/static/src/img/turkak_deney.png" class="img-fluid ms-2" style="max-width: 3em;" alt="Akreditasyon Sertifikası Görüntüle"/>
-                                </a>
-
-
+                                <div class="">
+                                    <a href="/vita_header/static/src/img/İSGÜM YETERLİK BELGESİ.pdf" class="isgum me-2" target="_blank">
+                                        <img src="/vita_header/static/src/img/isgum.svg" class="img-fluid" alt="Akreditasyon Sertifikası Görüntüle"/>
+                                    </a>
+                                    <a href="https://asist.turkak.org.tr/tr/accreditation/accreditation-certificate/search/8e651a1a-1291-4231-a33c-73254a874ee0" class="turkak ms-2" target="_blank">
+                                        <img src="/vita_header/static/src/img/turkak_deney.png" class="img-fluid" alt="Akreditasyon Sertifikası Görüntüle"/>
+                                    </a>
+                                </div>
                             </div>
 
-                            <div class="col-12 col-lg-4 h-lg-100 gradient-box box-3 jus-self-start ">
-                                <div class="d-block ">
+                            <div class="col-12 col-lg-4 h-lg-100 gradient-box box-3">
+                                <div class="musteri">
                                     <p> Müşteri Temsilcisi </p>
                                     <span>Online 7/24</span>
                                 </div>
-
-                                <a href="https://wa.me/+905325219786" style="text-align: center;" target="_blank">
-                                    <i class="fa fa-headset" style="font-size: 50px; color: white;"></i>
+                                <a href="https://wa.me/+905325219786" target="_blank">
+                                    <i class="fa fa-headset"></i>
                                 </a>
                             </div>
                         </div>
