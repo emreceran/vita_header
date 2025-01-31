@@ -149,38 +149,36 @@
                    
 
                     .gradient-box:hover {
-                    transform: scale(1.1); /* Hover durumunda büyüme */
-                    background: linear-gradient(to right, black, #f50528);
-                    border: none;
+                        transform: scale(1.1); /* Hover durumunda büyüme */
+                        background: linear-gradient(to right, black, #f50528);
+                        border: none;
                     }
 
 
                     .what:hover {
-                    transform: scale(1.1); /* Hover durumunda büyüme */
-                    background: linear-gradient(to right, #057d23, #05e63d);
+                        transform: scale(1.1); /* Hover durumunda büyüme */
+                        background: linear-gradient(to right, #057d23, #05e63d);
                     }
 
 
                     #wrapwrap {
-                    overflow-x:hidden;
+                        overflow-x:hidden;
                     }
 
                   
 
                     .social-media {
-                    background-color: #824209; /* Lacivert ton */
-                    color: white;
-                    padding: 10px 20px; /* İçerik için padding azaltıldı */
-                    font-size: 8px; /* Font boyutu küçültüldü */
-
+                        background-color: #824209; /* Lacivert ton */
+                        color: white;
+                        padding: 10px 20px; /* İçerik için padding azaltıldı */
+                        font-size: 8px; /* Font boyutu küçültüldü */
                     }
 
                     .social-media a {
-
-                    color: white;
-                    margin: 0 10px;
-                    text-decoration: none;
-                    font-size: 18px; /* İkon boyutu için ayar */
+                        color: white;
+                        margin: 0 10px;
+                        text-decoration: none;
+                        font-size: 18px; /* İkon boyutu için ayar */
                     }
 
                     .social-media a:hover {
@@ -202,7 +200,7 @@
                     .gradient-box p {
                     font-size: 1rem; /* Ana yazı boyutu */
                     margin-bottom: 0.5rem; /* p ile span arasında mesafe */
-                    text-align: center; /* İsteğe bağlı: hizalama */
+                    text-align: left; /* İsteğe bağlı: hizalama */
                     font-family: "Raleway", "Odoo Unicode Support Noto", sans-serif;
                     }
 
@@ -210,22 +208,21 @@
                     font-size: 0.85rem; /* Span yazısı daha küçük */
                     display: block; /* Alt satıra geçmesini sağlar */
                     font-family: "Roboto Condensed", "Odoo Unicode Support Noto", sans-serif;
-
-                    text-align: center; /* İsteğe bağlı: hizalama */
+                    text-align: left; /* İsteğe bağlı: hizalama */
                     color: #f1f1f1;
                     font-weight: 200;
                     line-height: 0.8;
 
                     }
                     .gradient-box.box-1 div {
-                    width:60%;
+                    width:40%;
                     }
                     .gradient-box.box-2 div {
-                    width:60%;
+                    width:40%;
                     }
 
                     .gradient-box.box-3 div {
-                    width:60%;
+                    width:40%;
                     } 
 
                     .gradient-box.box-2 a img {
@@ -242,7 +239,7 @@
                     .gradient-box.box-2 a img:hover {
                     transform: scale(1.5); /* Büyütme oranı */
                     }
-
+                    
                     .gradient-box.box-2 a:nth-child(1) img:hover {
                     transform: scale(1.5);
                     }
@@ -250,10 +247,20 @@
                     .gradient-box.box-2 a:nth-child(2) img:hover {
                     transform: scale(1.5);
                     }
+                   
                     @keyframes pulse {
-                    0% { transform: scale(1); box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
-                    50% { transform: scale(2); box-shadow: 25px 25px 50px rgba(0, 0, 0, 1); }
-                    100% { transform: scale(1); box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+                   0% { 
+        transform: scale(1); 
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); 
+    }
+    50% { 
+        transform: scale(1.5); 
+        box-shadow: 0 0 20px 10px rgba(247, 64, 30, 0.5); 
+    }
+    100% { 
+        transform: scale(1); 
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1); 
+    }
                     }
 
                     
@@ -284,22 +291,8 @@
                             );
                             height: 90% !important;
                         }
-                      
-                        .gradient-box div span,
-                        .gradient-box div p{
-                            text-align:left;
-                        }
                         
-                        .box-2 a{
-                            order: 2;
-                        }
-                        .box-3 a{
-                            order: 2;
-                        }
-                        .gradient-box.box-2 a:nth-child(1) img{
-                            border: 0.1px solid #012e5c;
-                            border-radius:50px;
-                        }
+                        
                     }
                    
                 </style>
@@ -322,14 +315,16 @@
 
 
                             <div class="col-12 col-lg-4 h-lg-100 gradient-box box-2">
-                                <a href="/vita_header/static/src/img/İSGÜM YETERLİK BELGESİ.pdf" target="_blank">
-                                    <img src="/vita_header/static/src/img/isgum.svg" class="img-fluid ms-2" style="max-width: 4em;" alt="Akreditasyon Sertifikası Görüntüle"/>
-                                </a>
                                 <div class="d-block">
                                     <p>İş Hijyeni Ölçüm </p>
                                     <span>Test ve Analiz Laboratuvarı</span>
                                 </div>
 
+                                <a href="/vita_header/static/src/img/İSGÜM YETERLİK BELGESİ.pdf" target="_blank">
+                                    <img src="/vita_header/static/src/img/isgum.svg" class="img-fluid mx-2 " style="max-width: 4em;border: 1px solid #012e5c;
+                        background:red;
+                        border-radius: 50px;" alt="Akreditasyon Sertifikası Görüntüle"/>
+                                </a>
 
                                 <a href="https://asist.turkak.org.tr/tr/accreditation/accreditation-certificate/search/8e651a1a-1291-4231-a33c-73254a874ee0" target="_blank">
                                     <img src="/vita_header/static/src/img/turkak_deney.png" class="img-fluid ms-2" style="max-width: 3em;" alt="Akreditasyon Sertifikası Görüntüle"/>
@@ -339,14 +334,14 @@
                             </div>
 
                             <div class="col-12 col-lg-4 h-lg-100 gradient-box box-3 jus-self-start ">
-                                <a href="https://wa.me/+905325219786" style="text-align: center;" target="_blank">
-                                    <i class="fa fa-headset" style="font-size: 50px; color: white;"></i>
-                                </a>
                                 <div class="d-block ">
                                     <p> Müşteri Temsilcisi </p>
                                     <span>Online 7/24</span>
                                 </div>
 
+                                <a href="https://wa.me/+905325219786" style="text-align: center;" target="_blank">
+                                    <i class="fa fa-headset" style="font-size: 50px; color: white;"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
