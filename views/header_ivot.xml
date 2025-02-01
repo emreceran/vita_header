@@ -232,9 +232,9 @@
 
                                 <span class="icerik"> İlke ve Değerlerimiz</span>
                               </a>
-                              <a href="/organizasyon-semas" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
+                              <a href="/ekibimiz" class="nav-link2 px-0" data-name="Menu Item" data-bs-original-title="" title="">
 
-                                <span class="icerik"> Organizasyon Şeması</span>
+                                <span class="icerik">Ekibimiz</span>
                               </a>
                             </nav>
                           </div>
@@ -780,7 +780,7 @@
                                     <a href="/ilke-ve-degerlerimiz" class="nav-link text-start">İlke ve Değerlerimiz</a>
                                   </li>
                                   <li>
-                                    <a href="/organizasyon-semas" class="nav-link text-start">Organizasyon Şeması</a>
+                                    <a href="/ekibimiz" class="nav-link text-start">Ekibimiz</a>
                                   </li>
                                 </ul>
                               </div>
@@ -1036,8 +1036,7 @@
 
                           <ul class="nav flex-column align-items-start mx-3" id="accordionExample4">
                             <li>
-                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu4-1" aria-expanded="false">MÜHENDİSLİK HİZMETLERİ</a>
-                              <div class="collapse " id="menu4-1" data-bs-parent="#accordionExample4">
+                              <div class="collapse show" id="menu4-1" data-bs-parent="#accordionExample4">
                                 <ul class="nav flex-column align-items-start mx-3">
                                   <li>
                                     <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link">Patlamadan Korunma Dökümantasyonu</a>
@@ -1068,6 +1067,7 @@
                                   </li>
                                 </ul>
                               </div>
+                              <a href="#" class="nav-link dropdown-toggle" style="visibility:hidden;" data-bs-toggle="collapse" data-bs-target="#menu4-1" aria-expanded="false">MÜHENDİSLİK HİZMETLERİ</a>
                             </li>
                           </ul>
                         </div>

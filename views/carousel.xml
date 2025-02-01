@@ -326,7 +326,7 @@
                             #013973 66%,   /* Daha açık lacivert başlıyor */
                             #013973 100%   /* Daha açık lacivert sona kadar */
                             );
-                            height: 75% !important;
+                            height: 90% !important;
                         }
                     }
                    
@@ -339,14 +339,13 @@
                                 <div class="a_tipi">
                                     <p>A Tipi Muayene Kuruluşu</p>
                                     <span>
-                                            Peryodik Kontroller
+                                            Periyodik Kontroller
                                     </span>
                                 </div>
                                 <a href="https://asist.turkak.org.tr/tr/accreditation/accreditation-certificate/search/9709ab87-8f1f-4df5-40f5-08d957ee13bc" target="_blank">
                                     <img src="/vita_header/static/src/img/turkak_muayene.png" class="img-fluid" alt="Akreditasyon Sertifikası Görüntüle"/>
                                 </a>
                             </div>
-
 
                             <div class="col-12 col-lg-4 h-lg-100 gradient-box box-2">
                                 <div class="hijyen">
@@ -375,11 +374,8 @@
                         </div>
                     </div>
                     <!-- Sosyal Medya Alanı -->
-                    <div class="row h-25 social-media  bg-dark ">
+                    <div class="row h-25 social-media" style="background-color: black;">
                         <div class="ms-auto col-11">
-                            <a href="#">
-                                <i class="fa fa-facebook"></i>
-                            </a>
                             <a href="#">
                                 <i class="fa fa-twitter"></i>
                             </a>
@@ -392,16 +388,7 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
             </div>
         </xpath>
-
-        <!--        <xpath expr="//div[@id='s_dynamic_snippet_1']//div[hasclass('h6')]" position="attributes">-->
-        <!--            <attribute name="class" add="bg-dark" separator=" " />-->
-        <!--        </xpath>-->
     </template>
 </odoo>
