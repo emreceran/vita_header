@@ -970,7 +970,7 @@
                                   <li>
                                     <a href="/shop/ucucu-organik-bilesik-voc-numune-alma-ve-analiz-100" class="nav-link">VOC Numune Alma ve Analiz</a>
                                   </li>
-                                  <li>
+                                  <!-- <li>
                                     <a href="/shop/kisisel-gaz-maruziyeti-olcumu-102" class="nav-link">Kişisel Gaz Maruziyeti Ölçümü</a>
                                   </li>
                                   <li>
@@ -981,7 +981,7 @@
                                   </li>
                                   <li>
                                     <a href="/shop/asit-konsantrasyon-olcumu-103" class="nav-link">Asit Konsantrasyon Ölçümü</a>
-                                  </li>
+                                  </li> -->
                                   <li>
                                     <a href="/shop/category/is-hijyeni-laboratuvar-kimyasal-etkenler-101" class="nav-link">Tüm Kimyasal Etkenler</a>
                                   </li>
@@ -1004,7 +1004,7 @@
                                   <li>
                                     <a href="/shop/termal-konfor-olcumu-95" class="nav-link">Termal Konfor Ölçümü</a>
                                   </li>
-                                  <li>
+                                  <!-- <li>
                                     <a href="#" class="nav-link">Tüm Vucut Titrşim Maruziyeti Ölçümü</a>
                                   </li>
                                   <li>
@@ -1016,41 +1016,41 @@
                                   <li>
                                     <a href="/shop/elektromanyetik-alan-maruziyet-olcumu-159" class="nav-link">Elektromanyetik Alan Ölçümü</a>
                                   </li>
-                                  <li>
-                                    <a href="/shop/category/is-hijyeni-laboratuvar-fiziksel-etkenler-100" class="nav-link">Tüm Fiziksel Etkenler</a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                                  <li> -->
+                                  <a href="/shop/category/is-hijyeni-laboratuvar-fiziksel-etkenler-100" class="nav-link">Tüm Fiziksel Etkenler</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
                       </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <div class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false">
-                        <div class="btn btn-outline-secondary w-100 d-flex justify-content-between">
-                          <div>MÜHENDİSLİK HİZMETLERİ</div>
-                          <div>&#9660;</div>
-                        </div>
-                        <div class="collapse bg-light rounded-3" id="menu4" data-bs-parent="#accordionExample">
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <div class="nav-link dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#menu4" aria-expanded="false">
+                      <div class="btn btn-outline-secondary w-100 d-flex justify-content-between">
+                        <div>MÜHENDİSLİK HİZMETLERİ</div>
+                        <div>&#9660;</div>
+                      </div>
+                      <div class="collapse bg-light rounded-3" id="menu4" data-bs-parent="#accordionExample">
 
-                          <ul class="nav flex-column align-items-start mx-3" id="accordionExample4">
-                            <li>
-                              <div class="collapse show" id="menu4-1" data-bs-parent="#accordionExample4">
-                                <ul class="nav flex-column align-items-start mx-3">
-                                  <li>
-                                    <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link">Patlamadan Korunma Dökümantasyonu</a>
-                                  </li>
-                                  <li>
-                                    <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link">Statik Analiz</a>
-                                  </li>
-                                  <li>
-                                    <a href="/shop/yangn-tesisat-proje-degerlendirme-207" class="nav-link">Yangın Tesisatı Proje</a>
-                                  </li>
-                                  <li>
-                                    <a href="/shop/havalandrma-tesisat-proje-degerlendirme-208" class="nav-link">Havalandırma Tesisatı Proje</a>
-                                  </li>
-                                  <li>
+                        <ul class="nav flex-column align-items-start mx-3" id="accordionExample4">
+                          <li>
+                            <div class="collapse show" id="menu4-1" data-bs-parent="#accordionExample4">
+                              <ul class="nav flex-column align-items-start mx-3">
+                                <li>
+                                  <a href="/shop/category/muhendislik-hizmetleri-patlamadan-korunma-dokumantasyonu-115?search=patlama&amp;order=name+asc" class="nav-link">Patlamadan Korunma Dökümantasyonu</a>
+                                </li>
+                                <li>
+                                  <a href="/shop/category/muhendislik-hizmetleri-statik-analiz-116" class="nav-link">Statik Analiz</a>
+                                </li>
+                                <li>
+                                  <a href="/shop/yangn-tesisat-proje-degerlendirme-207" class="nav-link">Yangın Tesisatı Proje</a>
+                                </li>
+                                <li>
+                                  <a href="/shop/havalandrma-tesisat-proje-degerlendirme-208" class="nav-link">Havalandırma Tesisatı Proje</a>
+                                </li>
+                                <!-- <li>
                                     <a href="/shop/alglama-alarm-sistemleri-proje-degerlendirme-209" class="nav-link">Algılama Alarm Sistemleriz</a>
                                   </li>
                                   <li>
@@ -1061,33 +1061,33 @@
                                   </li>
                                   <li>
                                     <a href="/shop/tesisat-grubu-proje-degerlendirme-213" class="nav-link">Tesisat Grubu Proje</a>
-                                  </li>
-                                  <li>
-                                    <a href="/shop/category/muhendislik-hizmetleri-77" class="nav-link">Tüm Mühendislik Hizmetleri</a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <a href="#" class="nav-link dropdown-toggle" style="visibility:hidden;" data-bs-toggle="collapse" data-bs-target="#menu4-1" aria-expanded="false">MÜHENDİSLİK HİZMETLERİ</a>
-                            </li>
-                          </ul>
-                        </div>
+                                  </li> -->
+                                <li>
+                                  <a href="/shop/category/muhendislik-hizmetleri-77" class="nav-link">Tüm Mühendislik Hizmetleri</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <a href="#" class="nav-link dropdown-toggle" style="visibility:hidden;" data-bs-toggle="collapse" data-bs-target="#menu4-1" aria-expanded="false">MÜHENDİSLİK HİZMETLERİ</a>
+                          </li>
+                        </ul>
                       </div>
-                    </li>
-                    <li class="nav-item text-end mt-5 pt-5">
-                      <a href="/contactus" class="btn btn-primary" data-bs-target="#menu5" aria-expanded="false">
+                    </div>
+                  </li>
+                  <li class="nav-item text-end mt-5 pt-5">
+                    <a href="/contactus" class="btn btn-primary" data-bs-target="#menu5" aria-expanded="false">
                         İletişim
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </nav>
+          </div>
+        </nav>
 
-        </div>
-      </header>
+      </div>
+    </header>
 
-      <script type="text/javascript">
+    <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function () {
 
           document.querySelectorAll('.offcanvas-body ul li ul li ul li a').forEach(link =&gt; {
@@ -1159,7 +1159,7 @@
         });
         });
         });
-      </script>
-    </xpath>
-  </template>
+    </script>
+  </xpath>
+</template>
 </odoo>
