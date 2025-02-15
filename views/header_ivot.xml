@@ -185,6 +185,32 @@
           overflow-x: hidden !important;
           padding:5px;
         }
+        /* skeleton css */
+        .skeleton {
+            background: linear-gradient(90deg, #eee 25%, #ddd 50%, #eee 75%);
+            background-size: 400% 100%;
+            animation: skeleton-loading 1.2s infinite;
+            width: 50px;
+            height: 50px;
+            display: block;
+        }
+
+        @keyframes skeleton-loading {
+            0% {
+                background-position: 100% 0;
+            }
+            100% {
+                background-position: -100% 0;
+            }
+        }
+
+        .lazyload {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+
+
 
       </style>
 
@@ -209,7 +235,12 @@
                           <div class="col-md-6 o_colored_level kenarlik  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="  o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/şirket profili.svg'" style="width:50px" alt=""/>
+                             <img class="lazyload skeleton"
+                                   t-att-data-src="'/vita_header/static/src/img/iconlar/şirket profili.svg'"
+                                   style="width:50px"
+                                   alt="Loading..."/>
+
+
                               </div>
                               <br/>
                               <font class="text-800">Şİrket profİlİ</font>
@@ -241,7 +272,7 @@
                           <div class="col-md-6 o_colored_level  kenarlik o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/kurumsal bilgiler.svg'" style="width:50px" alt="" />
+                                <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/kurumsal bilgiler.svg'" style="width:50px" alt="Loading..." />
                               </div>
                               <br/>
                               <font class="text-800">Kurumsal Bİlgİler</font>
@@ -271,7 +302,7 @@
                           <div class="col-md-6 o_colored_level  kenarlik o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'" style="width:50px" alt="" />
+                                <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'" style="width:50px" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Dokumantasyon</font>
@@ -301,7 +332,7 @@
                           <div class="col-md-6 o_colored_level  kenarlik o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img t-att-src="'/vita_header/static/src/img/iconlar/medya.svg'" style="width:50px" alt="" />
+                                <img class="lazyload skeleton"   t-att-data-src="'/vita_header/static/src/img/iconlar/medya.svg'" style="width:50px" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Medya</font>
@@ -347,7 +378,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/elektrik gurubu.svg'" alt="" />
+                                  <img class="lazyload skeleton"   t-att-data-src="'/vita_header/static/src/img/iconlar/elektrik gurubu.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Elektrİk Grubu</font>
@@ -387,7 +418,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/makine grubu.svg'" alt="" />
+                                  <img class="lazyload skeleton"   t-att-data-src="'/vita_header/static/src/img/iconlar/makine grubu.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Makİne Grubu</font>
@@ -426,7 +457,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/tesisat grubu.svg'" alt="" />
+                                  <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/tesisat grubu.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Yangın Tesisatı</font>
@@ -465,7 +496,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/havalandırma tesisatı.svg'" alt="" />
+                                  <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/havalandırma tesisatı.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Havalandırma Tesisatı</font>
@@ -518,7 +549,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div class="col-6">
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'" alt="" />
+                                  <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Kİmyasal etkenler</font>
@@ -578,7 +609,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div class="col-6">
-                                  <img t-att-src="'/vita_header/static/src/img/iconlar/fiziksel etkenler.svg'" alt="" />
+                                  <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/fiziksel etkenler.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Fİzİksel etkenler</font>
@@ -1089,6 +1120,33 @@
       </header>
 
       <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function () {
+              const images = document.querySelectorAll(".lazyload");
+
+              images.forEach(img => {
+                  const tempImage = new Image();
+                  tempImage.src = img.getAttribute("data-src");
+
+                  tempImage.onload = function () {
+                      setTimeout(() => {  // Resmi 3 saniye geciktirerek yükle
+                          img.src = tempImage.src;
+                          img.classList.remove("skeleton");
+                          img.style.opacity = "1";
+                      }, 3000); // 10 saniye gecikmeli yüklensin
+                  };
+
+                  tempImage.onerror = function () {
+                      console.error("Resim yüklenemedi: ", tempImage.src);
+                  };
+              });
+          });
+
+
+
+
+
+
         document.addEventListener('DOMContentLoaded', function () {
 
           document.querySelectorAll('.offcanvas-body ul li ul li ul li a').forEach(link =&gt; {
