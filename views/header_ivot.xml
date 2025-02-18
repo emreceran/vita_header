@@ -2,20 +2,24 @@
 <odoo>
   <template id="custom_theme_header" inherit_id="website.layout" name="Custom Theme Header">
     <xpath expr="//header" position="replace">
-      <style>       [data-name="Mega Menu"] {
-          transform-origin: top;
-          transform: scaleY(0);
-          opacity: 0;
-          visibility: hidden;
-          transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-        } [data-name="Mega Menu"].active {
-        transform: scaleY(1);
-        opacity: 1;
-        visibility: visible;
-        border-radius: 0 0 28px 28px !important;
-        margin-top: 1px !important;
+      <style>
+          [data-name="Mega Menu"] {
+              position: absolute; /* Menü pozisyonunu sabit tut */
+              top: 100%; /* Header'ın hemen altına koy */
+              left: 0;
+              width: 100%; /* Menü boyutlarını koru */
+              opacity: 0;
+              visibility: hidden;
+              transform: translateY(-10px);
+              transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+          }
 
-        }
+          [data-name="Mega Menu"].active {
+              opacity: 1;
+              visibility: visible;
+              transform: translateY(0);
+          }
+
 
 
 
@@ -1129,11 +1133,9 @@
                   tempImage.src = img.getAttribute("data-src");
 
                   tempImage.onload = function () {
-                      setTimeout(() => {  // Resmi 3 saniye geciktirerek yükle
-                          img.src = tempImage.src;
-                          img.classList.remove("skeleton");
-                          img.style.opacity = "1";
-                      }, 3000); // 10 saniye gecikmeli yüklensin
+                      img.src = tempImage.src;
+                      img.classList.remove("skeleton");
+                      img.style.opacity = "1";
                   };
 
                   tempImage.onerror = function () {
@@ -1147,77 +1149,34 @@
 
 
 
-        document.addEventListener('DOMContentLoaded', function () {
+              document.addEventListener('DOMContentLoaded', function () {
+                const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
+                const topMenu = document.querySelector('#top_menuu');
 
-          document.querySelectorAll('.offcanvas-body ul li ul li ul li a').forEach(link =&gt; {
-              link.addEventListener('click', function(event) {
-                  console.log("Tıklanan link:", this.href); // Konsola tıklanan linkin URL'sini yazdırır
+                megaMenus.forEach((menu) => {
+                    const dropdownToggle = menu.closest('.dropdown')?.querySelector('[data-bs-toggle="dropdown"]');
+                    let isMenuOpen = false;
 
-                  // Eğer href boş değilse, yönlendirmeyi çalıştır ve collapse kapanmasını engelle
-                  if (this.href) {
-                      event.stopPropagation(); // Bootstrap'in "collapse" özelliğini devre dışı bırak
-                      window.location.href = this.href;
-                      console.log("devredışı")
-                  }
-              });
-          });
+                    if (dropdownToggle) {
+                        topMenu.addEventListener('mouseenter', () => {
+                            menu.classList.add('active'); // Yalnızca hover ile aç
+                            isMenuOpen = true;
+                        });
 
-        // Tüm Mega Menu öğelerini seç
-        const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
-        const topMenu = document.querySelector('#top_menuu');
+                        topMenu.addEventListener('mouseleave', () => {
+                            menu.classList.remove('active'); // Mouse çıkınca kapan
+                            isMenuOpen = false;
+                        });
 
-        // Her bir Mega Menu için olay dinleyicileri ekle
-        megaMenus.forEach((menu) =&gt; {
-        const dropdownToggle = menu.closest('.dropdown').querySelector('[data-bs-toggle="dropdown"]');
+                        menu.addEventListener('mouseenter', () => isMenuOpen = true);
+                        menu.addEventListener('mouseleave', () => {
+                            menu.classList.remove('active');
+                            isMenuOpen = false;
+                        });
+                    }
+                });
+            });
 
-        if (dropdownToggle) {
-        // Menü açılma kontrol değişkeni
-        let isMenuOpen = false;
-
-        // Menü açıldığında
-        topMenu.addEventListener('mouseenter', () =&gt; {
-        if (!isMenuOpen) { // Eğer menü zaten açık değilse animasyonu uygula
-        menu.classList.add('active'); // Açılma animasyonu
-        isMenuOpen = true; // Menü açık olarak işaretle
-        }
-        });
-
-        // Menü kapandığında
-        topMenu.addEventListener('mouseleave', () =&gt; {
-        menu.classList.remove('active'); // Kapanma animasyonu
-        isMenuOpen = false; // Menü kapalı olarak işaretle
-        });
-
-        // Menü üzerinde gezinme
-        menu.addEventListener('mouseenter', () =&gt; {
-        isMenuOpen = true; // Menü üzerinde gezinirken açık kalsın
-        });
-
-        // Menüden çıkıldığında kapatma
-        menu.addEventListener('mouseleave', () =&gt; {
-        menu.classList.remove('active'); // Kapat
-        isMenuOpen = false; // Menü kapalı olarak işaretle
-        });
-        }
-        });
-
-        // #top_menu içindeki ilk 4 li elemanını seç
-        const firstFourItems = document.querySelectorAll('#top_menuu &gt; li:nth-child(-n+4)');
-        const megaNav = document.querySelector('#mega_nav');
-        megaNav.style.setProperty('border-radius', '50rem', 'important');
-
-        // İlk dört eleman üzerine geldiğinde işlem yap
-        firstFourItems.forEach((item) =&gt; {
-        item.addEventListener('mouseenter', () =&gt; {
-        megaNav.style.borderRadius = '28px 28px 0 0';
-        megaNav.style.setProperty('border-radius', '28px 28px 0 0', 'important');
-        });
-
-        item.addEventListener('mouseleave', () =&gt; {
-        megaNav.style.setProperty('border-radius', '50rem', 'important');
-        });
-        });
-        });
       </script>
     </xpath>
   </template>
