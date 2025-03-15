@@ -2,8 +2,7 @@
 <odoo>
   <template id="custom_theme_header" inherit_id="website.layout" name="Custom Theme Header">
     <xpath expr="//header" position="replace">
-      <style>
-          [data-name="Mega Menu"] {
+      <style> [data-name="Mega Menu"] {
               position: absolute; /* Menü pozisyonunu sabit tut */
               top: 100%; /* Header'ın hemen altına koy */
               left: 0;
@@ -12,9 +11,7 @@
               visibility: hidden;
               transform: translateY(-10px);
               transition: opacity 0.2s ease-out, transform 0.2s ease-out;
-          }
-
-          [data-name="Mega Menu"].active {
+          } [data-name="Mega Menu"].active {
               opacity: 1;
               visibility: visible;
               transform: translateY(0);
@@ -239,10 +236,7 @@
                           <div class="col-md-6 o_colored_level kenarlik  o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="  o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                             <img class="lazyload skeleton"
-                                   t-att-data-src="'/vita_header/static/src/img/iconlar/şirket profili.svg'"
-                                   style="width:50px"
-                                   alt="Loading..."/>
+                                <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/şirket profili.svg'" style="width:50px" alt="Loading..."/>
 
 
                               </div>
@@ -306,7 +300,7 @@
                           <div class="col-md-6 o_colored_level  kenarlik o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'" style="width:50px" alt="" />
+                                <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/dokumantasyon.svg'" style="width:50px" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Dokumantasyon</font>
@@ -336,7 +330,7 @@
                           <div class="col-md-6 o_colored_level  kenarlik o_grid_item g-col-lg-3 g-height-9 col-lg-3" data-tilt-feature="" style="">
                             <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                               <div>
-                                <img class="lazyload skeleton"   t-att-data-src="'/vita_header/static/src/img/iconlar/medya.svg'" style="width:50px" alt="" />
+                                <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/medya.svg'" style="width:50px" alt="" />
                               </div>
                               <br/>
                               <font class="text-800">Medya</font>
@@ -382,7 +376,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
-                                  <img class="lazyload skeleton"   t-att-data-src="'/vita_header/static/src/img/iconlar/elektrik gurubu.svg'" alt="" />
+                                  <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/elektrik gurubu.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Elektrİk Grubu</font>
@@ -422,7 +416,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
-                                  <img class="lazyload skeleton"   t-att-data-src="'/vita_header/static/src/img/iconlar/makine grubu.svg'" alt="" />
+                                  <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/makine grubu.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Makİne Grubu</font>
@@ -461,7 +455,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
-                                  <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/tesisat grubu.svg'" alt="" />
+                                  <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/tesisat grubu.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Yangın Tesisatı</font>
@@ -500,7 +494,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div>
-                                  <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/havalandırma tesisatı.svg'" alt="" />
+                                  <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/havalandırma tesisatı.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Havalandırma Tesisatı</font>
@@ -553,7 +547,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div class="col-6">
-                                  <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'" alt="" />
+                                  <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/kimyasal etkenler.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Kİmyasal etkenler</font>
@@ -613,7 +607,7 @@
                             <div class="d-flex align-items-end">
                               <h4 class="o_default_snippet_text text-uppercase h5 fw-bold mt-0">
                                 <div class="col-6">
-                                  <img class="lazyload skeleton"  t-att-data-src="'/vita_header/static/src/img/iconlar/fiziksel etkenler.svg'" alt="" />
+                                  <img class="lazyload skeleton" t-att-data-src="'/vita_header/static/src/img/iconlar/fiziksel etkenler.svg'" alt="" />
                                 </div>
                                 <br/>
                                 <font class="text-800">Fİzİksel etkenler</font>
@@ -1126,56 +1120,62 @@
       <script type="text/javascript">
 
         document.addEventListener("DOMContentLoaded", function () {
-              const images = document.querySelectorAll(".lazyload");
+          const images = document.querySelectorAll(".lazyload");
 
-              images.forEach(img => {
-                  const tempImage = new Image();
-                  tempImage.src = img.getAttribute("data-src");
+          images.forEach(img =&gt; {
+              const tempImage = new Image();
+              tempImage.src = img.getAttribute("data-src");
 
-                  tempImage.onload = function () {
-                      img.src = tempImage.src;
-                      img.classList.remove("skeleton");
-                      img.style.opacity = "1";
-                  };
+              tempImage.onload = function () {
+                  img.src = tempImage.src;
+                  img.classList.remove("skeleton");
+                  img.style.opacity = "1";
+              };
 
-                  tempImage.onerror = function () {
-                      console.error("Resim yüklenemedi: ", tempImage.src);
-                  };
-              });
+              tempImage.onerror = function () {
+                  console.error("Resim yüklenemedi: ", tempImage.src);
+              };
           });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+                        
+          document.getElementById('top_menu_collapse_mobile').addEventListener('click', function(event) {
+            if (event.target.tagName.toLowerCase() === 'a') {
+                        window.location.href = event.target.href; // href adresine yönlendir
+            }
+          });
+        });
 
 
 
+        document.addEventListener('DOMContentLoaded', function () {
+          const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
+          const topMenu = document.querySelector('#top_menuu');
 
+          megaMenus.forEach((menu) =&gt; {
+              const dropdownToggle = menu.closest('.dropdown')?.querySelector('[data-bs-toggle="dropdown"]');
+              let isMenuOpen = false;
 
+              if (dropdownToggle) {
+                  topMenu.addEventListener('mouseenter', () =&gt; {
+                      menu.classList.add('active'); // Yalnızca hover ile aç
+                      isMenuOpen = true;
+                  });
 
-              document.addEventListener('DOMContentLoaded', function () {
-                const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
-                const topMenu = document.querySelector('#top_menuu');
+                  topMenu.addEventListener('mouseleave', () =&gt; {
+                      menu.classList.remove('active'); // Mouse çıkınca kapan
+                      isMenuOpen = false;
+                  });
 
-                megaMenus.forEach((menu) => {
-                    const dropdownToggle = menu.closest('.dropdown')?.querySelector('[data-bs-toggle="dropdown"]');
-                    let isMenuOpen = false;
-
-                    if (dropdownToggle) {
-                        topMenu.addEventListener('mouseenter', () => {
-                            menu.classList.add('active'); // Yalnızca hover ile aç
-                            isMenuOpen = true;
-                        });
-
-                        topMenu.addEventListener('mouseleave', () => {
-                            menu.classList.remove('active'); // Mouse çıkınca kapan
-                            isMenuOpen = false;
-                        });
-
-                        menu.addEventListener('mouseenter', () => isMenuOpen = true);
-                        menu.addEventListener('mouseleave', () => {
-                            menu.classList.remove('active');
-                            isMenuOpen = false;
-                        });
-                    }
-                });
-            });
+                  menu.addEventListener('mouseenter', () =&gt; isMenuOpen = true);
+                  menu.addEventListener('mouseleave', () =&gt; {
+                      menu.classList.remove('active');
+                      isMenuOpen = false;
+                  });
+              }
+          });
+        });
 
       </script>
     </xpath>
