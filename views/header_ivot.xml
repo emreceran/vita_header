@@ -774,6 +774,11 @@
               <a data-name="Navbar Logo" href="/" class="navbar-brand logo">
                 <img src="/vita_header/static/src/img/Vita.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy"/>
               </a>
+              <div class="nav-item text-end ms-5 ps-5 ">
+                <a href="/contactus" class="btn btn-primary" data-bs-target="#menu5" aria-expanded="false">
+                        Bize Ulaşın
+                </a>
+              </div>
               <ul class="o_header_mobile_buttons_wrap navbar-nav flex-row align-items-center gap-2 mb-0">
                 <li>
                   <button class="nav-link btn me-auto p-2 o_not_editable" type="button" data-bs-toggle="offcanvas" data-bs-target="#top_menu_collapse_mobile" aria-controls="top_menu_collapse_mobile" aria-expanded="false" aria-label="Geçiş navigasyonu">
@@ -1102,11 +1107,6 @@
                           </ul>
                         </div>
                       </div>
-                    </li>
-                    <li class="nav-item text-end mt-5 pt-5">
-                      <a href="/contactus" class="btn btn-primary" data-bs-target="#menu5" aria-expanded="false">
-                        İletişim
-                      </a>
                     </li>
                   </ul>
                 </div>

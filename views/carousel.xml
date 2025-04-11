@@ -125,7 +125,7 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                    <div class=" w-100 h-100 d-flex justify-content-center align-items-center d-sm-none bg-info" style=" position: relative;">
+                    <div class="w-100 h-100 d-flex justify-content-center align-items-center d-sm-none img-fluid" style="background-image: url('/vita_header/static/src/img/slider6.jpg');  background-repeat: no-repeat; /* Resmin tekrar etmesini engeller */background-position: center center;background-size: cover; position: relative;">
                         <div class="mobil-slide">Vita Mühendislik</div>
                     </div>
                 </div>
