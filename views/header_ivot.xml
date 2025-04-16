@@ -2,8 +2,9 @@
 <odoo>
   <template id="custom_theme_header" inherit_id="website.layout" name="Custom Theme Header">
     <xpath expr="//header" position="replace">
-      <style> [data-name="Mega Menu"] {
+      <style>  [data-name="Mega Menu"] {
               position: absolute; /* Menü pozisyonunu sabit tut */
+                z-index: 99999 !important;
               top: 100%; /* Header'ın hemen altına koy */
               left: 0;
               width: 100%; /* Menü boyutlarını koru */
@@ -11,14 +12,17 @@
               visibility: hidden;
               transform: translateY(-10px);
               transition: opacity 0.2s ease-out, transform 0.2s ease-out;
-          } [data-name="Mega Menu"].active {
+      
+        } [data-name="Mega Menu"].active {
               opacity: 1;
               visibility: visible;
               transform: translateY(0);
-          }
+        }
 
 
-
+        .radius_duzen{
+            border-radius: 20px 20px 0 0 !important;
+        }
 
         .dropdown-toggle::after,
         .dropdown-toggle::before {
@@ -35,7 +39,7 @@
         .s_mega_menu_odoo_menu {
         background-color: #f2f2f2 !important;
         height: 17rem;
-        overflow-y: auto;
+        overflow-y: auto;i
         }
 
 
@@ -52,6 +56,7 @@
         @media (max-width: 992px) {
         #mega_nav {
         border-radius: 1rem !important;
+        background-color:blue !important;
         }
         }
 
@@ -217,7 +222,7 @@
 
       <header id="top" data-anchor="true" data-name="Header" data-extra-items-toggle-aria-label="Extra items button" class="   o_hoverable_dropdown o_header_disappears" style=" ">
         <div class="container py-3 px-0">
-          <nav id="mega_nav" data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc o_full_border d-none d-lg-block  py-2 px-3 shadow-sm ">
+          <nav id="mega_nav" data-name="Navbar" aria-label="Main" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc o_full_border d-none d-lg-block  py-2 px-3 shadow-sm rounded-pill">
             <div id="o_main_nav" class="o_main_nav container">
               <a data-name="Navbar Logo" href="/" class="navbar-brand logo me-4">
                 <span role="img" data-oe-xpath="/data/xpath/a/span[1]" aria-label="Logo of My Website" title="My Website" data-oe-model="website" data-oe-id="1" data-oe-field="logo" data-oe-type="image" data-oe-expression="website.logo"/>
@@ -774,7 +779,7 @@
               <a data-name="Navbar Logo" href="/" class="navbar-brand logo">
                 <img src="/vita_header/static/src/img/Vita.png" class="img img-fluid" width="95" height="40" alt="My Website" loading="lazy"/>
               </a>
-              <div class="nav-item text-end ms-5 ps-5 ">
+              <div class="nav-item text-end ms-3 ps-3 ">
                 <a href="/contactus" class="btn btn-primary" data-bs-target="#menu5" aria-expanded="false">
                         Bize Ulaşın
                 </a>
@@ -1117,67 +1122,62 @@
         </div>
       </header>
 
-      <script type="text/javascript">
+      <script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Lazyload
+  const images = document.querySelectorAll(".lazyload");
+  images.forEach(img =&gt; {
+    const tempImage = new Image();
+    tempImage.src = img.getAttribute("data-src");
 
-        document.addEventListener("DOMContentLoaded", function () {
-          const images = document.querySelectorAll(".lazyload");
+    tempImage.onload = function () {
+      img.src = tempImage.src;
+      img.classList.remove("skeleton");
+      img.style.opacity = "1";
+    };
 
-          images.forEach(img =&gt; {
-              const tempImage = new Image();
-              tempImage.src = img.getAttribute("data-src");
+    tempImage.onerror = function () {
+      console.error("Resim yüklenemedi: ", tempImage.src);
+    };
+  });
 
-              tempImage.onload = function () {
-                  img.src = tempImage.src;
-                  img.classList.remove("skeleton");
-                  img.style.opacity = "1";
-              };
+  // Mobil menü tıklama
+  document.getElementById('top_menu_collapse_mobile').addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() === 'a') {
+      window.location.href = event.target.href;
+    }
+  });
 
-              tempImage.onerror = function () {
-                  console.error("Resim yüklenemedi: ", tempImage.src);
-              };
-          });
-        });
+  // Mega Menü
+  const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
+  const Navbar = document.querySelector('#mega_nav');
+  const topMenu = document.querySelector('#top_menuu');
 
-        document.addEventListener("DOMContentLoaded", function () {
-                        
-          document.getElementById('top_menu_collapse_mobile').addEventListener('click', function(event) {
-            if (event.target.tagName.toLowerCase() === 'a') {
-                        window.location.href = event.target.href; // href adresine yönlendir
-            }
-          });
-        });
+  megaMenus.forEach((menu) =&gt; {
+    const dropdownToggle = menu.closest('.dropdown')?.querySelector('[data-bs-toggle="dropdown"]');
 
+    if (dropdownToggle) {
+      const showMenu = () =&gt; {
+        menu.classList.add('active');
+        Navbar.classList.add('radius_duzen');
+      };
 
+      const hideMenu = () =&gt; {
+          if (!menu.matches(':hover') &amp;&amp; !topMenu.matches(':hover')) {
+            menu.classList.remove('active');
+            Navbar.classList.remove('radius_duzen');
+          }
+      };
 
-        document.addEventListener('DOMContentLoaded', function () {
-          const megaMenus = document.querySelectorAll('[data-name="Mega Menu"]');
-          const topMenu = document.querySelector('#top_menuu');
-
-          megaMenus.forEach((menu) =&gt; {
-              const dropdownToggle = menu.closest('.dropdown')?.querySelector('[data-bs-toggle="dropdown"]');
-              let isMenuOpen = false;
-
-              if (dropdownToggle) {
-                  topMenu.addEventListener('mouseenter', () =&gt; {
-                      menu.classList.add('active'); // Yalnızca hover ile aç
-                      isMenuOpen = true;
-                  });
-
-                  topMenu.addEventListener('mouseleave', () =&gt; {
-                      menu.classList.remove('active'); // Mouse çıkınca kapan
-                      isMenuOpen = false;
-                  });
-
-                  menu.addEventListener('mouseenter', () =&gt; isMenuOpen = true);
-                  menu.addEventListener('mouseleave', () =&gt; {
-                      menu.classList.remove('active');
-                      isMenuOpen = false;
-                  });
-              }
-          });
-        });
-
+      topMenu.addEventListener('mouseover', showMenu);
+      topMenu.addEventListener('mouseout', hideMenu);
+      menu.addEventListener('mouseover', showMenu);
+      menu.addEventListener('mouseout', hideMenu);
+    }
+  });
+});
       </script>
+
     </xpath>
   </template>
 </odoo>
